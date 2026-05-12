@@ -18,4 +18,6 @@ COPY . .
 
 EXPOSE 8001
 
+RUN sed -i 's/\r$//' /app/start.sh
+
 CMD ["sh", "start.sh"]
