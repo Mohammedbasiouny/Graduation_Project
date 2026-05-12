@@ -29,6 +29,5 @@ temp/
 *.tmp
 
 # Local runtime artifacts
-backend/uploads/tmp/**
-backend/uploads/**/*.zip
+backend/uploads/**
 !backend/uploads/.gitkeep
