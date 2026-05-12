@@ -21,8 +21,6 @@ coverage.xml
 .dockerignore
 Dockerfile
 docker-compose.yml
-.env
-.env.*
 *.swp
 *.swo
 *~
