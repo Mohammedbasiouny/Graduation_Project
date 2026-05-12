@@ -61,4 +61,4 @@ RUN mkdir -p /app/uploads
 EXPOSE 3000
 
 # Start application with entrypoint
-ENTRYPOINT ["/app/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "/app/entrypoint.sh"]
