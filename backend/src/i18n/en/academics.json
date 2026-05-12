@@ -1,0 +1,33 @@
+{
+    "faculties": {
+        "CREATED_SUCCESSFULLY": "Faculty created successfully",
+        "RETRIEVED_SUCCESSFULLY": "Faculty(s) retrieved successfully",
+        "UPDATED_SUCCESSFULLY": "Faculty updated successfully",
+        "DELETED_SUCCESSFULLY": "Faculty deleted successfully",
+
+        "CREATE_FAILED": "Failed to create faculty",
+        "FETCH_FAILED": "Failed to fetch faculty(s) data",
+        "UPDATE_FAILED": "Failed to update faculty",
+        "DELETE_FAILED": "Failed to delete faculty",
+        
+        "ALREADY_EXISTS": "A faculty with this name already exists",
+        "NOT_FOUND": "Faculty not found",
+        "HAS_LINKED_RECORDS": "Cannot delete faculty because it has linked department programs"
+    },
+    "departments": {
+        "CREATED_SUCCESSFULLY": "Department created successfully",
+        "RETRIEVED_SUCCESSFULLY": "Department(s) retrieved successfully",
+        "UPDATED_SUCCESSFULLY": "Department updated successfully",
+        "DELETED_SUCCESSFULLY": "Department deleted successfully",
+
+        "CREATE_FAILED": "Failed to create department",
+        "FETCH_FAILED": "Failed to fetch department(s) data",
+        "UPDATE_FAILED": "Failed to update department",
+        "DELETE_FAILED": "Failed to delete department",
+
+        "ALREADY_EXISTS": "A department with this name already exists in this faculty",
+        "NOT_FOUND": "Department not found",
+        "FACULTY_NOT_FOUND": "The specified faculty does not exist",
+        "HAS_LINKED_RECORDS": "Cannot delete department because it has linked student records"
+    }
+}

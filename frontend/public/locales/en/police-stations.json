@@ -1,0 +1,59 @@
+{
+  "main_heading": {
+    "title": "Police Departments & Stations",
+    "subtitle": "Manage all police departments and stations across governorates"
+  },
+  "table_heading": {
+    "title": "Manage Police Departments & Stations",
+    "subtitle": "Use the table and filters below to view, edit, and manage all police departments and stations"
+  },
+  "cards": {
+    "add_police_station": {
+      "title": "Add New Police Department/Station",
+      "description": "Create a new police department or station and link it to the appropriate governorate.",
+      "button": "Add Police Station"
+    }
+  },
+  "police_stations_overview": {
+    "visible": {
+      "label": "Visible Stations",
+      "subtext": "Police stations currently visible to users"
+    },
+    "not_visible": {
+      "label": "Hidden Stations",
+      "subtext": "Police stations not visible to users"
+    },
+    "total": {
+      "label": "Total Stations",
+      "subtext": "Total number of all police departments and stations in the system"
+    }
+  },
+  "table": {
+    "columns": {
+      "id": "#ID",
+      "name": "Police Department / Station Name",
+      "governorate": "Governorate",
+      "is_visible": "Visible",
+      "areas": "Cities / Sheyakhas / Villages",
+      "actions": "Actions"
+    }
+  },
+  "modals": {
+    "delete": {
+      "title": "Delete Confirmation",
+      "description": "Are you sure you want to delete this police department or station? This action cannot be undone."
+    },
+    "add": {
+      "title": "Add New Police Department/Station",
+      "description": "Create a new police department or station and link it to the governorate."
+    },
+    "view": {
+      "title": "View Police Department/Station Details",
+      "description": "Here you can view all details about this police department or station."
+    },
+    "edit": {
+      "title": "Edit Police Department/Station",
+      "description": "Update the details of the police department or station."
+    }
+  }
+}

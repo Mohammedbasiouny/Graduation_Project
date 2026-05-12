@@ -1,0 +1,74 @@
+{
+    "governorates": {
+        "CREATED_SUCCESSFULLY": "Governorate created successfully",
+        "RETRIEVED_SUCCESSFULLY": "Governorate(s) retrieved successfully",
+        "UPDATED_SUCCESSFULLY": "Governorate updated successfully",
+        "DELETED_SUCCESSFULLY": "Governorate deleted successfully",
+
+        "ALREADY_EXISTS": "A governorate with this name already exists",
+        "NOT_FOUND": "Governorate not found",
+
+        "CREATE_FAILED": "Failed to create governorate",
+        "FETCH_FAILED": "Failed to fetch governorate(s)",
+        "UPDATE_FAILED": "Failed to update governorate",
+        "DELETE_FAILED": "Failed to delete governorate",
+        
+        "HAS_LINKED_CITIES": "Cannot delete governorate because it has linked cities",
+        "HAS_LINKED_POLICE_DEPARTMENTS": "Cannot delete governorate because it has linked police departments",
+        "HAS_LINKED_EDUCATIONAL_DEPARTMENTS": "Cannot delete governorate because it has linked educational departments",
+        "HAS_LINKED_STUDENTS": "Cannot delete governorate because it has linked students"
+    },
+    "police-departments": {
+        "CREATED_SUCCESSFULLY": "Police department created successfully",
+        "RETRIEVED_SUCCESSFULLY": "Police department(s) retrieved successfully",
+        "UPDATED_SUCCESSFULLY": "Police department updated successfully",
+        "DELETED_SUCCESSFULLY": "Police department deleted successfully",
+
+        "ALREADY_EXISTS": "A police department with this name already exists",
+        "NOT_FOUND": "Police department not found",
+        "GOVERNORATE_NOT_FOUND": "Governorate not found",
+
+        "CREATE_FAILED": "Failed to create police department",
+        "FETCH_FAILED": "Failed to fetch police department(s)",
+        "UPDATE_FAILED": "Failed to update police department",
+        "DELETE_FAILED": "Failed to delete police department",
+        
+        "HAS_LINKED_CITIES": "Cannot delete police department because it has linked cities",
+        "HAS_LINKED_STUDENTS": "Cannot delete police department because it has linked students"
+    },
+    "city": {
+        "CREATED_SUCCESSFULLY": "City/village created successfully",
+        "RETRIEVED_SUCCESSFULLY": "City/cities retrieved successfully",
+        "UPDATED_SUCCESSFULLY": "City/village updated successfully",
+        "DELETED_SUCCESSFULLY": "City/village deleted successfully",
+
+        "ALREADY_EXISTS": "A city or village with this name already exists",
+        "NOT_FOUND": "City/village not found",
+        "GOVERNORATE_NOT_FOUND": "Governorate not found",
+        "POLICE_DEPARTMENT_NOT_FOUND": "Police department not found",
+
+        "CREATE_FAILED": "Failed to create city/village",
+        "FETCH_FAILED": "Failed to fetch city/cities",
+        "UPDATE_FAILED": "Failed to update city/village",
+        "DELETE_FAILED": "Failed to delete city/village",
+
+        "HAS_LINKED_STUDENTS": "Cannot delete city/village because it has linked students"
+    },
+    "educational-departments": {
+        "CREATED_SUCCESSFULLY": "Educational department created successfully",
+        "RETRIEVED_SUCCESSFULLY": "Educational department(s) retrieved successfully",
+        "UPDATED_SUCCESSFULLY": "Educational department updated successfully",
+        "DELETED_SUCCESSFULLY": "Educational department deleted successfully",
+
+        "ALREADY_EXISTS": "An educational department with this name already exists",
+        "NOT_FOUND": "Educational department not found",
+        "GOVERNORATE_NOT_FOUND": "Governorate not found",
+
+        "CREATE_FAILED": "Failed to create educational department",
+        "FETCH_FAILED": "Failed to fetch educational department(s)",
+        "UPDATE_FAILED": "Failed to update educational department",
+        "DELETE_FAILED": "Failed to delete educational department",
+
+        "HAS_LINKED_STUDENTS": "Cannot delete educational department because it has linked students"
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "meals": {
+        "CREATED_SUCCESSFULLY": "Meal created successfully",
+        "RETRIEVED_SUCCESSFULLY": "Meals retrieved successfully",
+        "UPDATED_SUCCESSFULLY": "Meal updated successfully",
+        "DELETED_SUCCESSFULLY": "Meal deactivated successfully",
+
+        "CREATE_FAILED": "Failed to create meal",
+        "FETCH_FAILED": "Failed to retrieve meals",
+        "UPDATE_FAILED": "Failed to update meal",
+        "DELETE_FAILED": "Failed to deactivate meal",
+
+        "NOT_FOUND": "Meal not found",
+        "NAME_ALREADY_EXISTS": "A meal with this name already exists",
+        "HAS_LINKED_SCHEDULES": "Cannot deactivate this meal because it is linked to meal schedules",
+        "DEACTIVATE_LINKED_SCHEDULES": "Cannot deactivate this meal while it is part of an active meal schedule",
+        "INVALID_CATEGORY": "Category must be breakfast, lunch, dinner, or suhoor"
+    },
+    "meal_day_schedules": {
+        "CREATED_SUCCESSFULLY": "Meal day schedule created successfully",
+        "RETRIEVED_SUCCESSFULLY": "Meal day schedules retrieved successfully",
+        "UPDATED_SUCCESSFULLY": "Meal day schedule updated successfully",
+        "DELETED_SUCCESSFULLY": "Meal day schedule deleted successfully",
+
+        "CREATE_FAILED": "Failed to create meal day schedule",
+        "FETCH_FAILED": "Failed to retrieve meal day schedules",
+        "UPDATE_FAILED": "Failed to update meal day schedule",
+        "DELETE_FAILED": "Failed to delete meal day schedule",
+
+        "NOT_FOUND": "Meal day schedule not found",
+        "DUPLICATE_DATE": "A meal day schedule already exists for this date",
+        "BOOKING_START_BEFORE_END": "Booking start time must be before booking end time",
+        "BOOKING_WINDOW_TOO_SHORT": "Booking window must be at least 1 hour",
+        "SCHEDULE_MUST_BE_FUTURE": "Booking times must be set in the future",
+        "SCHEDULE_LOCKED": "This schedule cannot be modified because delivery has already started"
+    },
+    "meal_slots": {
+        "CREATED_SUCCESSFULLY": "Meal slot created successfully",
+        "RETRIEVED_SUCCESSFULLY": "Meal slots retrieved successfully",
+        "UPDATED_SUCCESSFULLY": "Meal slot updated successfully",
+        "DELETED_SUCCESSFULLY": "Meal slot deleted successfully",
+
+        "CREATE_FAILED": "Failed to create meal slot",
+        "FETCH_FAILED": "Failed to retrieve meal slots",
+        "UPDATE_FAILED": "Failed to update meal slot",
+        "DELETE_FAILED": "Failed to delete meal slot",
+
+        "NOT_FOUND": "Meal slot not found",
+        "MEAL_NOT_FOUND": "The specified meal was not found",
+        "MEAL_INACTIVE": "Cannot create a slot for an inactive meal",
+        "DELIVERY_START_BEFORE_END": "Delivery start time must be before delivery end time",
+        "BOOKING_MUST_PRECEDE_DELIVERY": "Booking window must fully precede the delivery window",
+        "KITCHEN_PREP_TIME_INSUFFICIENT": "There must be at least 2 hours between booking end time and delivery start time",
+        "DUPLICATE_CATEGORY_SAME_DAY": "A slot for this meal category already exists in this day schedule",
+        "SLOT_LOCKED": "This slot cannot be modified because delivery has already started"
+    }
+}

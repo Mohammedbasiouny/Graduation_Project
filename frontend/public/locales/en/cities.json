@@ -1,0 +1,68 @@
+{
+  "main_heading": {
+    "title": "Cities / Sheykhats / Villages",
+    "subtitle": "Manage all cities, sheykhats, and villages within the governorates"
+  },
+  "table_heading": {
+    "title": "Manage Cities, Sheykhats, and Villages",
+    "subtitle": "Use the table and filters to view, edit, and manage cities, sheykhats, and villages"
+  },
+  "cards": {
+    "add_city": {
+      "title": "Add New City / Sheykhat / Village",
+      "description": "Create a new residential unit and link it to the appropriate governorate and police station.",
+      "button": "Add Unit"
+    }
+  },
+  "cities_overview": {
+    "visible": {
+      "label": "Visible Units",
+      "subtext": "Units currently visible to users"
+    },
+    "not_visible": {
+      "label": "Hidden Units",
+      "subtext": "Units not visible to users"
+    },
+    "total": {
+      "label": "Total Units",
+      "subtext": "Total number of all cities, sheykhats, and villages in the system"
+    },
+    "acceptable": {
+      "label": "Acceptable Units",
+      "subtext": "Areas from which the system accepts students"
+    },
+    "not_acceptable": {
+      "label": "Not Acceptable",
+      "subtext": "Areas from which the system does not accept students"
+    }
+  },
+  "table": {
+    "columns": {
+      "id": "#ID",
+      "name": "Residential Unit Name",
+      "acceptance_status": "System Accepts From",
+      "governorate": "Governorate",
+      "police_station": "Police Department / Station",
+      "is_visible": "Visible",
+      "actions": "Actions"
+    }
+  },
+  "modals": {
+    "delete": {
+      "title": "Confirm Deletion",
+      "description": "Are you sure you want to delete this residential unit? This action cannot be undone."
+    },
+    "add": {
+      "title": "Add New Residential Unit",
+      "description": "Create a new residential unit and link it to the appropriate governorate and police station."
+    },
+    "view": {
+      "title": "View Residential Unit Details",
+      "description": "Here you can view all details of the residential unit."
+    },
+    "edit": {
+      "title": "Edit Residential Unit",
+      "description": "Edit the details and information of the city, sheykhat, or village."
+    }
+  }
+}

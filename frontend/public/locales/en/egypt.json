@@ -1,0 +1,37 @@
+{
+  "main_heading": {
+    "title": "Egypt’s Administrative Division",
+    "subtitle": "Manage governorates, districts, neighborhoods, and local areas within the national administrative structure"
+  },
+  "notes": {
+    "administrative_division": {
+      "title": "Egypt’s Administrative Division",
+      "description": "A clear summary of how Egypt is administratively structured and how each level relates to the one above it:\n\n- Top Level — Governorates:\n  Egypt is divided into multiple governorates. Each governorate is the main administrative unit responsible for planning and public services within its region.\n\n- Within Each Governorate — Educational Directorates:\n  Every governorate has several educational directorates responsible for schools, teachers, local exams, and all educational affairs within that governorate.\n\n- Within Each Governorate — Police Departments and Police Centers:\n  Each governorate also contains a security network of police departments and police centers. Departments usually cover urban areas or cities, while centers often serve rural or wider geographic regions.\n\n- Police Departments/Centers Oversee — Cities, Districts (Sheyakhas), and Villages:\n  Every department or center is responsible for a group of local administrative units such as cities, districts (sheyakhas), and villages.\n  • Sheyakhas: A local administrative term used to describe districts/neighborhoods within cities or populated areas — in other words, “sheyakhas” = small administrative neighborhoods inside cities or villages.\n  • Villages: Smaller rural settlements managed locally and fall under the jurisdiction of the corresponding police department or center.\n\nNote: Terminology may differ slightly between governorates (for example, the term “Markaz — Center” may refer to an administrative unit containing multiple villages), but the general structure always begins with the governorate and ends with the cities/districts and villages."
+    },
+    "selection_rules": {
+      "title": "Visibility and Eligibility Options in the System",
+      "description": "Each governorate or city/district/village in the system has two separate settings, which must not be confused when adding or editing data:\n\n1) Visibility Option — Can students select this location?\n   This setting determines whether a location (governorate, city, district, or village) appears in the student’s selection menus during application. If enabled, it appears and can be selected. If disabled, it still exists in the system but is hidden from the student.\n\n2) Eligibility Option — Does the system accept students from this location?\n   This setting is completely different from visibility. Even if a location appears to the student, the system may still reject the application if eligibility is disabled for that location.\n\nExamples:\n• A governorate may be visible to students (visibility enabled), but the system may not accept students coming from it that year (eligibility disabled).\n• Alternatively, a location may be eligible but not visible if it is currently unavailable for selection.\n\nThis flexibility gives the system full control over application management based on administrative rules and policies."
+    }
+  },
+  "administrative_overview": {
+    "governorates": {
+      "label": "Number of Governorates",
+      "subtext": "Total governorates in Egypt"
+    },
+    "educational_directorates": {
+      "label": "Number of Educational Directorates",
+      "subtext": "Total educational directorates across the country"
+    },
+    "police_departments": {
+      "label": "Number of Police Departments & Centers",
+      "subtext": "Total departments and centers responsible for maintaining security"
+    },
+    "areas": {
+      "label": "Number of Cities / Districts / Villages",
+      "subtext": "Total populated areas across all governorates"
+    }
+  },
+  "buttons": {
+    "governorates_button": "Click here to manage Egypt’s governorates"
+  }
+}

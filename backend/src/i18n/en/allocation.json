@@ -1,0 +1,17 @@
+{
+  "errors": {
+    "STUDENT_NOT_FOUND": "Student not found.",
+    "NO_ACCEPTED_APP": "No accepted application found for this student.",
+    "BUILDING_NOT_FOUND": "Building not found.",
+    "ROOM_NOT_FOUND": "Target room not found.",
+    "GENDER_MISMATCH": "Gender mismatch: Cannot assign a {studentGender} student to a {buildingType} building.",
+    "ROOM_BUILDING_MISMATCH": "The selected room does not belong to the chosen building.",
+    "ROOM_FULL": "The selected room is at full capacity.",
+    "ALLOCATION_NOT_FOUND": "Room allocation not found."
+  },
+  "success": {
+    "ASSIGNED": "Room allocated successfully",
+    "UPDATED": "Room allocation updated successfully",
+    "DELETED": "Room allocation removed successfully."
+  }
+}

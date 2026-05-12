@@ -1,0 +1,12 @@
+{
+    "RETRIEVED_SUCCESSFULLY": "Restaurant settings retrieved successfully",
+    "AUTO_RESERVATION_UPDATED": "Auto reservation settings updated successfully",
+
+    "STATUS_OPENED": "Restaurant is now open",
+    "STATUS_CLOSED": "Restaurant is now closed",
+
+    "FETCH_FAILED": "Failed to retrieve restaurant settings",
+    "UPDATE_FAILED": "Failed to update restaurant settings",
+    
+    "SETTINGS_NOT_FOUND": "Restaurant settings not found"
+}

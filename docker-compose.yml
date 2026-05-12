@@ -1,0 +1,188 @@
+services:
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis-cache
+
+    restart: always
+
+    ports:
+      - "6379:6379"
+
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  id-card-detection:
+    build:
+      context: ./ID-Card-Detection
+
+    container_name: id-card-detection
+
+    depends_on:
+      redis:
+        condition: service_healthy
+
+    ports:
+      - "8000:8000"
+
+    env_file:
+      - ./ID-Card-Detection/.env
+
+    environment:
+      API_HOST: 0.0.0.0
+      API_PORT: 8000
+      REDIS_URL: redis://redis:6379/0
+      CORS_ORIGINS: http://localhost:3030,http://frontend:3030,http://localhost:3000,http://backend:3000
+
+    healthcheck:
+      test:
+        ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/docs').read()"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  id-card-worker:
+    build:
+      context: ./ID-Card-Detection
+
+    container_name: id-card-worker
+
+    depends_on:
+      redis:
+        condition: service_healthy
+
+    env_file:
+      - ./ID-Card-Detection/.env
+
+    environment:
+      REDIS_URL: redis://redis:6379/0
+
+  udorm-attendance-service:
+    build:
+      context: ./udorm-attendance-service
+
+    container_name: udorm-attendance-service
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      backend:
+        condition: service_healthy
+
+    ports:
+      - "8001:8001"
+
+    env_file:
+      - ./udorm-attendance-service/.env
+
+    environment:
+      APP_HOST: 0.0.0.0
+      APP_PORT: 8001
+      DATABASE_URL: postgresql://postgres:123456@postgres:5432/udorm
+      REDIS_URL: redis://redis:6379/0
+      NESTJS_SERVICE_URL: http://backend:3000
+      INTERNAL_API_KEY: dev-internal-key
+      ALLOWED_ORIGINS: http://localhost:3030,http://frontend:3030,http://localhost:3000,http://backend:3000
+
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; socket.create_connection(('127.0.0.1', 8001), timeout=2)"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 180s
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: postgres-db
+
+    restart: always
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: udorm
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d udorm"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+
+    container_name: udorm-backend
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      id-card-detection:
+        condition: service_healthy
+
+    ports:
+      - "3000:3000"
+
+    env_file:
+      - ./backend/.env
+
+    environment:
+      SERVICE_URL: http://id-card-detection:8000
+      PYTHON_SERVICE_URL: http://udorm-attendance-service:8001
+      AI_SERVICE_PUBLIC_URL: http://id-card-detection:8000
+
+    volumes:
+      - ./backend/uploads:/app/uploads
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "require('http').get('http://127.0.0.1:3000/api/health', res => process.exit(res.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))",
+        ]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 45s
+
+  frontend:
+    build:
+      context: ./frontend
+
+    container_name: udorm-frontend
+
+    depends_on:
+      backend:
+        condition: service_healthy
+
+    ports:
+      - "3030:3030"
+
+    env_file:
+      - ./frontend/.env.production
+
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1:3030"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  postgres_data:

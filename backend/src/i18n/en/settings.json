@@ -1,0 +1,6 @@
+{
+  "FETCHED": "Settings fetched successfully.",
+  "UPDATED": "Settings updated successfully.",
+  "FETCH_FAILED": "Failed to fetch settings.",
+  "UPDATE_FAILED": "Failed to update settings."
+}

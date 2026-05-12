@@ -1,0 +1,59 @@
+{
+  "main_heading": {
+    "title": "Educational Certificates",
+    "subtitle": "Manage all certificates available for students during application"
+  },
+  "table_heading": {
+    "title": "Manage Educational Certificates",
+    "subtitle": "Use the table and filters below to view, edit, and manage certificates available to students"
+  },
+  "cards": {
+    "add_certificate": {
+      "title": "Add New Certificate",
+      "description": "Create a new educational certificate that students can select during the application process.",
+      "button": "Add Certificate"
+    }
+  },
+  "certificates_overview": {
+    "visible": {
+      "label": "Available Certificates",
+      "subtext": "Currently available for students"
+    },
+    "not_visible": {
+      "label": "Unavailable Certificates",
+      "subtext": "These certificates are not available for selection"
+    },
+    "total": {
+      "label": "Total Certificates",
+      "subtext": "Total number of all educational certificates"
+    }
+  },
+  "table": {
+    "columns": {
+      "id": "#ID",
+      "name": "Certificate Name",
+      "is_visible": "Visible",
+      "degree": "Degree",
+      "notes": "Notes", 
+      "actions": "Actions"
+    }
+  },
+  "modals": {
+    "delete": {
+      "title": "Delete Confirmation",
+      "description": "Are you sure you want to delete this certificate? This action cannot be undone."
+    },
+    "add": {
+      "title": "Add New Certificate",
+      "description": "Create a new educational certificate for students to select during application."
+    },
+    "view": {
+      "title": "View Certificate Details",
+      "description": "Here you can view the details of this educational certificate."
+    },
+    "edit": {
+      "title": "Edit Certificate",
+      "description": "Modify the details of the educational certificate."
+    }
+  }
+}

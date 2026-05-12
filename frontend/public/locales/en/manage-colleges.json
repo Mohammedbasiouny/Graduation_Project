@@ -1,0 +1,62 @@
+{
+  "main_heading": {
+    "title": "",
+    "subtitle": "Viewing and Managing {{uni}} University"
+  },
+  "table_heading": {
+    "title": "College Management",
+    "subtitle": "Use the table and filters below to view, edit, and manage the colleges available to students"
+  },
+  "colleges_overview": {
+    "visible": {
+      "label": "Available Colleges",
+      "subtext": "Colleges currently available for students"
+    },
+    "not_visible": {
+      "label": "Unavailable Colleges",
+      "subtext": "Colleges currently not available for selection"
+    },
+    "total": {
+      "label": "Total Colleges",
+      "subtext": "Total number of all available colleges"
+    }
+  },
+  "cards": {
+    "add_college": {
+      "title": "Add New College",
+      "description": "Create a new college and define its information to make it available for students during the application process.",
+      "button": "Add College"
+    },
+    "college_details": {
+      "departments_count": "Number of Departments",
+      "departments_link": "Click here to view all departments",
+      "add_department_buttons": "Add a new department"
+    }
+  },
+  "modals": {
+    "delete": {
+      "title": "Confirm Deletion",
+      "description": "Are you sure you want to delete this college? This action cannot be undone."
+    },
+    "add": {
+      "title": "Add New College",
+      "description": "Create a new college and define its information to make it available for students during the application process."
+    },
+    "view": {
+      "title": "View College Details",
+      "description": "Here you can view all the details of the college."
+    },
+    "edit": {
+      "title": "Edit College",
+      "description": "Modify the college information."
+    }
+  },
+  "columns": {
+    "id": "#ID",
+    "departments_count": "Department Count",
+    "college_name": "College Name",
+    "university": "University",
+    "is_visible": "Visible",
+    "college_is_off_campus": "College Location"
+  }
+}

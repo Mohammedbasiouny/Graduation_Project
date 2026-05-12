@@ -1,0 +1,214 @@
+{
+  "heading": {
+    "title": "Student File Management",
+    "subtitle": "Upload, download, and export student data and documents efficiently"
+  },
+  "notes": {
+    "info_note": {
+      "title": "Guide to Configuring and Exporting Student Data and Documents in a Compressed File",
+      "description": "This page allows you to generate a customized file containing student data by selecting the required fields from each section (Personal Information, Residence Details, Educational Information, Guardian Information, Housing Information, and Documents).\n\nFirst, select the student type, nationality, residence type, or any other available filter criteria. The system will automatically display the relevant fields based on your selections to ensure accurate data.\n\nYou can choose which fields to include in the file by enabling the checkboxes, and you may deselect any field that is not required. The list of selected fields will be automatically updated in the sidebar.\n\nImportant note: You can reorder the selected fields from the sidebar using drag and drop so that the exported Excel file follows the same order you defined.\n\nAfter selecting the required filters and fields, click the Export button. A compressed (ZIP) file will be downloaded, and it must be extracted to access the files inside.\n\nAfter extracting the file, you will find:\n- An Excel file containing student data according to the fields you selected.\n- A Word file containing the students' national ID cards arranged and ready for printing.\n- A folder named \"students\" that contains multiple subfolders, where each folder represents a single student.\n\nInside each student's folder, you will find the documents that were selected during the export process to be downloaded with that student's data.\n\nWhen generating the Word file, the AI system runs automatically to process the national ID card images. The system first verifies that the uploaded image is a valid Egyptian national ID card, then automatically crops the card and adjusts its orientation and size to make it suitable for printing.\n\nThe Word file is organized so that each page contains data for a maximum of 3 students. The national ID number is displayed at the top, and below it two images are shown (the student's ID card and the guardian's ID card) arranged in two columns, making it suitable for printing on A4 paper."
+    }
+  },
+  "fields": {
+    "personal_info": {
+      "title": "Personal Information",
+      "common": {
+      "isEgyptian": "Is the student of Egyptian nationality?",
+        "fullName": "Full Name",
+        "religion": "Religion",
+        "gender": "Gender",
+        "dateOfBirth": "Date of Birth",
+        "phoneNumber": "Phone Number"
+      },
+      "eg": {
+        "nationalId": "National ID",
+        "telephone": "Landline Phone",
+        "birthCity": "City of Birth"
+      },
+      "ex": {
+        "nationality": "Nationality",
+        "passportNumber": "Passport Number",
+        "passportIssuingCountry": "Passport Issuing Country",
+        "placeOfBirth": "Place of Birth"
+      }
+    },
+    "residence_info": {
+      "title": "Residence Information",
+      "common": {
+        "fullAddress": "Full Address",
+        "is_inside_egypt": "Is the student's place of residence within Egypt?"
+      },
+      "in": {
+        "governorateId": "Governorate",
+        "policeDepartmentId": "Police Department",
+        "cityId": "City"
+      },
+      "out": {
+        "countryOfResidence": "Country of Residence"
+      }
+    },
+    "pre_uni_edu_info": {
+      "title": "Pre-University Education",
+      "common": {
+        "qualificationId": "Qualification Type",
+        "highSchoolTotalGrade": "High School Total Grade",
+        "percentage": "Percentage (%)"
+      },
+      "inside": {
+        "highSchoolGovernorate": "High School Governorate",
+        "highSchoolEducationDistrictId": "Education Department"
+      },
+      "outside": {
+        "highSchoolCountry": "Country of Certification"
+      }
+    },
+    "academic_info": {
+      "title": "Academic Information",
+      "common": {
+        "facultyId": "Faculty",
+        "departmentId": "Department",
+        "is_new": "Is the student a new student?"
+      },
+      "new": {
+        "admissionYear": "Admission Year"
+      },
+      "old": {
+        "studentIdCode": "University Code",
+        "academicYear": "Academic Year",
+        "educationSystemType": "Study System",
+        "totalAcademicGrade": "Cumulative GPA",
+        "enrollmentStatus": "Enrollment Status",
+        "grade": "Student Grade"
+      }
+    },
+    "guardian_info": {
+      "title": "Guardian Information",
+      "common": {
+        "guardianName": "Guardian Name",
+        "guardianOccupation": "Guardian Occupation",
+        "guardianPhoneNumber": "Guardian Phone Number",
+        "guardianRelationship": "Relationship"
+      },
+      "eg": {
+        "guardianNationalId": "Guardian National ID"
+      },
+      "ex": {
+        "guardianNationalId": "Guardian Identity Number",
+        "guardianNationality": "Guardian Nationality"
+      }
+    },
+    "education_info": {
+      "title": "Education Information"
+    },
+    "housing_info": {
+      "title": "Housing Information",
+      "common": {
+        "requiresMeals": "Housing with Meals?",
+        "dormType": "Dorm Type"
+      }
+    },
+    "documents": {
+      "title": "Documents",
+      "commom": {
+        "personal_image": "Student Personal Photo"
+      },
+      "eg": {
+        "national_id_front": "Student National ID (Front)",
+        "national_id_back": "Student National ID (Back)"
+      },
+      "ex": {
+        "passport_image": "Student Passport Image"
+      },
+      "residence_outside": {
+        "visa_or_residency_image": "Student Visa or Residency Image"
+      },
+      "new_student": {
+        "pre_university_certificate": "Pre-University Certificates",
+        "nomination_card_image": "Nomination Card Image issued by the Coordination Office"
+      },
+      "old_student": {
+        "enrollment_proof_image": "Official College Enrollment Proof"
+      },
+      "guardian_eg": {
+        "guardian_id_front": "Guardian National ID (Front)",
+        "guardian_id_back": "Guardian National ID (Back)"
+      },
+      "guardian_ex": {
+        "guardian_identity": "Proof of Guardian Relationship to Student"
+      }
+    }
+  },
+  "buttons": {
+    "export": "Export Data",
+    "clear": "Clear Selections",
+    "cancel_export": "Cancel Data Export"
+  },
+  "labels": {
+    "selected_fields": "Fields to Export"
+  },
+  "messages": {
+    "order_selected": "Order of Selected Fields",
+    "moving": "Moving field...",
+    "drag": "Drag",
+    "no_fields_selected": "No fields selected yet",
+    "clear_all_hint": "You can clear all selected fields",
+    "drop_here": "Drop here to fix order"
+  },
+  "fields_labels": {
+    "is_new": "Is the student a new student?",
+    "percentage": "Percentage (%)",
+    "is_inside_egypt": "Is the student's place of residence within Egypt?",
+    "isEgyptian": "Is the student of Egyptian nationality?",
+    "requiresMeals": "Housing with Meals?",
+    "dormType": "Dorm Type",
+    "studentIdCode": "University Code",
+    "academicYear": "Academic Year",
+    "educationSystemType": "Study System",
+    "totalAcademicGrade": "Cumulative GPA",
+    "enrollmentStatus": "Enrollment Status",
+    "admissionYear": "Admission Year",
+    "facultyId": "Faculty",
+    "departmentId": "Department",
+    "highSchoolCountry": "Country of Certification",
+    "highSchoolGovernorate": "High School Governorate",
+    "highSchoolEducationDistrictId": "Education Department",
+    "qualificationId": "Qualification Type",
+    "highSchoolTotalGrade": "High School Total Grade",
+    "governorateId": "Governorate",
+    "grade": "Student Grade",
+    "policeDepartmentId": "Police Department",
+    "cityId": "City",
+    "countryOfResidence": "Country of Residence",
+    "fullAddress": "Full Address",
+    "id": "Student ID",
+    "fullName": "Full Name",
+    "religion": "Religion",
+    "gender": "Gender",
+    "dateOfBirth": "Date of Birth",
+    "phoneNumber": "Phone Number",
+    "nationality": "Nationality",
+    "passportNumber": "Passport Number",
+    "passportIssuingCountry": "Passport Issuing Country",
+    "placeOfBirth": "Place of Birth",
+    "nationalId": "National ID",
+    "telephone": "Landline Phone",
+    "birthCity": "City of Birth",
+    "guardianName": "Guardian Name",
+    "guardianOccupation": "Guardian Occupation",
+    "guardianPhoneNumber": "Guardian Phone Number",
+    "guardianRelationship": "Relationship",
+    "guardianNationalId": "Guardian Identity Number",
+    "guardianNationality": "Guardian Nationality",
+    "personal_image": "Student Personal Photo",
+    "national_id_front": "Student National ID (Front)",
+    "national_id_back": "Student National ID (Back)",
+    "passport_image": "Student Passport Image",
+    "visa_or_residency_image": "Student Visa or Residency Image",
+    "pre_university_certificate": "Pre-University Certificates",
+    "nomination_card_image": "Nomination Card Image issued by the Coordination Office",
+    "enrollment_proof_image": "Official College Enrollment Proof",
+    "guardian_id_front": "Guardian National ID (Front)",
+    "guardian_id_back": "Guardian National ID (Back)",
+    "guardian_identity": "Proof of Guardian Relationship to Student"
+  }
+}

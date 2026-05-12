@@ -1,0 +1,17 @@
+{
+    "residents": {
+        "CREATED_SUCCESSFULLY": "Resident created successfully",
+        "RETRIEVED_SUCCESSFULLY": "Residents retrieved successfully",
+        "UPDATED_SUCCESSFULLY": "Resident updated successfully",
+        "DELETED_SUCCESSFULLY": "Resident deleted successfully",
+
+        "CREATE_FAILED": "Failed to create resident",
+        "FETCH_FAILED": "Failed to retrieve residents",
+        "UPDATE_FAILED": "Failed to update resident",
+        "DELETE_FAILED": "Failed to delete resident",
+
+        "NOT_FOUND": "Resident not found",
+        "STUDENT_NOT_FOUND": "Student not found",
+        "NO_ACCEPTED_APPLICATION": "No accepted application found for this student"
+    }
+}

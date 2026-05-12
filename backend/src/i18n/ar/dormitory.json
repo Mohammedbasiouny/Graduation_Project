@@ -1,0 +1,33 @@
+{
+    "buildings": {
+        "CREATED_SUCCESSFULLY": "تم إنشاء المبنى بنجاح",
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع بيانات المباني بنجاح",
+        "UPDATED_SUCCESSFULLY": "تم تحديث المبنى بنجاح",
+        "DELETED_SUCCESSFULLY": "تم حذف المبنى بنجاح",
+
+        "CREATE_FAILED": "فشل إنشاء المبنى",
+        "FETCH_FAILED": "فشل استرجاع بيانات المباني",
+        "UPDATE_FAILED": "فشل تحديث المبنى",
+        "DELETE_FAILED": "فشل حذف المبنى",
+
+        "NOT_FOUND": "المبنى غير موجود",
+        "ALREADY_EXISTS": "يوجد مبنى بهذا الاسم بالفعل",
+        "HAS_LINKED_RECORDS": "لا يمكن حذف هذا المبنى لأنه مرتبط بغرف"
+    },
+    "rooms": {
+        "CREATED_SUCCESSFULLY": "تم إنشاء الغرفة بنجاح",
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع بيانات الغرف بنجاح",
+        "UPDATED_SUCCESSFULLY": "تم تحديث الغرفة بنجاح",
+        "DELETED_SUCCESSFULLY": "تم حذف الغرفة بنجاح",
+
+        "CREATE_FAILED": "فشل إنشاء الغرفة",
+        "FETCH_FAILED": "فشل استرجاع بيانات الغرف",
+        "UPDATE_FAILED": "فشل تحديث الغرفة",
+        "DELETE_FAILED": "فشل حذف الغرفة",
+
+        "NOT_FOUND": "الغرفة غير موجودة",
+        "ALREADY_EXISTS": "توجد غرفة بهذا الاسم في هذا المبنى بالفعل",
+        "FLOOR_EXCEEDS_BUILDING_FLOORS": "رقم الطابق يتجاوز عدد طوابق المبنى",
+        "HAS_LINKED_RECORDS": "لا يمكن حذف هذه الغرفة لأنها مرتبطة بسجلات"
+    }
+}

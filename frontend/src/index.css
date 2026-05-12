@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@import "./styles/fonts.css";
+
+@theme {
+  /* ===== Fonts ===== */
+  --font-elmessiri: "El Messiri", sans-serif;
+  --font-noto: "Noto Sans", sans-serif;
+
+  /* ===== Blue Palette ===== */
+  --blue-lightest: #EFF6FF;
+  --blue-light: #8EC5FF;
+  --blue-dark: #193CB8;
+
+  /* ===== Green Palette ===== */
+  --green-lightest: #F0FDF4;
+  --green-light: #7BF1A8;
+  --green-dark: #016630;
+
+  /* ===== Yellow / Gold Palette ===== */
+  --yellow-lightest: #FEFCE8;
+  --yellow-light: #FFDF20;
+  --yellow-dark: #894B00;
+
+  /* ===== Red Palette ===== */
+  --red-lightest: #FEF2F2;
+  --red-light: #FFA2A2;
+  --red-dark: #9F0712;
+
+  /* ===== Gray / Neutral Palette ===== */
+  --gray-lightest: #F9FAFB;
+  --gray-light: #D1D5DC;
+  --gray-dark: #1E2939;
+
+  /* ===== Identity Colors ===== */
+  --primary-dark: #272727;
+
+  --navy-main: #27285d;
+  --navy-deep: #132091;
+
+  --gold-main: #b38e19;
+  --gold-dark: #876705;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.shake {
+  animation: shake 0.4s ease;
+}
+
+.active {
+  color: var(--gold-main);
+}
+
+.font-ar {
+  font-family: var(--font-elmessiri);
+}
+
+.font-en {
+  font-family: var(--font-noto);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #272727;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold-main);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dark);
+}
+
+/* global.css or tailwind.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: inline-block;
+}

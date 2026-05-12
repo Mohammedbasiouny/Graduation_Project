@@ -1,0 +1,9 @@
+{
+  "main_heading": {
+    "title": "University Management",
+    "subtitle": "Manage all available universities and their related information"
+  },
+  "messages": {
+    "warning_message": "Please re-select the university you wish to manage."
+  }
+}

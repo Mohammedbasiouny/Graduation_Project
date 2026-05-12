@@ -1,0 +1,9 @@
+{
+  "REPORT_CREATED_SUCCESSFULLY": "تم إنشاء التقرير الطبي بنجاح",
+  "REPORT_RETRIEVED_SUCCESSFULLY": "تم استرجاع التقرير الطبي بنجاح",
+  "REPORTS_RETRIEVED_SUCCESSFULLY": "تم استرجاع التقارير الطبية بنجاح",
+  "REPORT_SAVED_SUCCESSFULLY": "تم حفظ التقرير الطبي بنجاح",
+  "NOT_FOUND": "التقرير الطبي غير موجود",
+  "CREATE_FAILED": "فشل في إنشاء التقرير الطبي",
+  "FETCH_FAILED": "فشل في استرجاع التقرير الطبي"
+}

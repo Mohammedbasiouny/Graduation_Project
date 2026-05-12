@@ -1,0 +1,26 @@
+import { ChoiceSkeleton } from '@/components/ui/Form/Choice'
+import { InputSkeleton } from '@/components/ui/Form/Input'
+import { LabelSkeleton } from '@/components/ui/Form/Label'
+import React from 'react'
+
+const PreUniInfoSectionSkeletion = () => {
+  return (
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+      <div className="space-y-2">
+        <LabelSkeleton />
+        <div className='w-fit flex gap-10 mt-auto'>
+          <ChoiceSkeleton />
+          <ChoiceSkeleton />
+        </div>
+      </div>
+      {Array.from({ length: 6 }).map((_, index) => (
+        <div key={index} className="space-y-2">
+          <LabelSkeleton />
+          <InputSkeleton />
+        </div>
+      ))}
+    </div>
+  )
+}
+
+export default PreUniInfoSectionSkeletion

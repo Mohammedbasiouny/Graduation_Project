@@ -1,0 +1,9 @@
+{
+  "REPORT_CREATED_SUCCESSFULLY": "Medical report created successfully",
+  "REPORT_RETRIEVED_SUCCESSFULLY": "Medical report retrieved successfully",
+  "REPORTS_RETRIEVED_SUCCESSFULLY": "Medical reports retrieved successfully",
+  "REPORT_SAVED_SUCCESSFULLY": "Medical report saved successfully",
+  "NOT_FOUND": "Medical report not found",
+  "CREATE_FAILED": "Failed to create medical report",
+  "FETCH_FAILED": "Failed to fetch medical report"
+}

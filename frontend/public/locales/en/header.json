@@ -1,0 +1,34 @@
+{
+  "links": {
+    "home": "Home",
+    "apply_process": "Application Process",
+    "about": "About",
+    "services": "Services",
+    "faq": "FAQ",
+    "contact": "Contact Us"
+  },
+  "logout": {
+    "title": "Logout",
+    "description": "Sign out of your account"
+  },
+  "profile": {
+    "title": "Profile",
+    "description": "View and edit your profile"
+  },
+  "login": {
+    "title": "Login",
+    "description": "Sign in to your account"
+  },
+  "signup": {
+    "title": "Sign Up",
+    "description": "Create a new account to get started"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "description": "Manage and view your main controls"
+  },
+  "services": {
+    "title": "Services Portal",
+    "description": "Access and manage available services"
+  }
+}

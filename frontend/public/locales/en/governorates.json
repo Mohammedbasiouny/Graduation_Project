@@ -1,0 +1,70 @@
+{
+  "main_heading": {
+    "title": "Egyptian Governorates",
+    "subtitle": "Manage all governorates of the Arab Republic of Egypt and their associated data"
+  },
+  "table_heading": {
+    "title": "Manage Governorates",
+    "subtitle": "Use the table and filters below to view, edit, and manage all governorates in Egypt"
+  },
+  "governorates_overview": {
+    "visible": {
+      "label": "Visible Governorates",
+      "subtext": "Governorates currently available for student selection"
+    },
+    "not_visible": {
+      "label": "Hidden Governorates",
+      "subtext": "Governorates that are not currently shown to students"
+    },
+    "acceptable": {
+      "label": "Eligible for Admission",
+      "subtext": "Locations from which the system accepts students"
+    },
+    "not_acceptable": {
+      "label": "Not Eligible for Admission",
+      "subtext": "Locations from which the system does not accept students"
+    },
+    "total": {
+      "label": "Total Governorates",
+      "subtext": "The total number of governorates in the system"
+    }
+  },
+  "cards": {
+    "add": {
+      "title": "Add New Governorate",
+      "description": "Create a new governorate and define its administrative details within the system.",
+      "button": "Add Governorate"
+    }
+  },
+  "table": {
+    "columns": {
+      "id": "#ID",
+      "name": "Governorate Name",
+      "distance_from_cairo": "Distance from Cairo (km)",
+      "acceptance_status": "System Acceptance",
+      "educational_departments": "Educational Directorates",
+      "police": "Police Departments/Centers",
+      "areas": "Cities / Sheyakhas / Villages",
+      "is_visible": "Available for Selection",
+      "actions": "Actions"
+    }
+  },
+  "modals": {
+    "delete": {
+      "title": "Delete Confirmation",
+      "description": "Are you sure you want to delete this governorate? This action cannot be undone."
+    },
+    "add": {
+      "title": "Add New Governorate",
+      "description": "Create a new governorate and add it to the administrative structure of Egypt."
+    },
+    "view": {
+      "title": "View Governorate Details",
+      "description": "Here you can view all details related to this governorate."
+    },
+    "edit": {
+      "title": "Edit Governorate",
+      "description": "Modify the information and details related to this governorate."
+    }
+  }
+}

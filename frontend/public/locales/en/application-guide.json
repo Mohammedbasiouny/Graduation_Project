@@ -1,0 +1,75 @@
+{
+  "application_guide": {
+    "title": "Comprehensive Guide to Using the University Dormitories System",
+    "subtitle": "This guide has been prepared to help you fully understand and use the University Dormitories System. It explains all services and features available to students within the system, not just the application process. Through this guide, you will learn how to create an account, log in, apply for housing, track your application status, update your information, and use the other available electronic services.",
+    "section_title": "System Services and Usage Steps",
+    "section_subtitle": "Select any section from the sidebar to view a detailed explanation of each service within the system, including practical steps and proper usage instructions supported by explanatory videos.",
+    "btn": "Click here to start exploring the system services",
+    "steps": [
+      {
+        "title": "Create a New Account",
+        "text": "Creating an account involves two main steps.\n\nStep 1: <mark>Choose your university</mark> from the available options: <mark>Capital University</mark>, <mark>Capital Private University</mark>, <mark>International Capital University of Technology</mark>. After selecting your university, you will be redirected to the <a href=\"auth/choose-university\" style=\"color:#2563eb; font-weight:600; text-decoration:underline;\">Account Creation</a> page. Please make sure to select the university you are enrolled in before completing your information. At the top of the page, you will see a note displaying the <mark>university name</mark> and <mark>logo</mark> for confirmation.\n\nThe required information includes: <mark>email address</mark>, <mark>password</mark>, and <mark>password confirmation</mark>.\nYour password must be at least <mark>8 characters long</mark> and include <mark>one uppercase letter</mark>, <mark>one lowercase letter</mark>, <mark>at least one number</mark>, and one of the following symbols: <mark>@#$%^&*</mark>.\n\nIf the <mark>email address</mark> is already registered, you will not be able to create a new account using it. If this is your first registration, the account will be created and an <mark>activation email</mark> will be sent to your inbox.\n\nThe activation email is valid for <mark>one hour</mark> from the time it is sent. If the email is delayed or you cannot activate your account within an hour, you can request a new activation email by trying to <a href=\"auth/login\" style=\"color:#2563eb; font-weight:600; text-decoration:underline;\">log in</a>. After entering your information and verifying it, the system will display a message with an option to <mark>resend account activation</mark>. Click <mark>Resend</mark> to receive a new activation email.\n\nYou must activate your account before you can <a href=\"auth/login\" style=\"color:#2563eb; font-weight:600; text-decoration:underline;\">log in</a> later."
+      },
+      {
+        "title": "Login and Password Reset",
+        "text": "After activating your account through the activation email sent to your <mark>email address</mark>, you can log in to the system using your <mark>email address</mark> and <mark>password</mark> via the <a href=\"auth/login\" style=\"color:#2563eb; font-weight:600; text-decoration:underline;\">Login</a> page.\n\nIf the entered credentials are correct, you will be redirected directly to your account dashboard.\nIf the credentials are incorrect, a notification will appear indicating an error in the <mark>email address</mark> or <mark>password</mark>.\n\nIf you forget your password, you can reset it using a verification code (OTP) through the <a href=\"auth/forgot-password\" style=\"color:#2563eb; font-weight:600; text-decoration:underline;\">Forgot Password</a> page.\n\nPassword reset steps:\n- Click on <mark>Forgot Password</mark>\n- Enter your registered <mark>email address</mark>\n- Receive the <mark>OTP</mark> via email\n- Enter the code in the system for verification\n- Enter your <mark>new password</mark> and confirm it\n- Return to the <a href=\"auth/login\" style=\"color:#2563eb; font-weight:600; text-decoration:underline;\">Login</a> page to use your new password\n\nImportant notes:\n- The <mark>OTP</mark> is valid for a limited time only.\n- The <mark>new password</mark> must comply with the system requirements (at least 8 characters, one uppercase letter, one lowercase letter, one number, and one of the following symbols: @#$%^&*).\n\nIf your account has been <mark>blocked</mark> for any administrative reason, a message will appear informing you that you cannot log in to the system.\nIn this case, you will not be able to access your account until the block is removed.\n\nTo resolve the issue, please contact the <mark>authorized administrator</mark> at your university, or use the <mark>Contact Us</mark> form at the bottom of the homepage to submit a message explaining your issue. Your request will be reviewed and you will receive a response as soon as possible."
+      },
+      {
+        "title": "Contacting the System Administration",
+        "text": "If you have any inquiries, technical issues, or comments related to using the system, you can contact the system administration through the <a href=\"/#contact-us\" style=\"color:#2563eb; font-weight:600; text-decoration:underline;\">Contact Us</a> page available at the bottom of the homepage.\n\nYou can also access it by clicking on <mark>Contact Us</mark> from the <mark>top menu bar</mark>, or if you are using a mobile device, tap the menu icon (☰) and then select <mark>Contact Us</mark> from the side menu.\n\nThis service allows you to send a direct message to the responsible department to review your request and respond to you as soon as possible.\n\nRequired information to send a message:\n- <mark>Full Name (Optional)</mark>\n- <mark>Email Address</mark>\n- <mark>Message Subject</mark>: Write a short and clear title that describes your message.\n- <mark>Message Content</mark>: Enter the details of your issue or inquiry clearly, including all important information that may help speed up the review process.\n\nImportant Notes:\n- Make sure to enter your <mark>Email Address</mark> correctly so you can receive a response.\n- It is recommended to include your application number (if available) or any related details to facilitate follow-up.\n- Your message will be reviewed by the responsible department, and a response will be sent to the email address provided in the form.\n\nUsing the <a href=\"/#contact-us\" style=\"color:#2563eb; font-weight:600; text-decoration:underline;\">Contact Us</a> form is the official way to request support, submit a complaint, or inquire about any service within the system."
+      },
+      {
+        "title": "View Available Application Dates",
+        "text": "After logging in, the student can view the available application dates and periods based on university and status.\nSteps:\n- Open the <mark>Application Dates</mark> page\n- Review available periods\n- Choose the appropriate application date\nNote: It is recommended to check the section (Who Can Apply?) before starting to ensure eligibility."
+      },
+      {
+        "title": "Start Application and Select Nationality",
+        "text": "When the application period opens, the student clicks (Apply) and selects <mark>Nationality</mark> (<mark>Egyptian or International</mark>).\nNotes: The application process has multiple steps, and the student data step differs by nationality; Egyptian students have an additional step including father and guardian details and parents' status."
+      },
+      {
+        "title": "Student Information",
+        "text": "The student enters their basic personal information, which differs based on nationality.\nEgyptian student data:\n- <mark>National ID</mark>\n- <mark>Full Name</mark>\n- <mark>Religion</mark>\n- <mark>Mobile Number</mark>\n- <mark>Landline Number (optional)</mark>\n- <mark>Profile Photo</mark>\n- <mark>National ID Photo (front and back)</mark>\nNotes: Upload clear and recent photos of the ID and profile picture.\nInternational student data:\n- <mark>Passport Number</mark>\n- <mark>Passport Issuing Country</mark>\n- <mark>Full Name</mark>\n- <mark>Nationality</mark>\n- <mark>Place of Birth</mark>\n- <mark>Date of Birth</mark>\n- <mark>Gender</mark>\n- <mark>Religion</mark>\n- <mark>Mobile Number</mark>\n- <mark>Profile Photo</mark>\n- <mark>Passport Photo</mark>\nNotes: The passport photo must be clear, and the date of birth must match the one in the passport."
+      },
+      {
+        "title": "Residence Information",
+        "text": "The student specifies their current residence and enters address details based on the situation.\nIf residing in Egypt:\n- <mark>Governorate</mark>\n- <mark>Police Department / District</mark>\n- <mark>City, Village, or Neighborhood</mark>\n- <mark>Detailed Address</mark>\nNote: Address must be accurate to facilitate communication.\nIf residing outside Egypt:\n- <mark>Country of Residence</mark>\n- <mark>Detailed Address</mark>\n- <mark>Visa or Residence Permit Photo</mark>\nNote: A clear image of the visa or residence permit must be uploaded."
+      },
+      {
+        "title": "Pre-University Education Data",
+        "text": "This step is for new students only.\nEnter pre-university education data:\n- <mark>Did you obtain the certificate from within Egypt?</mark>\n- <mark>Certificate Type</mark>\n- <mark>Total Score</mark>\n- <mark>Certificate Photo</mark>\nIf the certificate is from Egypt:\n- <mark>Governorate</mark>\n- <mark>Education Administration</mark>\nNote: The certificate photo must be clear and include basic data."
+      },
+      {
+        "title": "Academic Data",
+        "text": "Data differs for new or continuing students.\nFor new students:\n- <mark>Faculty</mark>\n- <mark>Department / Program</mark>\n- <mark>Year of Admission</mark>\n- <mark>Nomination Card Photo</mark>\nNote: Nomination card must be clear and show all student data.\nFor continuing students:\n- <mark>Faculty</mark>\n- <mark>Department / Program</mark>\n- <mark>Academic Year</mark>\n- <mark>Student Code (optional)</mark>\n- <mark>Study System Type</mark>\n- <mark>Cumulative GPA / Total Score</mark>\n- <mark>Enrollment Status</mark>\n- <mark>Proof of Enrollment Photo</mark>\nNotes: Proof of enrollment must be recent and certified; student code is optional."
+      },
+      {
+        "title": "Medical Information",
+        "text": "Medical and regulatory data is collected to ensure student safety in the dormitory:\n- <mark>Chronic Diseases</mark>\n- <mark>Behavioral and Social Aspects</mark>\n- <mark>Mood and Mental Health Assessment</mark>\n- <mark>Medical Treatment</mark>\n- <mark>Special Needs</mark>\nNote: This data is used for health and administrative purposes only and does not affect acceptance or student ranking."
+      },
+      {
+        "title": "Housing Preferences",
+        "text": "The student specifies the type of housing and required services:\n- <mark>Type of Housing</mark>\n- <mark>Do you want meals inside the dormitory?</mark>\nNote: Housing type affects costs and available services."
+      },
+      {
+        "title": "Guardian and Parent Information (Egyptian Students Only)",
+        "text": "This step is for Egyptian students and includes father/guardian and parents’ status:\n- <mark>Is the father Egyptian?</mark>\n- <mark>National ID</mark>\n- <mark>Full Name</mark>\n- <mark>Occupation</mark>\n- <mark>Mobile Number</mark>\n- <mark>ID Photo</mark>\n- <mark>Relationship</mark>\n- <mark>Parents’ Status</mark>"
+      },
+      {
+        "title": "Save Data and Complete Application Later",
+        "text": "The system gradually saves student data after each step, allowing the website to be closed and the application completed later.\nNotes: You can return and continue the application at any time during the application period. It is recommended to review data before moving to the next step."
+      },
+      {
+        "title": "Application Number",
+        "text": "After entering all student data, the system displays the student’s <mark>Application Number</mark>.\nNote: Keep the application number for later reference when checking status or following up on results."
+      },
+      {
+        "title": "Submit Application and Wait for Result",
+        "text": "After entering all data, the student submits the application and waits for the result.\nNotes: After submission, some data may not be editable depending on system settings, and the application status should be monitored via the system."
+      },
+      {
+        "title": "Track Application Status and View Results",
+        "text": "The student can track the application status and view the result in two ways:\n- Log in to the system and review the result.\n- Use the quick access option on the homepage to view the result using <mark>National ID</mark> or <mark>Application Number</mark>.\nNotes: This allows students to quickly check their results without a full login or receive detailed updates when logged in."
+      }
+    ]
+  }
+}

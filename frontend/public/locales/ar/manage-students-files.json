@@ -1,0 +1,214 @@
+{
+  "heading": {
+    "title": "إدارة ملفات الطلاب",
+    "subtitle": "رفع، تنزيل وتصدير بيانات ومستندات الطلاب بكفاءة"
+  },
+  "notes": {
+    "info_note": {
+      "title": "دليل إعداد وتصدير بيانات الطلاب والمستندات في ملف مضغوط",
+      "description": "تتيح لك هذه الصفحة إنشاء ملف مخصص لبيانات الطلاب من خلال اختيار الحقول المطلوبة من كل قسم (البيانات الشخصية، محل الإقامة، البيانات التعليمية، بيانات ولي الأمر، بيانات السكن، والمستندات).\n\nقم أولاً بتحديد نوع الطالب أو الجنسية أو نوع الإقامة أو أي معيار آخر من الفلاتر المتاحة، وسيتم عرض الحقول المناسبة تلقائياً وفقاً لاختياراتك لضمان دقة البيانات.\n\nيمكنك تحديد الحقول التي ترغب في تضمينها في الملف عن طريق تفعيل مربعات الاختيار، كما يمكنك إلغاء تحديد أي حقل غير مطلوب. يتم تحديث قائمة الحقول المختارة تلقائياً في اللوحة الجانبية.\n\nملاحظة مهمة: يمكنك إعادة ترتيب الحقول المختارة من اللوحة الجانبية باستخدام السحب والإفلات ليظهر ملف Excel بنفس الترتيب الذي قمت بتحديده.\n\nبعد الانتهاء من تحديد الفلاتر والحقول المطلوبة، اضغط على زر التصدير. سيتم تنزيل ملف مضغوط (ZIP)، ويجب فك ضغطه للوصول إلى الملفات بداخله.\n\nبعد فك الضغط ستجد:\n- ملف Excel يحتوي على بيانات الطلاب وفق الحقول التي قمت باختيارها.\n- ملف Word يحتوي على بطاقات الرقم القومي الخاصة بالطلاب مرتبة وجاهزة للطباعة.\n- مجلد باسم students يحتوي على مجلدات فرعية، كل مجلد يمثل طالباً واحداً.\n\nداخل كل مجلد خاص بالطالب ستجد المستندات التي تم اختيارها أثناء التصدير لتنزيلها مع بياناته.\n\nعند إنشاء ملف Word، يتم تشغيل نظام الذكاء الاصطناعي تلقائياً لمعالجة صور بطاقات الرقم القومي، حيث يتم التحقق من صحة الصورة وقص البطاقة وضبط اتجاهها وحجمها لتكون مناسبة للطباعة.\n\nيتم تنظيم ملف Word بحيث يحتوي كل صفحة على بيانات بحد أقصى 3 طلاب، مع عرض الرقم القومي في الأعلى وأسفلها صورتان (بطاقة الطالب وبطاقة ولي الأمر) في عمودين، مما يسهل الطباعة على ورق بحجم A4."
+    }
+  },
+  "fields": {
+    "personal_info": {
+      "title": "البيانات الشخصية",
+      "common": {
+        "fullName": "الاسم الكامل",
+        "religion": "الديانة",
+        "gender": "النوع",
+        "dateOfBirth": "تاريخ الميلاد",
+        "isEgyptian": "هل الطالب مصري الجنسية؟",
+        "phoneNumber": "رقم الهاتف"
+      },
+      "eg": {
+        "nationalId": "الرقم القومي",
+        "telephone": "الهاتف الأرضي",
+        "birthCity": "مدينة الميلاد"
+      },
+      "ex": {
+        "nationality": "الجنسية",
+        "passportNumber": "رقم جواز السفر",
+        "passportIssuingCountry": "دولة إصدار جواز السفر",
+        "placeOfBirth": "مكان الميلاد"
+      }
+    },
+    "residence_info": {
+      "title": "بيانات الأقامة",
+      "common": {
+        "fullAddress": "العنوان الكامل",
+        "is_inside_egypt": "هل مكان اٍقامة الطالب داخل مصر؟"
+      },
+      "in": {
+        "governorateId": "المحافظة",
+        "policeDepartmentId": "قسم الشرطة",
+        "cityId": "المدينة"
+      },
+      "out": {
+        "countryOfResidence": "دولة الإقامة"
+      }
+    },
+    "pre_uni_edu_info": {
+      "title": "بيانات التعليم ما قبل الجامعي",
+      "common": {
+        "qualificationId": "نوع المؤهل",
+        "highSchoolTotalGrade": "المجموع الكلي للثانوية",
+        "percentage": "النسبة المئوية (%)"
+      },
+      "inside": {
+        "highSchoolGovernorate": "محافظة الثانوية العامة",
+        "highSchoolEducationDistrictId": "الإدارة التعليمية"
+      },
+      "outside": {
+        "highSchoolCountry": "دولة الحصول على الشهادة"
+      }
+    },
+    "academic_info": {
+      "title": "البيانات الأكاديمية",
+      "common": {
+        "facultyId": "الكلية",
+        "departmentId": "القسم",
+        "is_new": "هل الطالب مستجد؟"
+      },
+      "new": {
+        "admissionYear": "سنة الالتحاق"
+      },
+      "old": {
+        "studentIdCode": "الكود الجامعي",
+        "academicYear": "العام الدراسي",
+        "educationSystemType": "نظام الدراسة",
+        "totalAcademicGrade": "التقدير التراكمي",
+        "enrollmentStatus": "حالة القيد",
+        "grade": "التقدير الدراسي للطالب"
+      }
+    },
+    "guardian_info": {
+      "title": "بيانات ولي الأمر",
+      "common": {
+        "guardianName": "اسم ولي الأمر",
+        "guardianOccupation": "مهنة ولي الأمر",
+        "guardianPhoneNumber": "رقم هاتف ولي الأمر",
+        "guardianRelationship": "صلة القرابة"
+      },
+      "eg": {
+        "guardianNationalId": "الرقم القومي لولي الأمر"
+      },
+      "ex": {
+        "guardianNationalId": "رقم هوية ولي الأمر",
+        "guardianNationality": "جنسية ولي الأمر"
+      }
+    },
+    "education_info": {
+      "title": "بيانات التعليم"
+    },
+    "housing_info": {
+      "title": "بيانات السكن",
+      "common": {
+        "requiresMeals": "السكن مع وجبات؟",
+        "dormType": "نوع السكن"
+      }
+    },
+    "documents": {
+      "title": "المستنادات",
+      "commom": {
+        "personal_image": "صورة شخصية للطالب"
+      },
+      "eg": {
+        "national_id_front": "صورة البطاقة الشخصية للطالب (الوجه الأمامي)",
+        "national_id_back": "صورة البطاقة الشخصية للطالب (الوجه الخلفي)"
+      },
+      "ex": {
+        "passport_image": "صورة جواز السفر للطالب"
+      },
+      "residence_outside": {
+        "visa_or_residency_image": "صورة تأشيرة الدخول أو الإقامة للطالب"
+      },
+      "new_student": {
+        "pre_university_certificate": "شهادات ما قبل الجامعة",
+        "nomination_card_image": "صورة بطاقة الترشيح الصادرة من مكتب التنسيق"
+      },
+      "old_student": {
+        "enrollment_proof_image": "صورة إثبات القيد الرسمي بالكلية"
+      },
+      "guardian_eg": {
+        "guardian_id_front": "صورة البطاقة الشخصية لولي الأمر (الوجه الأمامي)",
+        "guardian_id_back": "صورة البطاقة الشخصية لولي الأمر (الوجه الخلفي)"
+      },
+      "guardian_ex": {
+        "guardian_identity": "صورة مستند إثبات صلة ولي الأمر بالطالب"
+      }
+    }
+  },
+  "buttons": {
+    "export": "تصدير البيانات",
+    "clear": "مسح التحديدات",
+    "cancel_export": "ألغاء تصدير البيانات"
+  },
+  "labels": {
+    "selected_fields": "الحقول المراد تصديرها"
+  },
+  "messages": {
+    "order_selected": "ترتيب الحقول المختارة",
+    "moving": "يتم تحريك الحقل...",
+    "drag": "اسحب",
+    "no_fields_selected": "لم يتم اختيار أي حقول بعد",
+    "clear_all_hint": "يمكنك مسح جميع الحقول المختارة",
+    "drop_here": "أفلت هنا لتثبيت الترتيب"
+  },
+  "fields_labels": {
+    "is_new": "هل الطالب مستجد؟",
+    "percentage": "النسبة المئوية (%)",
+    "requiresMeals": "السكن مع وجبات؟",
+    "isEgyptian": "هل الطالب مصري الجنسية؟",
+    "is_inside_egypt": "هل مكان اٍقامة الطالب داخل مصر؟",
+    "dormType": "نوع السكن",
+    "studentIdCode": "الكود الجامعي",
+    "academicYear": "العام الدراسي",
+    "educationSystemType": "نظام الدراسة",
+    "totalAcademicGrade": "التقدير التراكمي",
+    "enrollmentStatus": "حالة القيد",
+    "admissionYear": "سنة الالتحاق",
+    "facultyId": "الكلية",
+    "departmentId": "القسم",
+    "highSchoolCountry": "دولة الحصول على الشهادة",
+    "highSchoolGovernorate": "محافظة الثانوية العامة",
+    "highSchoolEducationDistrictId": "الإدارة التعليمية",
+    "qualificationId": "نوع المؤهل",
+    "highSchoolTotalGrade": "المجموع الكلي للثانوية",
+    "governorateId": "المحافظة",
+    "grade": "التقدير الدراسي للطالب",
+    "policeDepartmentId": "قسم الشرطة",
+    "cityId": "المدينة",
+    "countryOfResidence": "دولة الإقامة",
+    "fullAddress": "العنوان الكامل",
+    "id": "رقم الطالب",
+    "fullName": "الاسم الكامل",
+    "religion": "الديانة",
+    "gender": "النوع",
+    "dateOfBirth": "تاريخ الميلاد",
+    "phoneNumber": "رقم الهاتف",
+    "nationality": "الجنسية",
+    "passportNumber": "رقم جواز السفر",
+    "passportIssuingCountry": "دولة إصدار جواز السفر",
+    "placeOfBirth": "مكان الميلاد",
+    "nationalId": "الرقم القومي",
+    "telephone": "الهاتف الأرضي",
+    "birthCity": "مدينة الميلاد",
+    "guardianName": "اسم ولي الأمر",
+    "guardianOccupation": "مهنة ولي الأمر",
+    "guardianPhoneNumber": "رقم هاتف ولي الأمر",
+    "guardianRelationship": "صلة القرابة",
+    "guardianNationalId": "رقم هوية ولي الأمر",
+    "guardianNationality": "جنسية ولي الأمر",
+    "personal_image": "صورة شخصية للطالب",
+    "national_id_front": "صورة البطاقة الشخصية للطالب (الوجه الأمامي)",
+    "national_id_back": "صورة البطاقة الشخصية للطالب (الوجه الخلفي)",
+    "passport_image": "صورة جواز السفر للطالب",
+    "visa_or_residency_image": "صورة تأشيرة الدخول أو الإقامة للطالب",
+    "pre_university_certificate": "شهادات ما قبل الجامعة",
+    "nomination_card_image": "صورة بطاقة الترشيح الصادرة من مكتب التنسيق",
+    "enrollment_proof_image": "صورة إثبات القيد الرسمي بالكلية",
+    "guardian_id_front": "صورة البطاقة الشخصية لولي الأمر (الوجه الأمامي)",
+    "guardian_id_back": "صورة البطاقة الشخصية لولي الأمر (الوجه الخلفي)",
+    "guardian_identity": "صورة مستند إثبات صلة ولي الأمر بالطالب"
+  }
+}

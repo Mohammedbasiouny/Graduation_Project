@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "El Messiri";
+
+  src: url("/assets/fonts/ElMessiri-Regular.ttf")
+    format("truetype");
+
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+
+  src: url("/assets/fonts/NotoSans_ExtraCondensed-Regular.ttf")
+    format("truetype");
+
+  font-weight: 400;
+
+  font-style: normal;
+}

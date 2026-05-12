@@ -1,0 +1,124 @@
+{
+  "parent": "الوحدة / الكيان",
+  "childrens": "الصلاحيات الممنوحة",
+  "permissions": {
+    "users": {
+      "label": "المستخدمون",
+      "children": {
+        "view-users": "عرض جميع المستخدمين",
+        "view-user": "عرض المستخدم",
+        "add-user": "إضافة مستخدم",
+        "edit-user": "تعديل المستخدم",
+        "delete-user": "حذف المستخدم",
+        "block-user": "حظر المستخدم",
+        "grant-permissions": "منح الصلاحيات"
+      }
+    },
+    "governorate": {
+      "label": "إدارة المحافظات",
+      "children": {
+        "add-governorate": "إضافة محافظة",
+        "view-governorates": "عرض جميع المحافظات",
+        "view-governorate": "عرض تفاصيل محافظة",
+        "update-governorate": "تعديل محافظة",
+        "delete-governorate": "حذف محافظة"
+      }
+    },
+    "Edu-department": {
+      "label": "إدارة الإدارات التعليمية",
+      "children": {
+        "add-Edu-department": "إضافة إدارة تعليمية",
+        "view-Edu-departments": "عرض جميع الإدارات التعليمية",
+        "view-Edu-department": "عرض تفاصيل إدارة تعليمية",
+        "update-Edu-department": "تعديل إدارة تعليمية",
+        "delete-Edu-department": "حذف إدارة تعليمية"
+      }
+    },
+    "police-station": {
+      "label": "إدارة أقسام الشرطة",
+      "children": {
+        "add-police-station": "إضافة قسم شرطة",
+        "view-police-stations": "عرض جميع أقسام الشرطة",
+        "view-police-station": "عرض تفاصيل قسم شرطة",
+        "update-police-station": "تعديل قسم شرطة",
+        "delete-police-station": "حذف قسم شرطة"
+      }
+    },
+    "city": {
+      "label": "إدارة المدن",
+      "children": {
+        "add-city": "إضافة مدينة",
+        "view-cities": "عرض جميع المدن",
+        "view-city": "عرض تفاصيل مدينة",
+        "update-city": "تعديل مدينة",
+        "delete-city": "حذف مدينة"
+      }
+    },
+    "college": {
+      "label": "إدارة الكليات",
+      "children": {
+        "add-college": "إضافة كلية",
+        "view-colleges": "عرض جميع الكليات",
+        "view-college": "عرض تفاصيل كلية",
+        "update-college": "تعديل كلية",
+        "delete-college": "حذف كلية"
+      }
+    },
+    "department": {
+      "label": "إدارة الأقسام",
+      "children": {
+        "add-department": "إضافة قسم",
+        "view-departments": "عرض جميع الأقسام",
+        "view-department": "عرض تفاصيل قسم",
+        "update-department": "تعديل قسم",
+        "delete-department": "حذف قسم"
+      }
+    },
+    "application-date": {
+      "label": "إدارة مواعيد التقديم",
+      "children": {
+        "add-application-date": "إضافة موعد تقديم",
+        "view-application-dates": "عرض جميع مواعيد التقديم",
+        "view-application-date": "عرض تفاصيل موعد تقديم",
+        "update-application-date": "تعديل موعد تقديم",
+        "delete-application-date": "حذف موعد تقديم"
+      }
+    },
+    "building": {
+      "label": "إدارة المباني",
+      "children": {
+        "add-building": "إضافة مبنى",
+        "view-buildings": "عرض جميع المباني",
+        "view-building": "عرض تفاصيل مبنى",
+        "update-building": "تعديل مبنى",
+        "delete-building": "حذف مبنى"
+      }
+    },
+    "room": {
+      "label": "إدارة الغرف",
+      "children": {
+        "add-room": "إضافة غرفة",
+        "view-rooms": "عرض جميع الغرف",
+        "view-room": "عرض تفاصيل غرفة",
+        "update-room": "تعديل غرفة",
+        "delete-room": "حذف غرفة"
+      }
+    },
+    "pre-uni-certificate": {
+      "label": "إدارة شهادات ما قبل الجامعة",
+      "children": {
+        "add-pre-uni-certificate": "إضافة شهادة ما قبل الجامعة",
+        "view-pre-uni-certificates": "عرض جميع شهادات ما قبل الجامعة",
+        "view-pre-uni-certificate": "عرض تفاصيل شهادة ما قبل الجامعة",
+        "update-pre-uni-certificate": "تعديل شهادة ما قبل الجامعة",
+        "delete-pre-uni-certificate": "حذف شهادة ما قبل الجامعة"
+      }
+    },
+    "period-status": {
+      "label": "إدارة حالة الفترة",
+      "children": {
+        "toggle-period-status": "تغيير حالة الفترة"
+      }
+    }
+  }
+}

@@ -1,0 +1,792 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ========================
+// ENUMS
+// ========================
+enum Role {
+  student
+  supervisor
+  security
+  cafeteria
+  maintenance
+  medical
+  admin
+}
+
+enum Gender {
+  male
+  female
+}
+
+enum University {
+  hu // Helwan University
+  hnu // Helwan National University
+  hitu // Helwan Institute of Technology University
+}
+
+enum RoomType {
+  regular
+  premium
+  medical
+  studying
+}
+
+// ========================
+// Restaurant & Meal Management Enums
+// ========================
+enum MealCategory {
+  breakfast
+  lunch
+  dinner
+  suhoor
+}
+
+enum DayType {
+  normal
+  exam
+  ramadan
+}
+
+enum StudentType {
+  new
+  old
+  all
+}
+
+enum AcceptanceStatus {
+  pending
+  accepted
+  rejected
+}
+
+enum ReservationStatus {
+  pending
+  completed
+  no_show
+  cancelled
+}
+
+enum ReservationType {
+  auto // Automatically created by the system based on the student's meal schedule
+  student // Manually created by an off-campus student
+  staff // Manually created by a staff member for a student (e.g., for special occasions or needs)
+}
+
+enum FacultyLocation {
+  inside
+  outside
+}
+
+enum QRCodeStatus {
+  active
+  scanned
+  expired
+}
+
+enum AutoReservationTarget {
+  inside
+  outside
+  both
+}
+
+// ========================
+// USER (Ø£ÙˆÙ„ Ù…ÙˆØ¯ÙŠÙ„!)
+// ========================
+model User {
+  id            Int       @id @default(autoincrement())
+  username      String?   @unique
+  password_hash String
+  role          Role
+  full_name     String?
+  ssn           BigInt?   @unique
+  email         String    @unique
+  phone         String?
+  otp           String?
+  otpExpiresAt  DateTime?
+  end_date      DateTime?
+  isActive      Boolean   @default(false)
+  university    String?
+  created_at    DateTime  @default(now())
+  updated_at    DateTime?
+
+  student           Student?
+  medicalReviews    MedicalReview?    @relation("UserMedicalReviews")
+  aiTasks           AiTask[]
+  staffReservations MealReservation[] @relation("StaffReservations")
+  staffOverrides    MealQRCode[]      @relation("StaffOverrides")
+  userPermission    UserPermission?
+  auditLogs         AuditLog[]
+}
+
+model AiTask {
+  id        Int      @id @default(autoincrement())
+  task_id   String   @unique
+  status    String
+  file_name String
+  user_id   Int
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [user_id], references: [id])
+
+  @@map("ai_tasks")
+}
+
+model UserPermission {
+  id          Int  @id @default(autoincrement())
+  userId      Int  @unique
+  permissions Json
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model AuditLog {
+  id          Int      @id @default(autoincrement())
+  user_id     Int
+  role        String
+  action      String
+  method      String
+  endpoint    String   @db.Text
+  ip_address  String?
+  user_agent  String?  @db.Text
+  status_code Int
+  status      String   @default("SUCCESS")
+  message     String?  @db.Text
+  created_at  DateTime @default(now())
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Restrict)
+
+  @@index([user_id])
+  @@index([role])
+  @@index([action])
+  @@index([method])
+  @@index([status])
+  @@index([created_at])
+  @@map("audit_logs")
+}
+
+// ========================
+// Administrative Divisions
+// ========================
+model Governorate {
+  id                Int      @id @default(autoincrement())
+  name              String   @unique
+  is_visible        Boolean  @default(true)
+  distanceFromCairo Int      @default(0)
+  created_at        DateTime @default(now())
+  updated_at        DateTime @updatedAt
+
+  // Relations
+  cities                 CitySheikhVillage[]
+  policeDepartments      PoliceDepartment[]
+  educationalDepartments EducationalDepartment[]
+  students               Student[]               @relation("StudentGovernorate")
+  highSchoolStudents     Student[]               @relation("StudentHighSchoolGovernorate")
+
+  @@map("governorates")
+}
+
+model PoliceDepartment {
+  id                Int      @id @default(autoincrement())
+  name              String
+  governorate_id    Int
+  acceptance_status Boolean  @default(true)
+  is_visible        Boolean  @default(true)
+  created_at        DateTime @default(now())
+  updated_at        DateTime @updatedAt
+
+  governorate Governorate         @relation(fields: [governorate_id], references: [id], onDelete: Restrict)
+  cities      CitySheikhVillage[]
+  students    Student[]           @relation("StudentPoliceDepartment")
+
+  @@map("police_departments")
+}
+
+model CitySheikhVillage {
+  id                   Int      @id @default(autoincrement())
+  name                 String
+  governorate_id       Int
+  police_department_id Int
+  is_visible           Boolean  @default(true)
+  created_at           DateTime @default(now())
+  updated_at           DateTime @updatedAt
+
+  governorate      Governorate      @relation(fields: [governorate_id], references: [id], onDelete: Restrict)
+  policeDepartment PoliceDepartment @relation(fields: [police_department_id], references: [id], onDelete: Restrict)
+  students         Student[]        @relation("StudentCity")
+
+  @@map("cities")
+}
+
+model EducationalDepartment {
+  id                Int      @id @default(autoincrement())
+  name              String
+  acceptance_status Boolean  @default(true)
+  governorate_id    Int
+  is_visible        Boolean  @default(true)
+  created_at        DateTime @default(now())
+  updated_at        DateTime @updatedAt
+
+  governorate Governorate @relation(fields: [governorate_id], references: [id], onDelete: Restrict)
+  students    Student[]   @relation("StudentEducationalDepartment")
+
+  @@map("educational_departments")
+}
+
+// ========================
+// Academic
+// ========================
+model Faculty {
+  id            Int        @id @default(autoincrement())
+  name          String
+  university    University
+  is_off_campus Boolean    @default(false)
+  is_visible    Boolean    @default(true)
+  created_at    DateTime   @default(now())
+  updated_at    DateTime   @updatedAt
+
+  students           Student[]           @relation("StudentFaculty")
+  departmentPrograms DepartmentProgram[]
+
+  @@map("faculties")
+}
+
+model DepartmentProgram {
+  id         Int      @id @default(autoincrement())
+  name       String
+  faculty_id Int
+  is_visible Boolean  @default(true)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  // Relations
+  faculty  Faculty   @relation(fields: [faculty_id], references: [id], onDelete: Restrict)
+  students Student[] @relation("StudentDepartment")
+
+  @@map("department_programs")
+}
+
+model PreUniversityQualification {
+  id         Int      @id @default(autoincrement())
+  name       String   @unique
+  is_visible Boolean  @default(true)
+  degree     Float
+  notes      String?  @db.Text
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  students Student[] @relation("StudentQualification")
+
+  @@map("pre_university_qualifications")
+}
+
+// ========================
+// Student
+// ========================
+model Student {
+  id     Int  @id @default(autoincrement())
+  userId Int  @unique
+  user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Flow Flags
+  personalInfoCompleted  Boolean @default(false)
+  residencyInfoCompleted Boolean @default(false)
+  academicInfoCompleted  Boolean @default(false)
+
+  // Personal
+  nationalId   String?   @unique
+  fullName     String?
+  religion     String?
+  gender       Gender?
+  dateOfBirth  DateTime?
+  placeOfBirth String?
+  birthCity    String?
+  phoneNumber  String?
+  telephone    String?
+  fullAddress  String?
+
+  // Residency
+  isEgyptian             Boolean?
+  is_inside_egypt        Boolean?
+  countryOfResidence     String?
+  passportIssuingCountry String?
+  governorateId          Int?
+  governorate            Governorate?       @relation("StudentGovernorate", fields: [governorateId], references: [id])
+  policeDepartmentId     Int?
+  policeDepartment       PoliceDepartment?  @relation("StudentPoliceDepartment", fields: [policeDepartmentId], references: [id])
+  cityId                 Int?
+  city                   CitySheikhVillage? @relation("StudentCity", fields: [cityId], references: [id])
+
+  // Passport
+  passportNumber String?
+  nationality    String?
+
+  // Academic
+  highSchoolFromEgypt           Boolean?
+  highSchoolTotalGrade          Float?
+  highSchoolCountry             String?
+  highSchoolGovernorate         Int?
+  highSchoolGovernorateRel      Governorate?                @relation("StudentHighSchoolGovernorate", fields: [highSchoolGovernorate], references: [id])
+  highSchoolEducationDistrictId Int?
+  educationalDepartment         EducationalDepartment?      @relation("StudentEducationalDepartment", fields: [highSchoolEducationDistrictId], references: [id])
+  qualificationId               Int?
+  qualification                 PreUniversityQualification? @relation("StudentQualification", fields: [qualificationId], references: [id])
+  grade                         String?
+  percentage                    Float?
+
+  is_new              Boolean?
+  facultyId           Int?
+  faculty             Faculty?           @relation("StudentFaculty", fields: [facultyId], references: [id])
+  departmentId        Int?
+  department          DepartmentProgram? @relation("StudentDepartment", fields: [departmentId], references: [id])
+  admissionYear       String?
+  studentIdCode       String?
+  academicYear        String?
+  educationSystemType String?
+  totalAcademicGrade  Float?
+  enrollmentStatus    String?
+
+  // Family
+  isGuardianEgyptian   Boolean?
+  guardianName         String?
+  guardianRelationship String?
+  guardianOccupation   String?
+  guardianNationalId   String?
+  guardianPhoneNumber  String?
+  guardianNationality  String?
+
+  parentsStatus       String?
+  parentsOutsideEgypt Boolean?
+
+  // Dorm
+  dormType      String?
+  requiresMeals Boolean?
+
+  hasPunishment Boolean? @default(false)
+  feeExpelled   Boolean? @default(false)
+
+  created_at DateTime  @default(now())
+  updated_at DateTime  @default(now()) @updatedAt
+  applied_at DateTime?
+
+  residents Resident[]
+
+  applications   StudentApplication[]
+  documents      Document[]
+  medicalReviews MedicalReview?
+
+  face_embedding FaceEmbedding?
+
+  @@map("students")
+}
+
+// ========================
+// Document
+// ========================
+model Document {
+  id            Int      @id @default(autoincrement())
+  student_id    Int
+  student       Student  @relation(fields: [student_id], references: [id], onDelete: Cascade)
+  document_type String
+  file_path     String
+  uploaded_at   DateTime @default(now())
+
+  @@map("documents")
+}
+
+model MedicalReview {
+  id         Int     @id @default(autoincrement())
+  student_id Int     @unique
+  student    Student @relation(fields: [student_id], references: [id], onDelete: Cascade)
+
+  user_id Int?  @unique
+  user    User? @relation("UserMedicalReviews", fields: [user_id], references: [id], onDelete: SetNull)
+
+  // Boolean fields with conditional details
+  blood_pressure                  Boolean
+  blood_pressure_details          String?
+  diabetes                        Boolean
+  diabetes_details                String?
+  heart_disease                   Boolean
+  heart_disease_details           String?
+  immune_diseases                 Boolean
+  immune_diseases_details         String?
+  mental_health                   Boolean
+  mental_health_details           String?
+  other_diseases                  Boolean
+  other_diseases_details          String?
+  mental_health_treatment         Boolean
+  mental_health_treatment_details String?
+  receiving_treatment             Boolean
+  receiving_treatment_details     String?
+  allergies                       Boolean
+  allergies_details               String?
+  special_needs                   Boolean
+  special_needs_details           String?
+
+  // Boolean fields without details
+  adapt_to_new_environments Boolean
+  prefer_solitude           Boolean
+  behavioral_problems       Boolean
+  suspension_history        Boolean
+  shared_room_adaptation    Boolean
+  social_support            Boolean
+  stimulants_or_sedatives   Boolean
+  social_media_usage        Boolean
+
+  // Mental health scale questions
+  sadness_without_reason   String
+  anxiety_or_stress        String
+  concentration_difficulty String
+  sleep_problems           String
+  loss_of_interest         String
+  self_harm_thoughts       String
+  appetite_changes         String
+  anger_outbursts          String
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("medical_reviews")
+}
+
+// ========================
+// ApplicationDate 
+// ========================
+model ApplicationDate {
+  id         Int      @id @default(autoincrement())
+  name       String
+  startAt    DateTime
+  endAt      DateTime
+  university String?
+
+  studentType StudentType @default(new)
+
+  preliminaryResultAnnounced Boolean @default(false)
+
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+  deletedAt  DateTime?
+
+  // Relations
+  studentApplications   StudentApplication[]
+  AcceptanceSheetExport AcceptanceSheetExport[]
+  AcceptanceSheetImport AcceptanceSheetImport[]
+
+  @@map("application_dates")
+}
+
+model StudentApplication {
+  id        Int @id @default(autoincrement())
+  studentId Int
+  phaseId   Int
+
+  status AcceptanceStatus @default(pending)
+
+  // Pipeline Results
+  systemRecommendation String?
+  flagReasons          String?
+
+  // Admin Flow
+  securityReviewStatus Boolean? // Shadow-ban flag: if false, force "pending" on student UI
+  messageToStudent     String?  @db.Text
+
+  candidateForFinalAcceptance String? @default("pending")
+  finalAcceptance             String? @default("pending")
+
+  student Student         @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  phase   ApplicationDate @relation(fields: [phaseId], references: [id], onDelete: Cascade)
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  resident Resident?
+
+  @@unique([studentId, phaseId])
+  @@map("student_applications")
+}
+
+model AcceptanceSheetExport {
+  id               Int      @id @default(autoincrement())
+  phaseId          Int
+  exportedAt       DateTime @default(now())
+  exportedBy       Int?
+  exportedByName   String?
+  segmentsExported String[]
+  totalStudents    Int?
+  aiTasksFired     Boolean  @default(false)
+
+  phase ApplicationDate @relation(fields: [phaseId], references: [id])
+
+  @@map("acceptance_sheet_exports")
+}
+
+model AcceptanceSheetImport {
+  id                    Int      @id @default(autoincrement())
+  phaseId               Int
+  importedAt            DateTime @default(now())
+  importedBy            Int?
+  importedByName        String?
+  totalRows             Int
+  acceptedCount         Int      @default(0)
+  rejectedCount         Int      @default(0)
+  securityRejectedCount Int      @default(0)
+  errors                Json?
+  rawFileName           String?
+
+  phase ApplicationDate @relation(fields: [phaseId], references: [id])
+
+  @@map("acceptance_sheet_imports")
+}
+
+// ========================
+// Settings
+// ========================
+model Settings {
+  id                                 Int      @id @default(autoincrement())
+  restaurant_status                  Boolean  @default(true)
+  application_period_open            Boolean  @default(false)
+  application_period_open_changed_at DateTime
+  auto_meal_reserve                  Boolean  @default(false)
+  admission_results_announced        Boolean  @default(false)
+  university_housing_started         Boolean  @default(false)
+  female_visits_available            Boolean  @default(false)
+  online_payment_available           Boolean  @default(false)
+  attendance_start                   DateTime @db.Time(0)
+  attendance_end                     DateTime @db.Time(0)
+  updated_at                         DateTime @updatedAt
+
+  @@map("settings")
+}
+
+// ========================
+// Dormitory Management
+// ========================
+
+model Building {
+  id                    Int      @id @default(autoincrement())
+  name                  String   @unique
+  type                  Gender // Male, Female
+  floors_count          Int      @default(1)
+  is_available_for_stay Boolean  @default(true)
+  created_at            DateTime @default(now())
+  updated_at            DateTime @updatedAt
+
+  // Relations
+  rooms     Room[]     @relation("BuildingRooms")
+  residents Resident[]
+
+  @@map("buildings")
+}
+
+model Room {
+  id                    Int      @id @default(autoincrement())
+  building_id           Int
+  name                  String
+  type                  RoomType
+  floor                 Int
+  capacity              Int
+  description           String?  @db.Text
+  is_available_for_stay Boolean  @default(true)
+  created_at            DateTime @default(now())
+  updated_at            DateTime @updatedAt
+
+  // Relations
+  building  Building   @relation("BuildingRooms", fields: [building_id], references: [id], onDelete: Cascade)
+  residents Resident[]
+
+  @@map("rooms")
+}
+
+// ========================
+// Restaurant & Meal Management
+// ========================
+
+model Meal {
+  id          Int          @id @default(autoincrement())
+  name        String       @unique
+  category    MealCategory
+  is_active   Boolean      @default(true)
+  description String?      @db.Text
+  created_at  DateTime     @default(now())
+  updated_at  DateTime     @updatedAt
+
+  // Relations
+  slots MealSlot[]
+
+  @@map("meals")
+}
+
+model MealDaySchedule {
+  id                 Int      @id @default(autoincrement())
+  day_type           DayType
+  booking_start_time DateTime
+  booking_end_time   DateTime
+  notes              String?  @db.Text
+  created_at         DateTime @default(now())
+  updated_at         DateTime @updatedAt
+
+  // Relations
+  slots MealSlot[]
+
+  @@map("meal_day_schedules")
+}
+
+model MealSlot {
+  id                  Int             @id @default(autoincrement())
+  schedule_id         Int
+  schedule            MealDaySchedule @relation(fields: [schedule_id], references: [id], onDelete: Cascade)
+  meal_id             Int
+  meal                Meal            @relation(fields: [meal_id], references: [id], onDelete: Restrict)
+  delivery_start_time DateTime
+  delivery_end_time   DateTime
+  created_at          DateTime        @default(now())
+  updated_at          DateTime        @updatedAt
+
+  // Relations
+  reservations MealReservation[]
+
+  @@unique([schedule_id, meal_id])
+  @@index([schedule_id])
+  @@map("meal_slots")
+}
+
+model MealReservation {
+  id Int @id @default(autoincrement())
+
+  resident_id Int
+  resident    Resident @relation(fields: [resident_id], references: [id], onDelete: Cascade)
+
+  meal_slot_id Int
+  meal_slot    MealSlot @relation(fields: [meal_slot_id], references: [id], onDelete: Cascade)
+
+  status           ReservationStatus @default(pending)
+  reservation_type ReservationType
+  faculty_location FacultyLocation
+
+  created_by_staff_id Int?
+  created_by_staff    User? @relation("StaffReservations", fields: [created_by_staff_id], references: [id], onDelete: SetNull)
+
+  qr_code MealQRCode?
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@unique([resident_id, meal_slot_id])
+  @@index([resident_id])
+  @@map("meal_reservations")
+}
+
+model MealQRCode {
+  id             Int             @id @default(autoincrement())
+  reservation_id Int             @unique
+  reservation    MealReservation @relation(fields: [reservation_id], references: [id], onDelete: Cascade)
+
+  token      String       @unique
+  status     QRCodeStatus @default(active)
+  scanned_at DateTime?
+
+  is_manual_override Boolean @default(false)
+  overridden_by_id   Int?
+  overridden_by      User?   @relation("StaffOverrides", fields: [overridden_by_id], references: [id], onDelete: SetNull)
+  override_reason    String? @db.Text
+
+  expires_at DateTime
+  created_at DateTime @default(now())
+
+  @@map("meal_qr_codes")
+}
+
+model RestaurantSettings {
+  id                       Int                   @id @default(1)
+  is_open                  Boolean               @default(true)
+  auto_reservation_enabled Boolean               @default(true)
+  auto_reservation_target  AutoReservationTarget @default(inside)
+  updated_at               DateTime              @updatedAt
+
+  @@map("restaurant_settings")
+}
+
+// ==========================
+// Residency Management
+// ==========================
+enum ResidencyStatus {
+  pending_assignment
+  active
+  checked_out
+  term_ended
+}
+
+model Resident {
+  id Int @id @default(autoincrement())
+
+  student_id Int
+  student    Student @relation(fields: [student_id], references: [id], onDelete: Restrict)
+
+  application_id Int                @unique
+  application    StudentApplication @relation(fields: [application_id], references: [id], onDelete: Restrict)
+
+  building_id Int?
+  building    Building? @relation(fields: [building_id], references: [id], onDelete: Restrict)
+  room_id     Int?
+  room        Room?     @relation(fields: [room_id], references: [id], onDelete: Restrict)
+
+  status        ResidencyStatus @default(pending_assignment)
+  move_in_date  DateTime?
+  move_out_date DateTime?
+  notes         String?         @db.Text
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  // Relations
+  attendance_logs   AttendanceLog[]
+  meal_reservations MealReservation[]
+  // visit_requests    VisitRequest[]
+  // maintenance_requests MaintenanceRequest[]
+
+  @@unique([student_id, application_id])
+  @@index([student_id])
+  @@index([status])
+  @@map("residents")
+}
+
+// ========================
+// Attendance system for university housing
+// ========================
+enum AttendanceMethod {
+  face_scan
+  manual
+}
+
+model FaceEmbedding {
+  id         Int      @id @default(autoincrement())
+  student_id Int      @unique
+  student    Student  @relation(fields: [student_id], references: [id], onDelete: Cascade)
+  embedding  String   @db.Text
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("face_embeddings")
+}
+
+model AttendanceLog {
+  id          Int              @id @default(autoincrement())
+  resident_id Int
+  resident    Resident         @relation(fields: [resident_id], references: [id], onDelete: Cascade)
+  logged_at   DateTime         @default(now())
+  method      AttendanceMethod @default(face_scan)
+  confidence  Float?
+  notes       String?
+
+  @@unique([resident_id, logged_at])
+  @@index([resident_id])
+  @@index([logged_at])
+  @@map("attendance_logs")
+}

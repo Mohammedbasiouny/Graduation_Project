@@ -1,0 +1,17 @@
+{
+    "residents": {
+        "CREATED_SUCCESSFULLY": "تم إنشاء السكن بنجاح",
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع بيانات السكان بنجاح",
+        "UPDATED_SUCCESSFULLY": "تم تحديث بيانات السكن بنجاح",
+        "DELETED_SUCCESSFULLY": "تم حذف السكن بنجاح",
+
+        "CREATE_FAILED": "فشل إنشاء السكن",
+        "FETCH_FAILED": "فشل استرجاع بيانات السكان",
+        "UPDATE_FAILED": "فشل تحديث بيانات السكن",
+        "DELETE_FAILED": "فشل حذف السكن",
+
+        "NOT_FOUND": "السكن غير موجود",
+        "STUDENT_NOT_FOUND": "الطالب غير موجود",
+        "NO_ACCEPTED_APPLICATION": "لا يوجد طلب قبول مقبول لهذا الطالب"
+    }
+}

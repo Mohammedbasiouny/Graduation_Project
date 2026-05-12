@@ -1,0 +1,33 @@
+{
+    "buildings": {
+        "CREATED_SUCCESSFULLY": "Building created successfully",
+        "RETRIEVED_SUCCESSFULLY": "Buildings retrieved successfully",
+        "UPDATED_SUCCESSFULLY": "Building updated successfully",
+        "DELETED_SUCCESSFULLY": "Building deleted successfully",
+
+        "CREATE_FAILED": "Failed to create building",
+        "FETCH_FAILED": "Failed to retrieve buildings",
+        "UPDATE_FAILED": "Failed to update building",
+        "DELETE_FAILED": "Failed to delete building",
+
+        "NOT_FOUND": "Building not found",
+        "ALREADY_EXISTS": "A building with this name already exists",
+        "HAS_LINKED_RECORDS": "Cannot delete this building because it has linked rooms"
+    },
+    "rooms": {
+        "CREATED_SUCCESSFULLY": "Room created successfully",
+        "RETRIEVED_SUCCESSFULLY": "Rooms retrieved successfully",
+        "UPDATED_SUCCESSFULLY": "Room updated successfully",
+        "DELETED_SUCCESSFULLY": "Room deleted successfully",
+
+        "CREATE_FAILED": "Failed to create room",
+        "FETCH_FAILED": "Failed to retrieve rooms",
+        "UPDATE_FAILED": "Failed to update room",
+        "DELETE_FAILED": "Failed to delete room",
+
+        "NOT_FOUND": "Room not found",
+        "ALREADY_EXISTS": "A room with this name already exists in this building",
+        "FLOOR_EXCEEDS_BUILDING_FLOORS": "Floor number exceeds the building's total floor count",
+        "HAS_LINKED_RECORDS": "Cannot delete this room because it has linked records"
+    }
+}

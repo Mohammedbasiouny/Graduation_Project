@@ -1,0 +1,16 @@
+{
+    "CREATED_SUCCESSFULLY": "Pre university qualification created successfully.",
+    "RETRIEVED_SUCCESSFULLY": "Pre university qualification retrieved successfully.",
+    "DELETED_SUCCESSFULLY": "Pre university qualification deleted successfully.",
+    "UPDATED_SUCCESSFULLY": "Pre university qualification updated successfully.",
+
+    "CREATE_FAILED": "Failed to create pre university qualification.",
+    "RETRIEVED_FAILED": "Failed to retrieve pre university qualifications.",
+    "FETCH_FAILED": "Failed to fetch pre university qualification.",
+    "UPDATE_FAILED": "Failed to update pre university qualification.",
+
+    "HAS_LINKED_RECORDS": "Cannot delete qualification, linked records exist.",
+    "ALREADY_EXISTS": "Pre university qualification already exists.",
+    "NOT_FOUND": "Pre university qualification not found.",
+    "INTERNAL_ERROR": "An error occurred while processing your request."
+}

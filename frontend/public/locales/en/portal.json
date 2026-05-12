@@ -1,0 +1,68 @@
+{
+  "heading": {
+    "title": "Welcome to Capital University Housing", 
+    "subtitle": "From here you can manage your account, track your application, or access housing services"
+  },
+  "cards": {
+    "profile": {
+      "title": "Your Account",
+      "subtitle": "View and update your personal and academic data, and track the status of your university housing application."
+    },
+    "application_dates": {
+      "title": "Available Application Dates",
+      "subtitle": "Check the opening and closing dates for applying or renewing university housing."
+    },
+    "apply_or_renew": {
+      "title": "Apply / Renew Residency",
+      "subtitle": "Submit or renew your university housing application and upload the required documents electronically."
+    },
+    "meals": {
+      "title": "Meal Plans",
+      "subtitle": "Book your daily meals, track your balance, and view the weekly meal schedule."
+    },
+    "attendance": {
+      "title": "Attendance Tracking",
+      "subtitle": "Record your daily attendance and view your attendance history."
+    },
+    "room_details": {
+      "title": "Room Details",
+      "subtitle": "Find out your building and room number, roommates, and housing rules."
+    },
+    "application_guide": {
+      "title": "University Housing Application Guide",
+      "subtitle": "Learn the application steps, details for each step, and watch the explanatory video."
+    },
+    "application_status": {
+      "title": "Track Application Status",
+      "subtitle": "Follow the status of your university housing application and see whether it has been accepted or rejected."
+    },
+    "violations": {
+      "title": "Violations & Penalties",
+      "subtitle": "Check your record of violations or warnings within the university housing."
+    },
+    "complaints": {
+      "title": "Submit a Complaint or Inquiry",
+      "subtitle": "Send a complaint or inquiry to the university housing administration and track the response."
+    },
+    "maintenance": {
+      "title": "Maintenance Request",
+      "subtitle": "Submit a maintenance request for your room or building and set the priority level."
+    },
+    "rules": {
+      "title": "Rules & Guidelines",
+      "subtitle": "Review the regulations and instructions for staying in university housing."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "subtitle": "View important alerts, new updates, and status changes."
+    },
+    "fees": {
+      "title": "Fees & e-Payment",
+      "subtitle": "Track your subscription and accommodation fees and make electronic payments."
+    },
+    "visit_request": {
+      "title": "Visit Request",
+      "subtitle": "Submit a request to visit the university housing and schedule your visit."
+    }
+  }
+}

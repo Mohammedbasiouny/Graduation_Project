@@ -1,0 +1,14 @@
+{
+  "validation_error": "There was a validation error. Please check the entered information and try again.",
+  "unexpected_error": "Something went wrong. Please try again.",
+  "network_error": "Network error. Please check your internet connection and try again.",
+  "created_successfully": "Created successfully",
+  
+  "updated_successfully": "Updated successfully",
+  "update_not_found": "The item to update was not found or has already been deleted.",
+  
+  "deleted_successfully": "Deleted successfully.",
+  "delete_failed": "Failed to delete the data. Please try again.",
+  "delete_not_found": "The requested item was not found or has already been deleted.",
+  "delete_related_entities": "This item cannot be deleted because it is linked to other data. Please remove or unlink the related data first."
+}

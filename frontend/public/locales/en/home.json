@@ -1,0 +1,168 @@
+{
+  "hero_section": {
+    "badge": "University Dormitories",
+    "headline_main": "More than Housing.",
+    "headline_sub": "A True Student Home",
+    "description": "Designed for students of Capital University, Capital National University, and Capital International Technological University, our dormitories offer a secure, comfortable, and supportive environment that helps students focus on learning, growth, and success.",
+    "btn_create_account": "Create your account",
+    "btn_explore_services": "Explore our services",
+    "stats": {
+      "buildings": "University City Buildings",
+      "rooms": "Rooms",
+      "students": "Beneficiary Students"
+    },
+    "period_status": {
+      "true": "The application period is currently open. You can create a new account or log in if you already have one.",
+      "false": "The application period is currently closed. Applications are not accepted at this time."
+    }
+  },
+  "application_result_section": {
+    "heading": {
+      "title": "Check Your Admission Result",
+      "subtitle": "Enter your national ID number below to quickly view the result of your application."
+    },
+    "warning_result_not_available": "The result is not available yet. A notification will be sent to your registered email once the result is released, and you can also check the website regularly.",
+    "submit_btn": "Show Result Now",
+    "scroll_btn": "Go to view application results"
+  },
+  "admission_steps_section": {
+    "heading": {
+      "title": "Steps to join university dormitories",
+      "subtitle": "Follow these steps to complete your student housing application smoothly and efficiently."
+    },
+    "steps": {
+      "choose_uni": { 
+        "title": "Choose your university", 
+        "description": "Your journey begins by identifying your university (Capital University, Capital National University, or Capital Technological University). The goal is to guide you through your university's student housing system to ensure accurate information and deadlines."
+      },
+      "signup": { 
+        "title": "Create an account", 
+        "description": "Register a new account using your email address and a strong password. A confirmation email will be sent to your email to activate the account. This will create a permanent profile through which you can manage and track your order."
+      },
+      "Verify": { 
+        "title": "Secure Access", 
+        "description": "Verify your account and keep your data protected throughout the process."
+      },
+      "login": { 
+        "title": "Log in", 
+        "description": "After activating your account, use your credentials to log in to the system and proceed with the application steps. This will grant you access to your control panel."
+      },
+      "dates": { 
+        "title": "Find out the dates", 
+        "description": "Keep an eye on application and renewal opening periods, as these are announced on the university website or within the system. This ensures you submit your application on time, as the system does not accept applications after the deadline."
+      },
+      "application": { 
+        "title": "Submit an application", 
+        "description": "Fill in your personal and academic details, and upload the required documents (ID card, birth certificate, social research report, personal photo, etc.). The purpose is to submit a formal application for accommodation in university dormitories."
+      },
+      "requirements": { 
+        "title": "Meet all the requirements", 
+        "description": "Complete all required checks, such as the medical examination, security check, and payment of fees, by the specified deadlines. These checks are intended to ensure compliance with all terms and conditions before final approval of the application."
+      },
+      "follow": { 
+        "title": "Follow the request", 
+        "description": "After submitting your application, you can track its status through the dashboard to see if it is under review, accepted, or rejected. This is designed to keep you informed of the progress of your application until the final decision is issued." 
+      },
+      "result": { 
+        "title": "Check the result", 
+        "description": "After the review period ends and applications are approved by the General Administration of University Residences, you can log in to your account to check the final status of your application. Your dashboard will show whether you have been accepted, placed on the waiting list, or rejected, along with the reason for rejection if applicable. This system allows you to easily understand your final status and take the necessary steps, such as paying fees or submitting additional documents if required." 
+      }
+    }
+  },
+  "student_services_section": {
+    "heading": {
+      "title": "Student services in university cities",
+      "subtitle": "Manage your university housing easily — from application to daily services."
+    },
+    "cards": {
+      "profile": {
+        "title": "Profile",
+        "subtitle": "View and update your personal and academic data, and track your university dorm application status."
+      },
+      "application_dates": {
+        "title": "Available Application Dates",
+        "subtitle": "View opening and closing times for applying or renewing dorm residency."
+      },
+      "apply_or_renew": {
+        "title": "Apply / Renew Residency",
+        "subtitle": "Submit or renew your university dorm application and upload required documents."
+      },
+      "meals": {
+        "title": "Meal Plans",
+        "subtitle": "Book your meals, check your balance, and view the weekly menu."
+      },
+      "room_details": {
+        "title": "Room Details",
+        "subtitle": "View your dorm building, room number, roommates, and housing rules."
+      },
+      "application_status": {
+        "title": "Application Status",
+        "subtitle": "Track the status of your dorm application, whether accepted or rejected."
+      },
+      "violations": {
+        "title": "Violations & Penalties",
+        "subtitle": "Check your violation record and related notes inside the dorms."
+      },
+      "complaints": {
+        "title": "Submit a Complaint or Inquiry",
+        "subtitle": "Send a complaint or inquiry to the dorm administration and follow the response."
+      },
+      "maintenance": {
+        "title": "Maintenance Request",
+        "subtitle": "Submit a maintenance request for your room or building and set priority level."
+      },
+      "rules": {
+        "title": "Rules & Guidelines",
+        "subtitle": "Read the regulations and important instructions for dorm residency."
+      },
+      "notifications": {
+        "title": "Notifications",
+        "subtitle": "View important alerts, new updates, and status changes."
+      },
+      "fees": {
+        "title": "Fees & e-Payment",
+        "subtitle": "Track your payment dues and complete payments electronically."
+      },
+      "visit_request": {
+        "title": "Visit Request",
+        "subtitle": "Submit a request to visit the university dorms and schedule your visit."
+      }
+    }
+  },
+  "about_section": {
+    "heading": {
+      "title": "About the university dormitories at Helwan University",
+      "subtitle": "We are a digital platform designed to simplify the management of university housing services for students, from applying for accommodation to accessing and tracking all daily services easily and securely."
+    },
+
+    "content": {
+      "about_p1": "Student housing is one of the most essential pillars of the university’s student services system. It is not only a place to stay, but a complete environment that supports students academically, socially, and psychologically. By expanding and continuously improving dormitory services, the university strengthens student stability, boosts academic performance, and contributes to higher-quality educational and research outcomes.",
+      "about_p2": "As a specialized institution offering distinctive academic programs, the University of the Capital (formerly Helwan University) attracts students from all governorates across Egypt. This diversity and national reach have resulted in a steady increase in demand for dormitory accommodation and daily meal services throughout the academic year. Therefore, the university is committed to developing a modern housing system that ensures comfort, safety, and a well-rounded student experience."
+    },
+
+    "vision": {
+      "title": "Our Vision",
+      "description": "To provide a safe, organized, and supportive second home—where students can live comfortably, study effectively, and grow personally through quality services and a balanced environment."
+    },
+
+    "mission": {
+      "title": "Our Mission",
+      "description": "To deliver high-quality dormitory services that meet students’ needs through safe housing, professional supervision, healthy nutrition, accessible healthcare, and an active student life—ensuring every resident feels supported, respected, and empowered to succeed."
+    },
+
+    "badges": {
+      "about": "About"
+    },
+    "side_card": {
+      "title": "Student Housing",
+      "highlight": "More than a place to stay",
+      "description": "We provide a safe and supportive environment that helps students feel stable, focus on their studies, and enjoy a complete university experience."
+    }
+  },
+  "contact_us": {
+    "heading": {
+      "title": "Contact Us",
+      "subtitle": "Have a question or need help? Send us a message and we’ll get back to you soon."
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "main_heading": {
+    "title": "أقسام الكليات",
+    "subtitle": "عرض وإدارة أقسام الكليات"
+  },
+  "main_heading_with_college": {
+    "title": "{{collegeName}} - {{university}}",
+    "subtitle": "عدد الأقسام: {{departmentsCount}}"
+  },
+  "table_heading": {
+    "title": "إدارة الأقسام",
+    "subtitle": "استخدم الجدول والفلاتر أدناه لعرض وتحرير وإدارة الأقسام المتاحة للطلاب"
+  },
+  "departments_overview": {
+    "visible": {
+      "label": "الأقسام المتاحة",
+      "subtext": "أقسام متاحة حالياً للطلاب"
+    },
+    "not_visible": {
+      "label": "الأقسام غير المتاحة",
+      "subtext": "أقسام غير متاحة حالياً للاختيار"
+    },
+    "total": {
+      "label": "إجمالي الأقسام",
+      "subtext": "إجمالي جميع الأقسام المتوفرة"
+    }
+  },
+  "cards": {
+    "add_department": {
+      "title": "إضافة قسم جديد",
+      "description": "قم بإنشاء قسم جديد وتحديد معلوماته ليكون متاحًا ضمن الكلية.",
+      "button": "إضافة قسم"
+    }
+  },
+  "modals": {
+    "delete": {
+      "title": "تأكيد الحذف",
+      "description": "هل أنت متأكد من رغبتك في حذف هذا القسم؟ لا يمكن التراجع عن هذا الإجراء."
+    },
+    "view": {
+      "title": "عرض تفاصيل القسم",
+      "description": "هنا يمكنك عرض جميع تفاصيل القسم."
+    },
+    "add": {
+      "title": "إضافة قسم جديد",
+      "description": "قم بإنشاء قسم جديد وتحديد معلوماته ليتم ربطه بالكلية."
+    },
+    "edit": {
+      "title": "تعديل القسم",
+      "description": "قم بتعديل معلومات القسم."
+    }
+  },
+  "columns": {
+    "id": "#رقم",
+    "department_name": "اسم القسم",
+    "college_name": "اسم الكلية",
+    "university": "الجامعة",
+    "is_visible": "مرئي"
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "RETRIEVED_SUCCESSFULLY": "تم استرجاع إعدادات المطعم بنجاح",
+    "AUTO_RESERVATION_UPDATED": "تم تحديث إعدادات الحجز التلقائي بنجاح",
+
+    "STATUS_OPENED": "المطعم مفتوح الآن",
+    "STATUS_CLOSED": "المطعم مغلق الآن",
+
+    "FETCH_FAILED": "فشل استرجاع إعدادات المطعم",
+    "UPDATE_FAILED": "فشل تحديث إعدادات المطعم",
+    
+    "SETTINGS_NOT_FOUND": "إعدادات المطعم غير موجودة"
+}

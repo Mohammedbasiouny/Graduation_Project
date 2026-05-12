@@ -1,0 +1,58 @@
+{
+  "main_heading": {
+    "title": "Educational Departments",
+    "subtitle": "Manage all departments associated with governorates"
+  },
+  "table_heading": {
+    "title": "Manage Educational Departments",
+    "subtitle": "Use the table and filters below to view, edit, and manage educational departments"
+  },
+  "cards": {
+    "add_department": {
+      "title": "Add New Department",
+      "description": "Create a new educational department and associate it with the appropriate governorate.",
+      "button": "Add Department"
+    }
+  },
+  "departments_overview": {
+    "visible": {
+      "label": "Visible Departments",
+      "subtext": "Departments currently visible to users"
+    },
+    "not_visible": {
+      "label": "Hidden Departments",
+      "subtext": "Departments not currently visible to users"
+    },
+    "total": {
+      "label": "Total Departments",
+      "subtext": "Total number of all educational departments"
+    }
+  },
+  "table": {
+    "columns": {
+      "id": "#ID",
+      "name": "Educational Department",
+      "governorate": "Governorate",
+      "is_visible": "Visible",
+      "actions": "Actions"
+    }
+  },
+  "modals": {
+    "delete": {
+      "title": "Delete Confirmation",
+      "description": "Are you sure you want to delete this educational department? This action cannot be undone."
+    },
+    "add": {
+      "title": "Add New Educational Department",
+      "description": "Create a new educational department that can be used within the application data."
+    },
+    "view": {
+      "title": "View Educational Department Details",
+      "description": "Here you can view the details of the educational department."
+    },
+    "edit": {
+      "title": "Edit Educational Department",
+      "description": "Modify the information of the educational department."
+    }
+  }
+}

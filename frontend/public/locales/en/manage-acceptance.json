@@ -1,0 +1,66 @@
+{
+  "main_heading": {
+    "title": "Dormitory Application Results Management",
+    "subtitle": "Monitor and analyze application period statistics, manage student acceptance stages, and upload accepted and rejected lists"
+  },
+  "note": {
+    "title": "Guidelines for Managing and Processing Admission Data",
+    "description": "Please follow the protocol below to ensure accurate system updates:\n\n1. Data Review: You can extract student data and classify it according to the specified time periods, with a comprehensive audit of the submitted information.\n2. Technical Evaluation: Acceptance and exclusion criteria (security, academic, and geographic) defined in the regulations are applied to each record individually.\n3. Final Export: After approving acceptance or rejection decisions, the final file is prepared and uploaded in a supported format.\n4. Integrity Verification: Please review the file before the final upload, as this process will immediately and directly update the results in the main system database."
+  },
+  "charts": {
+    "gender": {
+      "title": "Applicants Distribution by Gender",
+      "description": "Analytical overview of the distribution of applicants between males and females across different application periods"
+    },
+    "application_periods": {
+      "title": "Periods Comparison",
+      "description": "Displaying the total number of applicants versus incomplete applications during different application periods"
+    }
+  },
+  "columns": {
+    "application_periods": "Application Periods",
+    "student_type": "Student Type",
+    "start_at": "Period Start Date & Time",
+    "end_at": "Period End Date & Time",
+    "applications_count": "Total Applications",
+    "completed_applications_count": "Completed Applications",
+    "accepted_security_count": "Security Accepted",
+    "candidates_for_final_acceptance": "Candidates for Final Acceptance",
+    "final_accepted": "Final Accepted",
+    "actions": "Actions"
+  },
+  "buttons": {
+    "show_actions": "Show Statistics & Actions",
+    "hide_actions": "Hide Statistics & Actions",
+    "download_students": "Download Completed Applications Data",
+    "upload_security": "Upload Security Accepted and Rejected List",
+    "upload_candidates_for_final_acceptance": "Upload Candidates for Final Acceptance",
+    "upload_final_accepted": "Upload Final Acceptance Results"
+  },
+  "stats": {
+    "title": "Acceptance Statistics",
+    "subtitle": "Quick overview of application period performance",
+    "applications": "Total Applications",
+    "completed": "Completed Applications",
+    "completion_rate": "Completion Rate",
+    "security": "Security Accepted",
+    "candidates": "Candidates for Final Acceptance",
+    "final": "Final Accepted",
+    "comparison": "{{completed}} completed applications out of {{total}} submitted applications",
+    "section_title": "Application Period Overview",
+    "eg_title": "Egyptians 🇪🇬",
+    "ex_title": "International Students 🌍",
+    "new_students": "New Students:",
+    "old_students": "Returning Students:"
+  },
+  "modals": {
+    "download_students": {
+      "title": "Download Student Data (Excel & Word)",
+      "description": "Download Excel and Word files containing completed student applications organized and formatted by student type. The Excel file includes detailed data, while the Word file contains Egyptian national ID card images for each student arranged for easy review and printing."
+    }
+  },
+  "males": "Completed Male Students",
+  "females": "Completed Female Students",
+  "period_not_ended": "Application period has not ended yet",
+  "period_ended": "Application period has ended"
+}

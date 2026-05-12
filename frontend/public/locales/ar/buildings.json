@@ -1,0 +1,71 @@
+{
+  "main_heading": {
+    "title": "السكن الجامعي",
+    "subtitle": "إدارة مباني السكن والأدوار والغرف"
+  },
+  "table_heading": {
+    "title": "إدارة المباني",
+    "subtitle": "استخدم الجدول والفلاتر لعرض وتعديل وإدارة المباني والأدوار والغرف"
+  },
+  "building_type": {
+    "male": "طلاب",
+    "female": "طالبات"
+  },
+  "fields": {
+    "building_name": "اسم المبنى",
+    "building_type": "نوع المبنى",
+    "is_available_for_stay": "متاح للسكن",
+    "floors_count": "عدد الأدوار",
+    "rooms_count": "إجمالي عدد الغرف",
+    "regular_rooms_count": "غرف عادية",
+    "premium_rooms_count": "غرف مميزة",
+    "medical_rooms_count": "غرف طبية",
+    "studying_rooms_count": "غرف دراسة"
+  },
+  "cards": {
+    "add_building": {
+      "title": "إضافة مبنى جديد",
+      "description": "قم بإنشاء مبنى جديد لتخصيصه للطلاب أو الطالبات، وحدد عدد الأدوار والغرف",
+      "button": "إضافة المبنى"
+    }
+  },
+  "overview": {
+    "buildings_count": {
+      "title": "نظرة عامة على المباني",
+      "subtitle": "ملخص سريع لمباني الطلاب والطالبات"
+    },
+    "male_buildings_count": {
+      "label": "مباني الطلاب",
+      "subtext": "عرض جميع مباني الطلاب"
+    },
+    "female_buildings_count": {
+      "label": "مباني الطالبات",
+      "subtext": "عرض جميع مباني الطالبات"
+    }
+  },
+  "modals": {
+    "delete": {
+      "title": "تأكيد الحذف",
+      "description": "هل أنت متأكد أنك تريد حذف هذا المبنى؟ لا يمكن التراجع عن هذا الإجراء."
+    },
+    "add": {
+      "title": "إضافة مبنى جديد",
+      "description": "قم بإنشاء مبنى سكن جديد وحدد نوعه وعدد الأدوار والغرف."
+    },
+    "view": {
+      "title": "عرض تفاصيل المبنى",
+      "description": "هنا يمكنك عرض جميع تفاصيل المبنى بما في ذلك الأدوار والغرف."
+    },
+    "edit": {
+      "title": "تعديل المبنى",
+      "description": "قم بتحديث بيانات المبنى ونوعه والتفاصيل المرتبطة به."
+    }
+  },
+  "is_available_for_stay": {
+    "true": "متاح للسكن",
+    "false": "غير متاح للسكن"
+  },
+  "rooms_link": "اضغط هنا لعرض جميع الغرف",
+  "add_room_btn": "إضافة غرفة جديدة",
+  "view_rooms_btn": "عرض الغرف"
+}

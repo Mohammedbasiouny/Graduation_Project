@@ -1,0 +1,33 @@
+{
+    "faculties": {
+        "CREATED_SUCCESSFULLY": "تم إنشاء الكلية بنجاح",
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع بيانات الكلية بنجاح",
+        "UPDATED_SUCCESSFULLY": "تم تحديث الكلية بنجاح",
+        "DELETED_SUCCESSFULLY": "تم حذف الكلية بنجاح",
+
+        "CREATE_FAILED": "فشل في إنشاء الكلية",
+        "FETCH_FAILED": "فشل في جلب بيانات الكلية",
+        "UPDATE_FAILED": "فشل في تحديث الكلية",
+        "DELETE_FAILED": "فشل في حذف الكلية",
+        
+        "ALREADY_EXISTS": "كلية بهذا الاسم موجودة بالفعل",
+        "NOT_FOUND": "الكلية غير موجودة",
+        "HAS_LINKED_RECORDS": "لا يمكن حذف الكلية لأنها تحتوي على برامج أقسام مرتبطة بها"
+    },
+    "departments": {
+        "CREATED_SUCCESSFULLY": "تم إنشاء القسم بنجاح",
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع بيانات القسم بنجاح",
+        "UPDATED_SUCCESSFULLY": "تم تحديث القسم بنجاح",
+        "DELETED_SUCCESSFULLY": "تم حذف القسم بنجاح",
+
+        "CREATE_FAILED": "فشل في إنشاء القسم",
+        "FETCH_FAILED": "فشل في جلب بيانات القسم",
+        "UPDATE_FAILED": "فشل في تحديث القسم",
+        "DELETE_FAILED": "فشل في حذف القسم",
+        
+        "ALREADY_EXISTS": "قسم بهذا الاسم موجود بالفعل في هذه الكلية",
+        "NOT_FOUND": "القسم غير موجود",
+        "FACULTY_NOT_FOUND": "الكلية المحددة غير موجودة",
+        "HAS_LINKED_RECORDS": "لا يمكن حذف القسم لأنه يحتوي على سجلات طلاب مرتبطة به"
+    }
+}

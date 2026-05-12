@@ -1,0 +1,89 @@
+{
+  "main_heading": {
+    "title": "Meal Schedule",
+    "subtitle": "Manage the meal schedule in the university restaurant"
+  },
+  "table_heading": {
+    "title": "Meal Schedule Management",
+    "subtitle": "Use the table and filters below to view, edit, and manage the available meal schedules in the university restaurant"
+  },
+  "cards": {
+    "close_restaurant": {
+      "title": "Close Restaurant",
+      "description": "Temporarily close the restaurant",
+      "opened_at": "The restaurant was opened on {{date}} at {{time}}",
+      "button": "Close Restaurant"
+    },
+    "open_restaurant": {
+      "title": "Open Restaurant",
+      "description": "Open the restaurant to receive orders",
+      "button": "Open Restaurant",
+      "closed_at": "The restaurant was closed on {{date}} at {{time}}"
+    },
+    "add": {
+      "title": "Add New Meal Schedule",
+      "description": "Create a new meal schedule to add it to the university restaurant menu.",
+      "button": "Add Meal Schedule"
+    }
+  },
+  "overview": {
+    "total": {
+      "label": "Total Meal Schedules",
+      "subtext": "Total number of all meal schedules available in the university restaurant"
+    }
+  },
+  "table": {
+    "columns": {
+      "id": "ID",
+      "meal_name": "Meal Name",
+      "meal_category": "Meal Category",
+      "meal_description": "Meal Description",
+      "day_type": "Day Type",
+      "delivery_start_time": "Delivery Start Time",
+      "delivery_end_time": "Delivery End Time",
+      "booking_start_time": "Booking Start Time",
+      "booking_end_time": "Booking End Time",
+      "status": "Status",
+      "notes": "Notes",
+      "actions": "Actions"
+    }
+  },
+  "modals": {
+    "add": {
+      "title": "Add New Meal Schedule",
+      "description": "Create a new meal schedule to add it to the university restaurant menu."
+    },
+    "edit": {
+      "title": "Edit Meal Schedule",
+      "description": "Modify the details of the selected meal schedule."
+    },
+    "delete": {
+      "title": "Delete Meal Schedule",
+      "description": "Are you sure you want to delete this schedule? This action cannot be undone."
+    },
+    "view": {
+      "title": "View Meal Schedule Details",
+      "description": "View all details of the selected meal schedule."
+    },
+    "truncate": {
+      "title": "Delete All Meal Schedules",
+      "description": "Are you sure you want to delete all meal schedules? This action cannot be undone."
+    },
+    "close_restaurant": {
+      "title": "Close Restaurant",
+      "description": "Are you sure you want to close the restaurant? This action cannot be undone."
+    },
+    "open_restaurant": {
+      "title": "Open Restaurant",
+      "description": "Are you sure you want to open the restaurant? This action cannot be undone."
+    }
+  },
+  "status": {
+    "booking_not_started": "Booking Not Started",
+    "booking_open": "Booking Open",
+    "waiting_delivery": "Waiting for Delivery",
+    "delivery_in_progress": "Delivery in Progress",
+    "delivery_finished": "Delivery Finished"
+  },
+  "truncate_btn": "Delete All Meal Schedules"
+}

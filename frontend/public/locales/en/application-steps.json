@@ -1,0 +1,184 @@
+{
+  "choose_nationality": {
+    "heading": {
+      "title": "Select Your Nationality (Egyptian / International)",
+      "subtitle": "Before filling in your information, please select your nationality as a student to guide you to the appropriate form for your data.\nThis helps ensure the accuracy of information and the proper procedures for each student category."
+    },
+    "egyptian": {
+      "title": "Egyptian",
+      "description": "Follows the general requirements for students within the Arab Republic of Egypt."
+    },
+    "expatriate": {
+      "title": "International",
+      "description": "Subject to procedures specific to non-Egyptian students."
+    },
+    "notes": {
+      "title": "Important Notice Regarding Data Selection:",
+      "description": "Please ensure that all information is entered accurately, as each student category has a different application form with specific requirements. Inaccurate information may cause delays or rejection of the application. It is advised to review all information carefully before proceeding."
+    },
+    "proceed_btn": "Proceed to Fill in Data",
+    "warning": "You must first select your nationality before you can continue filling in your information."
+  },
+  "forms": {
+    "personal": {
+      "heading": {
+        "title": "Student Personal Information:",
+        "subtitle": ""
+      },
+      "warning_note": {
+        "title": "Important Notice Regarding Data Accuracy:",
+        "description": "Please ensure that all information entered in this form exactly matches your official documents.\n\nThis data is a crucial part of the application review and acceptance process, and any discrepancies or errors may result in rejection or delay.\n\nPlease carefully verify all fields before clicking \"Click Here to Save Changes\"."
+      }
+    },
+    "residence": {
+      "residence_heading": {
+        "title": "Residence Information:",
+        "subtitle": ""
+      },
+      "residence_type_heading": {
+        "title": "Place of Residence:",
+        "subtitle": "Please indicate whether your residence is inside or outside the Arab Republic of Egypt"
+      },
+      "warning_note": {
+        "title": "Important Notice Regarding Residence Data:",
+        "description": "Please enter your residence information exactly as it appears in your official documents, without any changes.\n\nThis data is used to review and verify the application, and any inconsistencies may lead to delays or rejection.\n\nPlease ensure all fields are accurate and match your official documents before proceeding."
+      }
+    },
+    "student_type": {
+      "heading": {
+        "title": "Student Type:",
+        "subtitle": "Please indicate whether you are a new student joining the university for the first time, or a continuing student previously enrolled."
+      },
+      "info_note": {
+        "title": "Important Notice Regarding Student Type:",
+        "description": "Please ensure the student type is selected accurately before proceeding.\n\nNew Student:\nA student joining the university for the first time who has not previously registered in any faculty or academic program.\n\nContinuing Student:\nA student who has been registered at the university for more than one academic year, either in a higher year or preparatory stage.\n\nThis selection determines admission procedures and academic requirements. Providing incorrect information may affect the application outcome."
+      }
+    },
+    "pre_uni": {
+      "heading": {
+        "title": "Pre-University Education Data:",
+        "subtitle": ""
+      },
+      "warning_note": {
+        "title": "Important Notice Regarding Pre-University Education Data:",
+        "description": "Please enter pre-university education data accurately and clearly, including certificate type, total score, and study system.\n\nThis information is used for administrative purposes only and does not affect admission criteria or student ranking.\n\nAny inaccurate information may cause difficulties in processing data correctly. Ensure all answers are correct."
+      }
+    },
+    "academic": {
+      "heading": {
+        "title": "Academic Data:",
+        "subtitle": ""
+      },
+      "info_note": {
+        "title": "Important Notice Regarding Academic Data:",
+        "description": "Please enter all academic information accurately and clearly, including study level, major, and study system.\n\nThis data is for administrative purposes only and does not affect admission decisions or student ranking.\n\nInaccurate or omitted information may hinder proper processing of your academic data. Verify all details before submission."
+      }
+    },
+    "relatives": {
+      "steps": {
+        "guardian": "Guardian Information",
+        "parents_status": "Parents’ Status"
+      },
+      "relative_heading": {
+        "title": "Guardian Information:",
+        "subtitle": "Please enter the legal guardian’s or responsible person’s information, if available, for administrative purposes."
+      },
+      "parents_status_heading": {
+        "title": "Parents’ Status:",
+        "subtitle": "Please indicate the current status of your parents for administrative and organizational purposes."
+      },
+      "warning_note": {
+        "title": "Important Notice Regarding Guardian and Parents’ Data:",
+        "description": "Please enter guardian and parents’ status information accurately and clearly, as this is used for administrative and organizational purposes during the study period.\n\nThis information is necessary for official communication and to ensure proper processing of student-related procedures.\n\nInaccuracies or missing information may lead to delays or communication issues. Verify all data matches official documents."
+      }
+    },
+    "medical": {
+      "heading": {
+        "title": "Health Information:",
+        "subtitle": ""
+      },
+      "error_note": {
+        "title": "Important Notice Regarding Health Disclosure:",
+        "description": "Please provide accurate and clear medical information, as this data is used to assess your health and provide appropriate medical care and support during your stay or study.\n\nThis data is required for health and administrative purposes only and is not used for admission decisions or ranking.\n\nInaccuracies or withheld information may prevent proper care or handling of emergencies. Ensure all responses reflect your actual health status."
+      }
+    },
+    "housing": {
+      "heading": {
+        "title": "Housing Preferences:",
+        "subtitle": ""
+      },
+      "info_note": {
+        "title": "Important Notice Regarding Housing Selection:",
+        "description": "Your selection of “Housing Type” helps the administration determine the most suitable accommodation.\nIf you do not require meals from the dormitory, you can choose “Housing without Meals” to reduce costs.\nPlease ensure your selection reflects your actual needs before completing the application."
+      }
+    },
+    "contact": {
+      "heading": {
+        "title": "Contact Information:",
+        "subtitle": ""
+      }
+    },
+    "upload_files": {
+      "heading": {
+        "title": "Required Documents:",
+        "subtitle": "Click the 'View Documents' button to see previously uploaded documents. If no documents have been uploaded yet, nothing will appear. Use the fields below to add new documents or update existing ones."
+      },
+      "view_documents_heading": {
+        "title": "View Uploaded Documents",
+        "subtitle": "To open a document, click its name. If no documents have been uploaded, nothing will be displayed."
+      },
+      "info_note": {
+        "title": "Important Notice Regarding Document Uploads",
+        "description": "When uploading documents for the first time, please click 'View Documents' to ensure the files appear correctly.\n\nIf you wish to modify any document, you must re-upload it; previous files will be deleted and replaced with the new ones.\n\nAfter uploading, verify that the new documents are visible via the 'View Documents' button."
+      }
+    }
+  },
+  "heading": {
+    "title": "Fill in Application Data",
+    "subtitle": ""
+  },
+  "steps": {
+    "student": "Student Information",
+    "residence": "Residence Information",
+    "pre_uni": "Pre-University Education",
+    "academic": "Academic Data",
+    "relatives": "Guardian Information",
+    "medical": "Medical Data",
+    "housing": "Housing Information"
+  },
+  "buttons": {
+    "next": "Proceed to Next Step",
+    "previous": "Go Back One Step",
+    "save_changes": "Click Here to Save Changes",
+    "view_documents": "View Uploaded Documents",
+    "end": "Finish Application Submission",
+    "click_to_view": "Click Here to View Document",
+    "track_application": "Click here to check your application status and progress for each stage.",
+    "period_closed": "Cannot edit or complete registration. The registration period is currently closed."
+  },
+  "messages": {
+    "application_number": "Student number is (please save it, it may be requested later)",
+    "student_not_fount": "The student’s application was not found",
+    "application_status_change_note": "To change a specific status in your application, you must delete the current application and refill the data from the beginning. Please enter data carefully next time.",
+    "upload_required_files_note": "Please ensure all required files are uploaded to complete your application. Applications will not be considered until all files are submitted.",
+    "user_already_exists_note": "Another user already exists with these details. Please verify the entered information.",
+    "retrieved_successfully": "Your saved data has been successfully retrieved",
+    "saved_successfully": "Data has been successfully saved",
+    "no_documents_uploaded": "No documents have been uploaded yet.",
+    "update_data_not_available": "The registration period available for you to add or update your data has ended.\nNo changes can be made at this time.",
+    "wait_for_applications_period_start": "The application period has not started yet.\nPlease wait until registration opens."
+  },
+  "documents": {
+    "personal_image": "Student Profile Photo",
+    "national_id_front": "Student National ID (Front)",
+    "national_id_back": "Student National ID (Back)",
+    "passport_image": "Student Passport Photo",
+    "visa_or_residency_image": "Visa or Residence Permit Photo (Non-Egyptians)",
+    "pre_university_certificate": "Pre-University Certificates",
+    "nomination_card_image": "Nomination Card Photo from Coordination Office",
+    "enrollment_proof_image": "Official Enrollment Proof Photo",
+    "guardian_id_front": "Guardian ID Photo (Front)",
+    "guardian_id_back": "Guardian ID Photo (Back)",
+    "guardian_identity": "Proof of Guardian Relationship Document"
+  }
+}

@@ -1,0 +1,40 @@
+# ================================
+# Web Framework
+# ================================
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9          # Required for file uploads (multipart/form-data)
+websockets==12.0                 # WebSocket support for WS /ws/recognize endpoint
+
+# ================================
+# AI & Computer Vision
+# ================================
+insightface==0.7.3               # Face detection + ArcFace recognition (buffalo_l)
+onnxruntime==1.17.3              # ONNX model inference (CPU)
+opencv-python==4.9.0.80          # Frame processing, image utilities
+numpy==1.26.4                    # Embedding math and array operations
+
+# ================================
+# Database
+# ================================
+sqlalchemy==2.0.30               # ORM for PostgreSQL
+psycopg2-binary==2.9.9           # PostgreSQL driver
+
+# ================================
+# Cache & Queue
+# ================================
+redis==5.0.4                     # Redis client — shared cache + attendance event queue
+
+# ================================
+# Data Validation
+# ================================
+pydantic==2.7.1                  # Request/response schemas (built into FastAPI)
+pydantic-settings==2.2.1         # Settings management from .env
+
+# ================================
+# Utilities
+# ================================
+loguru==0.7.2                    # Structured logging with rotation
+python-dotenv==1.0.1             # Load .env file
+Pillow==10.3.0                   # Image loading and processing helpers
+scipy==1.13.0                    # Cosine similarity for face matching

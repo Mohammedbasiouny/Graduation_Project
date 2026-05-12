@@ -1,0 +1,17 @@
+{
+  "ERROR": "Error",
+  "USER_NOT_FOUND": "User not found",
+  "VALIDATION_ERROR": "dfdsfsfsdf",
+  "tooManyRequests": "Too many requests. Please try again later.",
+  "VALIDATION_FAILED": "Validation failed.",
+  "CONFLICT": "Resource already exists.",
+  "NOT_FOUND": "Resource not found.",
+  "USER_DELETED_SUCCESS": "User deleted successfully.",
+  "USER_BLOCK_TOGGLED_SUCCESS": "User block status updated successfully.",
+  "USERS_FETCHED_SUCCESS": "Users fetched successfully.",
+  "USER_FETCHED_SUCCESS": "User fetched successfully.",
+  "USER_INFO_UPDATED_SUCCESS": "User information updated successfully.",
+  "PERMISSIONS_FETCHED": "Permissions fetched successfully.",
+  "PERMISSIONS_GRANTED": "Permissions granted successfully.",
+  "NO_DATA_FOUND_FOR_EXPORT": "No data found for export."
+}

@@ -1,0 +1,214 @@
+{
+  "chronic_diseases": {
+    "heading": {
+      "title": "Chronic Diseases",
+      "subtitle": "Please indicate whether you suffer from any of the following medical conditions and provide details where applicable."
+    },
+    "questions": {
+      "blood_pressure": {
+        "label": "Do you suffer from blood pressure problems?",
+        "description": "Select “Yes“ if you have high or low blood pressure, then provide details in the field below."
+      },
+      "blood_pressure_details": {
+        "label": "Blood Pressure Details",
+        "placeholder": "Enter blood pressure details",
+        "description": "Please specify whether you have high or low blood pressure and describe any treatment or medical follow-up you are receiving."
+      },
+
+      "diabetes": {
+        "label": "Do you suffer from diabetes?",
+        "description": "Select “Yes“ if you have diabetes, then provide details about the condition."
+      },
+      "diabetes_details": {
+        "label": "Diabetes Details",
+        "placeholder": "Enter diabetes details",
+        "description": "Please specify the type of diabetes (Type 1 or Type 2) and indicate whether you regularly use insulin or any other medication."
+      },
+
+      "heart_disease": {
+        "label": "Do you suffer from heart disease?",
+        "description": "Select “Yes“ if you have any heart-related condition."
+      },
+      "heart_disease_details": {
+        "label": "Heart Disease Details",
+        "placeholder": "Enter heart condition details",
+        "description": "Please describe the type of heart condition if any (such as heart muscle weakness or arrhythmia) and the treatment you are currently using."
+      },
+
+      "immune_diseases": {
+        "label": "Do you suffer from immune system diseases?",
+        "description": "Select “Yes“ if you have any immune-related disease."
+      },
+      "immune_diseases_details": {
+        "label": "Immune Disease Details",
+        "placeholder": "Enter immune disease details",
+        "description": "Please mention the name of the immune disease (such as lupus, rheumatoid arthritis, or others) and describe the treatment or medical follow-up."
+      },
+
+      "mental_health": {
+        "label": "Do you suffer from psychological or mental health conditions?",
+        "description": "Select “Yes“ if you have any psychological or mental health condition."
+      },
+      "mental_health_details": {
+        "label": "Mental Health Details",
+        "placeholder": "Enter mental health details",
+        "description": "Please indicate whether you are receiving psychological treatment or regular follow-up, and describe the nature of the condition if you wish."
+      },
+
+      "other_diseases": {
+        "label": "Do you suffer from any other medical conditions?",
+        "description": "Select “Yes“ if you have any other health conditions not mentioned above."
+      },
+      "other_diseases_details": {
+        "label": "Other Health Conditions",
+        "placeholder": "Enter other health condition details",
+        "description": "Please add any other medical condition not listed above, along with its details or medications you are using."
+      }
+    }
+  },
+  "behavioral_social_aspects": {
+    "heading": {
+      "title": "Behavioral and Social Aspects",
+      "subtitle": "Please answer the following questions to help us better understand your social behavior and daily lifestyle."
+    },
+    "questions": {
+      "adapt_to_new_environments": {
+        "label": "Do you find it difficult to adapt to strangers or new environments?",
+        "description": "Select “Yes” if you usually feel uncomfortable or anxious when meeting new people or being in unfamiliar places."
+      },
+
+      "prefer_solitude": {
+        "label": "Do you prefer solitude and spending time alone?",
+        "description": "Select “Yes” if you generally prefer being alone rather than socializing with others."
+      },
+
+      "behavioral_problems": {
+        "label": "Have you ever been involved in fights or behavioral problems?",
+        "description": "Select “Yes” if you have had any history of aggressive behavior or disciplinary issues."
+      },
+
+      "suspension_history": {
+        "label": "Have you ever been suspended or warned at any stage of your education?",
+        "description": "Select “Yes” if you have received any formal warnings or suspensions during your academic life."
+      },
+
+      "shared_room_adaptation": {
+        "label": "Can you cope well in a shared room with other students?",
+        "description": "Select “Yes” if you are comfortable living and sharing personal space with others."
+      },
+
+      "social_support": {
+        "label": "Do you have close friends or a social support network?",
+        "description": "Select “Yes” if you have close friends or people you can rely on for emotional or social support."
+      },
+
+      "stimulants_or_sedatives": {
+        "label": "Do you rely on any type of stimulants or sedatives?",
+        "description": "Select “Yes” if you regularly use substances such as caffeine pills, energy drugs, sleeping pills, or similar medications."
+      },
+
+      "social_media_usage": {
+        "label": "Do you use social media for more than 5 hours a day?",
+        "description": "Select “Yes” if your daily usage of social media platforms exceeds five hours."
+      }
+    }
+  },
+  "mood_psychological_assessment": {
+    "heading": {
+      "title": "Mood and Psychological Assessment",
+      "subtitle": "Please select the option that best describes your condition for each question."
+    },
+    "options": {
+      "always": "Always",
+      "sometimes": "Sometimes",
+      "rarely": "Rarely",
+      "never": "Never"
+    },
+    "questions": {
+      "sadness_without_reason": {
+        "label": "Do you feel sad or depressed without a clear reason?",
+        "description": "Please choose the option that best describes how you have been feeling recently."
+      },
+      "anxiety_or_stress": {
+        "label": "Do you feel anxious or excessively stressed?",
+        "description": "Select how often you experience anxiety or stress in your daily life."
+      },
+      "concentration_difficulty": {
+        "label": "Do you have difficulty concentrating or making decisions?",
+        "description": "Indicate how much this affects your daily or academic performance."
+      },
+      "sleep_problems": {
+        "label": "Do you suffer from sleep problems (insomnia / nightmares / excessive sleep)?",
+        "description": "Choose the answer that best reflects your condition during the past weeks."
+      },
+      "loss_of_interest": {
+        "label": "Have you lost interest in activities you previously enjoyed?",
+        "description": "Please indicate how often you experience this feeling."
+      },
+      "self_harm_thoughts": {
+        "label": "Have you ever thought about harming yourself or others?",
+        "description": "This question is important for accurately assessing your mental health, and your answer will remain confidential."
+      },
+      "appetite_changes": {
+        "label": "Do you notice significant changes in your appetite (increase / decrease)?",
+        "description": "Select how often these changes occur."
+      },
+      "anger_outbursts": {
+        "label": "Do you experience anger outbursts or unexplained irritability?",
+        "description": "Indicate how frequently this happens recently."
+      }
+    }
+  },
+  "treatment": {
+    "heading": {
+      "title": "Medical Treatment",
+      "subtitle": "Please specify any medications or medical treatments taken regularly, along with the related health condition."
+    },
+    "questions": {
+      "receiving_treatment": {
+        "label": "Are you currently receiving medical treatment?",
+        "description": "Select “Yes“ if you are currently undergoing any regular medical treatment, then provide details about the type of treatment and the reason for taking it in the field below."
+      },
+      "receiving_treatment_details": {
+        "label": "Treatment Details",
+        "placeholder": "Enter treatment details",
+        "description": "Please specify the name of the treatment, the reason for taking it, and the dosage if possible. Also indicate whether the treatment is ongoing or temporary."
+      },
+      "allergies": {
+        "label": "Do you have any allergies to certain medications or foods?",
+        "description": "Select “Yes” if you have any kind of allergy to medications or foods, then provide the details in the following field."
+      },
+      "allergies_details": {
+        "label": "Allergy Details",
+        "placeholder": "Enter allergy details here",
+        "description": "Please mention the type of allergy, the name of the medication or food causing it, and the nature of the symptoms you experience when exposed."
+      },
+      "mental_health_treatment": {
+        "label": "Have you ever received mental health treatment?",
+        "description": "Select “Yes” if you have undergone any form of mental health treatment, counseling, or therapy, then provide the details in the following field."
+      },
+      "mental_health_treatment_details": {
+        "label": "Treatment Details",
+        "placeholder": "Enter details about your mental health treatment here",
+        "description": "Please mention the type of treatment, the reason for it, and any relevant details about your experience or duration."
+      }
+    }
+  },
+  "special_needs": {
+    "heading": {
+      "title": "Special Needs",
+      "subtitle": "Please indicate whether the student has special needs and provide details about the type of disability or required support, if applicable."
+    },
+    "questions": {
+      "special_needs": {
+        "label": "Do you have special needs?",
+        "description": "Select “Yes“ if you have special needs, then specify the type of condition in the field below."
+      },
+      "special_needs_details": {
+        "label": "Specify the type of disability or special condition",
+        "placeholder": "Enter the details here",
+        "description": "Please describe the type of disability or special condition in detail, including any required accommodations or support needed during accommodation or study."
+      }
+    }
+  }
+}

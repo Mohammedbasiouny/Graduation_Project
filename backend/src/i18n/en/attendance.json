@@ -1,0 +1,19 @@
+{
+    "face_recognition": {
+        "HYDRATED_SUCCESSFULLY": "Memory hydrated successfully",
+        "UNENROLLED_SUCCESSFULLY": "Student unenrolled successfully",
+        "RESET_SUCCESSFULLY": "System reset successfully",
+
+        "UNENROLL_FAILED": "Failed to unenroll student",
+        "HYDRATION_FAILED": "Failed to hydrate memory. Python service may be unavailable",
+        "RESET_FAILED": "Failed to reset system",
+        
+        "STUDENT_NOT_ENROLLED": "This student has no face embedding to unenroll"
+    },
+    "attendance_calendar": {
+        "RETRIEVED_SUCCESSFULLY": "Attendance calendar retrieved successfully",
+
+        "FETCH_FAILED": "Failed to retrieve attendance calendar",
+        "STUDENT_NOT_FOUND": "Student not found"
+    }
+}

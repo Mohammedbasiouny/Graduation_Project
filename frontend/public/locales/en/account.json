@@ -1,0 +1,125 @@
+{
+  "your_account_heading": {
+    "title": "Your Personal Account",
+    "student_subtitle": "View and manage your account as a student enrolled at {{uni}}",
+    "admin_subtitle": "View and manage your account as an administrator and configure account settings"
+  },
+  "admin_heading": {
+    "title": "Admin Dashboard",
+    "subtitle": "Manage all accounts and data"
+  },
+  "accounts_heading": {
+    "title": "Accounts Management",
+    "subtitle": "Monitor and manage all user accounts within the system, with the ability to view roles, permissions, and fully control account data."
+  },
+  "my_account_heading": {
+    "title": "Account Management",
+    "subtitle": "Edit your personal information and account details"
+  },
+  "table_accounts_heading": {
+    "title": "User Accounts",
+    "subtitle": "View all users with their roles and permissions"
+  },
+  "history_logs_heading": {
+    "title": "Activity Logs",
+    "subtitle": "View all actions and changes performed from the account"
+  },
+  "notes": {
+    "change_email": {
+      "title": "Important Notice Regarding Email Change:",
+      "description": "When changing the email address, a verification link will be sent to the new email. You must click the link to complete the change process. The link is valid for one hour only, and the new email cannot be used before it is verified. Please ensure the email is correct before submitting to avoid any issues accessing your account."
+    }
+  },
+  "cards": {
+    "add_user": {
+      "title": "Add User",
+      "description": "Create a new user and assign appropriate permissions",
+      "button": "Add User"
+    }
+  },
+  "columns": {
+    "id": "#ID",
+    "email": "Email",
+    "is_active": "Is Active?",
+    "role": "Role",
+    "permissions_count": "Permissions Count",
+    "blocked": "Is Expired",
+    "created_at": "Created At",
+    "actions": "Actions"
+  },
+  "overview": {
+    "roles_count": {
+      "title": "Total Roles",
+      "subtitle": "Number of users per role"
+    }
+  },
+  "is_active": {
+    "true": "Active",
+    "false": "Inactive"
+  },
+  "blocked": {
+    "true": "Expired",
+    "false": "Enabled"
+  },
+  "change_email_heading": {
+    "title": "Change Email",
+    "subtitle": "Update the email address associated with your account to ensure you receive notifications and important information."
+  },
+  "view_permissions_heading": {
+    "title": "User Permissions",
+    "subtitle": "If the permission is highlighted in green, it means it is granted to you. If it is highlighted in red, it means you do not have access to it."
+  },
+  "change_password_heading": {
+    "title": "Change Password",
+    "subtitle": "Keep your account secure by updating your password regularly"
+  },
+  "account_heading": {
+    "title": "Account Details",
+    "subtitle": "A comprehensive view of account data, including personal information, role, and associated permissions, with the ability to manage and update the information."
+  },
+  "modals": {
+    "delete": {
+      "title": "Delete Account",
+      "description": "Are you sure you want to delete this account? This action cannot be undone and all associated data will be permanently removed."
+    },
+    "block": {
+      "title": "Block Account",
+      "description": "The account will be blocked on {{blockDate}} at {{blockTime}}."
+    },
+    "unblock": {
+      "title": "Unblock Account",
+      "description": "Are you sure you want to unblock this account? The user will regain access immediately."
+    },
+    "verified_email": {
+      "title": "Activate Email",
+      "description": "Please click the link sent to your new email to activate your account. If you did not receive the email, please check your spam folder or request a new link.",
+      "success": "Email activated successfully. You can now log in using your new email.",
+      "expired": "The link is invalid or has already been used. Please request a new link to activate your email.",
+      "invalid": "The link is invalid or has already been used. Please request a new link to activate your email.",
+      "user_not_found": "User not found.",
+      "email_taken": "This email is already used by another account. Please choose a different email."
+    }
+  },
+  "buttons": {
+    "change_email": "Update Email",
+    "change_password": "Change Password",
+    "change_user_info": "Change User Information",
+    "add_account": "Add Account",
+    "block_account": "Block Account",
+    "delete_account": "Delete Account",
+    "grant_permissions": "Grant Permissions"
+  },
+  "messages": {
+    "email_change_success": "Email updated successfully. Please check your new email to complete the change process.",
+    "email_change_verification_sent": "A verification link has been sent to your new email. Please check your inbox to complete the change process.",
+    "email_not_found": "The email was not found in the system. Please check your input.",
+    "password_change_success": "Password changed successfully. You can now log in using your new password.",
+    "user_info_change_success": "User information updated successfully.",
+    "account_add_success": "The new account has been added successfully.",
+    "account_block_success": "The account has been blocked successfully.",
+    "account_unblock_success": "The account has been unblocked successfully.",
+    "account_delete_success": "The account has been deleted successfully.",
+    "permissions_grant_success": "Permissions granted successfully."
+  },
+  "permissions_count": "This user has {{count}} permission(s) out of {{total}}."
+}

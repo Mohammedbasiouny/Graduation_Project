@@ -1,0 +1,74 @@
+{
+    "governorates": {
+        "CREATED_SUCCESSFULLY": "تم إنشاء المحافظة بنجاح",
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع المحافظة/المحافظات بنجاح",
+        "UPDATED_SUCCESSFULLY": "تم تحديث المحافظة بنجاح",
+        "DELETED_SUCCESSFULLY": "تم حذف المحافظة بنجاح",
+
+        "ALREADY_EXISTS": "محافظة بهذا الاسم موجودة بالفعل",
+        "NOT_FOUND": "المحافظة غير موجودة",
+
+        "CREATE_FAILED": "فشل إنشاء المحافظة",
+        "FETCH_FAILED": "فشل استرجاع المحافظة/المحافظات",
+        "UPDATE_FAILED": "فشل تحديث المحافظة",
+        "DELETE_FAILED": "فشل حذف المحافظة",
+        
+        "HAS_LINKED_CITIES": "لا يمكن حذف المحافظة لأنها تحتوي على مدن مرتبطة بها",
+        "HAS_LINKED_POLICE_DEPARTMENTS": "لا يمكن حذف المحافظة لأنها تحتوي على أقسام شرطة مرتبطة بها",
+        "HAS_LINKED_EDUCATIONAL_DEPARTMENTS": "لا يمكن حذف المحافظة لأنها تحتوي على إدارات تعليمية مرتبطة بها",
+        "HAS_LINKED_STUDENTS": "لا يمكن حذف المحافظة لأنها تحتوي على طلاب مرتبطين بها"
+    },
+    "police-departments": {
+        "CREATED_SUCCESSFULLY": "تم إنشاء قسم الشرطة بنجاح",
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع قسم/أقسام الشرطة بنجاح",
+        "UPDATED_SUCCESSFULLY": "تم تحديث قسم الشرطة بنجاح",
+        "DELETED_SUCCESSFULLY": "تم حذف قسم الشرطة بنجاح",
+
+        "ALREADY_EXISTS": "قسم شرطة بهذا الاسم موجود بالفعل",
+        "NOT_FOUND": "قسم الشرطة غير موجود",
+        "GOVERNORATE_NOT_FOUND": "المحافظة غير موجودة",
+
+        "CREATE_FAILED": "فشل إنشاء قسم الشرطة",
+        "FETCH_FAILED": "فشل استرجاع قسم/أقسام الشرطة",
+        "UPDATE_FAILED": "فشل تحديث قسم الشرطة",
+        "DELETE_FAILED": "فشل حذف قسم الشرطة",
+        
+        "HAS_LINKED_CITIES": "لا يمكن حذف قسم الشرطة لأنه يحتوي على مدن مرتبطة به",
+        "HAS_LINKED_STUDENTS": "لا يمكن حذف قسم الشرطة لأنه يحتوي على طلاب مرتبطين به"
+    },
+    "city": {
+        "CREATED_SUCCESSFULLY": "تم إنشاء المدينة/القرية بنجاح",
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع المدينة/المدن بنجاح",
+        "UPDATED_SUCCESSFULLY": "تم تحديث المدينة/القرية بنجاح",
+        "DELETED_SUCCESSFULLY": "تم حذف المدينة/القرية بنجاح",
+
+        "ALREADY_EXISTS": "مدينة أو قرية بهذا الاسم موجودة بالفعل",
+        "NOT_FOUND": "المدينة/القرية غير موجودة",
+        "GOVERNORATE_NOT_FOUND": "المحافظة غير موجودة",
+        "POLICE_DEPARTMENT_NOT_FOUND": "قسم الشرطة غير موجود",
+
+        "CREATE_FAILED": "فشل إنشاء المدينة/القرية",
+        "FETCH_FAILED": "فشل استرجاع المدينة/المدن",
+        "UPDATE_FAILED": "فشل تحديث المدينة/القرية",
+        "DELETE_FAILED": "فشل حذف المدينة/القرية",
+
+        "HAS_LINKED_STUDENTS": "لا يمكن حذف المدينة/القرية لأنها تحتوي على طلاب مرتبطين بها"
+    },
+    "educational-departments": {
+        "CREATED_SUCCESSFULLY": "تم إنشاء الإدارة التعليمية بنجاح",
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع الإدارة/الإدارات التعليمية بنجاح",
+        "UPDATED_SUCCESSFULLY": "تم تحديث الإدارة التعليمية بنجاح",
+        "DELETED_SUCCESSFULLY": "تم حذف الإدارة التعليمية بنجاح",
+
+        "ALREADY_EXISTS": "إدارة تعليمية بهذا الاسم موجودة بالفعل",
+        "NOT_FOUND": "الإدارة التعليمية غير موجودة",
+        "GOVERNORATE_NOT_FOUND": "المحافظة غير موجودة",
+
+        "CREATE_FAILED": "فشل إنشاء الإدارة التعليمية",
+        "FETCH_FAILED": "فشل استرجاع الإدارة/الإدارات التعليمية",
+        "UPDATE_FAILED": "فشل تحديث الإدارة التعليمية",
+        "DELETE_FAILED": "فشل حذف الإدارة التعليمية",
+
+        "HAS_LINKED_STUDENTS": "لا يمكن حذف الإدارة التعليمية لأنها تحتوي على طلاب مرتبطين بها"
+    }
+}

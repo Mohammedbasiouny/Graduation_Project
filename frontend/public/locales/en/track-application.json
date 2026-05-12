@@ -1,0 +1,123 @@
+{
+  "heading": {
+    "title": "Student Information & Status",
+    "subtitle": "You can review all your data, uploaded documents, and the status of each student section here"
+  },
+  "empty_message": "No data is currently available.",
+  "delete_application": "Cancel application and delete data",
+  "summrize": {
+    "id": "Student ID",
+    "is_egyptian_national": "Nationality",
+    "is_resident_inside_egypt": "Residence inside Egypt",
+    "is_new_student": "Student Status",
+    "created_at": "Application Date"
+  },
+  "personal": {
+    "heading": {
+      "title": "Personal Information",
+      "subtitle": "This section contains the personal data submitted by the student"
+    }
+  },
+  "residence": {
+    "heading": {
+      "title": "Residence Information",
+      "subtitle": "This section includes information about the current residence and details provided by the student"
+    }
+  },
+  "pre_uni_edu": {
+    "heading": {
+      "title": "Pre-University Education",
+      "subtitle": "This section includes details of previous academic certificates and pre-university education data"
+    }
+  },
+  "acadmic": {
+    "heading": {
+      "title": "Academic Information",
+      "subtitle": "This section contains details of the college or study program and the applied major"
+    }
+  },
+  "guardian": {
+    "heading": {
+      "title": "Guardian Information",
+      "subtitle": "This section includes information about the student’s guardian or responsible person, if provided"
+    }
+  },
+  "parents_status": {
+    "heading": {
+      "title": "Parents' Status",
+      "subtitle": "This section contains information about the social status of the parents and related data"
+    }
+  },
+  "medical": {
+    "heading": {
+      "title": "Medical Information",
+      "subtitle": "This section contains the health information disclosed by the student, if any"
+    },
+    "fields": {
+      "blood_pressure": "Blood Pressure Issues",
+      "diabetes": "Diabetes",
+      "heart_disease": "Heart Diseases",
+      "immune_diseases": "Immune System Diseases",
+      "mental_health": "Psychological Issues",
+      "other_diseases": "Other Diseases",
+      "adapt_to_new_environments": "Adapts to New Environments",
+      "prefer_solitude": "Prefers Solitude",
+      "behavioral_problems": "Behavioral Problems",
+      "suspension_history": "Academic Suspension History",
+      "shared_room_adaptation": "Shared Room Adaptation",
+      "social_support": "Needs Social Support",
+      "stimulants_or_sedatives": "Uses Stimulants or Sedatives",
+      "social_media_usage": "Social Media Usage",
+      "receiving_treatment": "Receiving Treatment",
+      "allergies": "Allergies",
+      "mental_health_treatment": "Psychological Treatment",
+      "special_needs": "Special Needs",
+      "sadness_without_reason": "Unexplained Sadness",
+      "anxiety_or_stress": "Anxiety or Stress",
+      "concentration_difficulty": "Difficulty Concentrating",
+      "sleep_problems": "Sleep Problems",
+      "loss_of_interest": "Loss of Interest",
+      "self_harm_thoughts": "Thoughts of Self-Harm",
+      "appetite_changes": "Appetite Changes",
+      "anger_outbursts": "Anger Outbursts"
+    },
+    "options": {
+      "always": "Always",
+      "sometimes": "Sometimes",
+      "rarely": "Rarely",
+      "never": "Never"
+    }
+  },
+  "housing": {
+    "heading": {
+      "title": "Housing Information",
+      "subtitle": "The information you provided and your housing preferences"
+    }
+  },
+  "documents": {
+    "file": "File",
+    "files": "Files",
+    "heading": {
+      "title": "Uploaded Documents Overview",
+      "subtitle": "Preview the documents the student has uploaded so far"
+    }
+  },
+  "modals": {
+    "delete": {
+      "title": "Confirm Application Cancellation",
+      "description": "Are you sure you want to cancel the application and delete all associated data? This action cannot be undone after confirmation."
+    }
+  },
+  "completed_steps": {
+    "title": "Completed Steps",
+    "completed": "Completed",
+    "personal": "Personal Information",
+    "residence": "Residence Information",
+    "pre_uuni_edu": "Pre-University Education",
+    "academic": "Academic Information",
+    "guardian": "Guardian Information",
+    "parents_status": "Parents' Status",
+    "medical": "Medical Information",
+    "housing": "University Housing Information"
+  }
+}

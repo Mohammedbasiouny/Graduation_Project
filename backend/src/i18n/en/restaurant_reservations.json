@@ -1,0 +1,18 @@
+{
+    "RETRIEVED_SUCCESSFULLY": "Today's meals retrieved successfully",
+    "RESERVED_SUCCESSFULLY": "Meal reserved successfully",
+
+    "FETCH_FAILED": "Failed to retrieve today's meals",
+    "RESERVE_FAILED": "Failed to create meal reservation",
+
+    "RESTAURANT_CLOSED": "Cannot create reservation. The restaurant is currently closed",
+    "NO_MEAL_TODAY": "No meal scheduled for today",
+    "BOOKING_NOT_STARTED": "Booking period has not started yet",
+    "BOOKING_WINDOW_CLOSED": "Booking period has ended",
+    "ALREADY_RESERVED": "You already have a reservation for this meal",
+    "MEAL_INACTIVE": "This meal is no longer available",
+    "DELIVERY_ALREADY_ENDED": "The delivery window for this meal has already ended",
+
+    "FACULTY_NOT_LINKED": "Your faculty information is not complete. Please contact administration",
+    "RESERVATION_TRANSACTION_FAILED": "Failed to complete reservation. Please try again"
+}

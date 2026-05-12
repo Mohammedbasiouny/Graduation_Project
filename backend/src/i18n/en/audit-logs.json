@@ -1,0 +1,269 @@
+{
+  "LOGS_FETCHED_SUCCESSFULLY": "Audit logs fetched successfully",
+  "MESSAGE": {
+    "SUCCESS_TEMPLATE": "{action} {resource}",
+    "FAILED_TEMPLATE": "Attempted to {action} {resource} but failed",
+    "FAILED_WITH_REASON_TEMPLATE": "Attempted to {action} {resource} but failed because {reason}"
+  },
+  "ACTION": {
+    "SUCCESS": {
+      "created": "Created",
+      "fetched": "Fetched",
+      "fetched_many": "Listed",
+      "updated": "Updated",
+      "deleted": "Deleted",
+      "processed": "Processed",
+      "logged_in": "Logged in",
+      "uploaded": "Uploaded",
+      "downloaded": "Downloaded",
+      "imported": "Imported",
+      "exported": "Exported"
+    },
+    "FAILED": {
+      "create": "create",
+      "fetch": "fetch",
+      "update": "update",
+      "delete": "delete",
+      "process": "process",
+      "log_in": "log in",
+      "upload": "upload",
+      "download": "download",
+      "import": "import",
+      "export": "export"
+    }
+  },
+  "RESOURCES": {
+    "user": {
+      "one": "user",
+      "many": "users"
+    },
+    "order": {
+      "one": "order",
+      "many": "orders"
+    },
+    "category": {
+      "one": "category",
+      "many": "categories"
+    },
+    "table": {
+      "one": "table",
+      "many": "tables"
+    },
+    "record": {
+      "one": "record",
+      "many": "records"
+    },
+    "student": {
+      "one": "student",
+      "many": "students"
+    },
+    "building": {
+      "one": "building",
+      "many": "buildings"
+    },
+    "faculty": {
+      "one": "faculty",
+      "many": "faculties"
+    },
+    "department": {
+      "one": "department",
+      "many": "departments"
+    },
+    "application_date": {
+      "one": "application date",
+      "many": "application dates"
+    },
+    "dormitory": {
+      "one": "dormitory",
+      "many": "dormitories"
+    },
+    "room": {
+      "one": "room",
+      "many": "rooms"
+    },
+    "meal": {
+      "one": "meal",
+      "many": "meals"
+    },
+    "setting": {
+      "one": "setting",
+      "many": "settings"
+    },
+    "location": {
+      "one": "location",
+      "many": "locations"
+    }
+  },
+  "ERRORS": {
+    "Validation failed": "Validation failed",
+    "validation failed": "Validation failed",
+    "email must not be null": "Email is required",
+    "email must not be empty": "Email is required",
+    "name must not be empty": "Name is required",
+    "name must not be null": "Name is required",
+    "password must not be empty": "Password is required",
+    "password must be longer than or equal to 6 characters": "Password must be at least 6 characters long",
+    "phone must be a valid phone number": "Invalid phone number",
+    "invalid email format": "Invalid email format",
+    "already exists": "Already exists",
+    "not found": "Not found",
+    "unauthorized": "Unauthorized",
+    "forbidden": "Forbidden",
+    "bad request": "Bad request",
+    "internal server error": "Internal server error",
+    "user not found": "User not found",
+    "email already in use": "Email already in use",
+    "invalid credentials": "Invalid credentials",
+    "access denied": "Access denied",
+    "resource not found": "Resource not found",
+    "duplicate entry": "Duplicate entry",
+    "operation failed": "Operation failed"
+  },
+  "student": {
+    "INVALID_GOV_CODE": "Invalid governorate code in national ID",
+    "NATIONAL_ID_EXISTS": "This national ID is already registered",
+    "FILE_UPLOAD_ERROR": "Error occurred while uploading files",
+    "STUDENT_CREATION_FAILED": "Failed to create student data",
+    "ALL_FILES_REQUIRED_PERSONAL_EG": "All files required: personal photo, front ID card, back ID card",
+    "ALL_FILES_REQUIRED_PERSONAL_NON_EG": "All files required: personal photo, passport",
+    "NOT_EGYPTIAN": "This user is not registered as Egyptian",
+    "NOT_INSIDE_EGYPT": "Residence information can only be provided from within Egypt",
+    "COUNTRY_MUST_EGYPT": "Country must be Egypt",
+    "INVALID_LOCATION_DATA": "Invalid selection for governorate, district or city",
+    "RESIDENCE_INFO_ERROR": "Error saving residence information. Please try again later.",
+    "NOT_OUTSIDE_EGYPT": "This service is only for students residing outside Egypt",
+    "COUNTRY_MUST_NOT_BE_EGYPT": "Country must not be Egypt",
+    "VISA_FILE_REQUIRED": "Visa or residence permit image is required",
+    "VISA_FILE_SAVE_FAILED": "Failed to save visa or residence permit image",
+    "UPDATE_TARGET_NOT_FOUND": "No student found to update",
+    "NEW_STUDENT_ONLY": "Service available only for new students",
+    "NOMINATION_CARD_REQUIRED": "Nomination card image is required",
+    "NOMINATION_FILE_SAVE_FAILED": "Failed to save nomination card image",
+    "ACADEMIC_INFO_ERROR": "Error saving academic information. Please try again later.",
+    "OLD_STUDENT_ONLY": "Service available only for continuing students",
+    "ENROLLMENT_PROOF_REQUIRED": "Enrollment proof image is required",
+    "ENROLLMENT_PROOF_SAVE_FAILED": "Failed to save enrollment proof image",
+    "TOTAL_SCORE_REQUIRED": "Total score must be entered",
+    "CERTIFICATE_FILE_REQUIRED": "High school certificate image is required",
+    "INVALID_CERTIFICATE_TYPE_OR_DEGREE": "Invalid certificate type or degree not available",
+    "INVALID_PERCENTAGE_CALCULATION": "Unable to calculate percentage. Please check your total score",
+    "PRE_UNI_INFO_ERROR": "Error saving pre-university information. Please try again later.",
+    "CERTIFICATE_FILE_SAVE_FAILED": "Failed to save high school certificate image",
+    "HOUSE_TYPE_INFO_ERROR": "Error saving accommodation type. Please try again later.",
+    "PARENT_GUARDIAN_INFO_ERROR": "Error saving parent/guardian information. Please try again later.",
+    "INVALID_KINSHIP_TYPE": "Invalid kinship type. Must be 'father' or 'guardian'.",
+    "GUARDIAN_RELATIONSHIP_REQUIRED": "Guardian relationship must be specified",
+    "FATHER_KINSHIP_NOT_ALLOWED": "Cannot enter relationship for father",
+    "FATHER_INFO_ERROR": "Error saving father information",
+    "GUARDIAN_INFO_ERROR": "Error saving guardian information",
+    "PERSONAL_INFO_NOT_COMPLETED": "Personal information must be completed first",
+    "RESIDENCY_INFO_NOT_COMPLETED": "Residence information must be completed first",
+    "PRE_UNI_INFO_NOT_COMPLETED": "Pre-university information must be completed first",
+    "FILE_UPLOAD_FAILED": "File upload failed",
+    "REGISTRATION_PERIOD_NOT_ACTIVE": "Registration period is not active",
+    "NATIONAL_ID_ALREADY_EXISTS": "This national ID is already registered",
+    "STUDENT_IS_NOT_EGYPTIAN": "Student is not registered as Egyptian",
+    "MOBILE_NUMBER_ALREADY_EXISTS": "Phone number is already registered",
+    "PERSONAL_IMAGE_REQUIRED": "Personal image is required",
+    "NATIONAL_ID_FRONT_IMAGE_REQUIRED": "Front ID card image is required",
+    "NATIONAL_ID_BACK_IMAGE_REQUIRED": "Back ID card image is required",
+    "PERSONAL_INFO_ERROR": "Error saving personal information. Please try again later.",
+    "PASSPORT_IMAGE_REQUIRED": "Passport image is required",
+    "INVALID_GOVERNORATE_DATA": "Invalid governorate data",
+    "INVALID_POLICE_DEPARTMENT_DATA": "Invalid police department data",
+    "INVALID_CITY_OR_VILLAGE_DATA": "Invalid city or village data",
+    "STUDENT_NOT_MARKED_AS_INSIDE_EGYPT": "Student not marked as residing in Egypt",
+    "STUDENT_MARKED_AS_INSIDE_EGYPT": "Student marked as residing in Egypt",
+    "STUDENT_MARKED_AS_OLD": "Student marked as continuing student",
+    "COLLEGE_NOT_FOUND": "Selected college not found",
+    "DEPARTMENT_NOT_FOUND": "Selected department or program not found",
+    "STUDENT_MARKED_AS_NEW": "Student marked as new student",
+    "STUDENT_MARKED_AS_OUTSIDE_EGYPT": "Student marked as residing outside Egypt",
+    "FATHER_ALREADY_MARKED_NON_EGYPTIAN": "Father already marked as non-Egyptian",
+    "GUARDIAN_ALREADY_MARKED_NON_EGYPTIAN": "Guardian already marked as non-Egyptian",
+    "FATHER_ID_IMAGES_REQUIRED": "Father ID front and back images required",
+    "GUARDIAN_ID_IMAGES_REQUIRED": "Guardian ID front and back images required",
+    "FATHER_ALREADY_MARKED_EGYPTIAN": "Father already marked as Egyptian",
+    "GUARDIAN_ALREADY_MARKED_EGYPTIAN": "Guardian already marked as Egyptian",
+    "FATHER_IDENTITY_REQUIRED": "Father identity image is required",
+    "GUARDIAN_IDENTITY_REQUIRED": "Guardian identity image is required",
+    "REGISTRATION_CLOSED": "Registration is currently closed. Please return during the next registration period.",
+    "INVALID_PERCENTAGE": "Percentage value must be between 0 and 100."
+  },
+  "academic": {
+    "faculties": {
+      "ALREADY_EXISTS": "Faculty with this name already exists",
+      "NOT_FOUND": "Faculty not found",
+      "HAS_LINKED_RECORDS": "Cannot delete faculty as it has linked programs"
+    },
+    "departments": {
+      "ALREADY_EXISTS": "Department with this name already exists in this faculty",
+      "NOT_FOUND": "Department not found",
+      "FACULTY_NOT_FOUND": "Selected faculty not found",
+      "HAS_LINKED_RECORDS": "Cannot delete department as it has linked student records"
+    }
+  },
+  "dormitory": {
+    "buildings": {
+      "ALREADY_EXISTS": "Building with this name already exists",
+      "NOT_FOUND": "Building not found",
+      "HAS_LINKED_RECORDS": "Cannot delete building as it is linked to rooms"
+    },
+    "rooms": {
+      "ALREADY_EXISTS": "Room with this name already exists in this building",
+      "NOT_FOUND": "Room not found",
+      "FLOOR_EXCEEDS_BUILDING_FLOORS": "Floor number exceeds building floors",
+      "HAS_LINKED_RECORDS": "Cannot delete room as it is linked to records"
+    }
+  },
+  "restaurant": {
+    "meals": {
+      "NAME_ALREADY_EXISTS": "Meal with this name already exists",
+      "NOT_FOUND": "Meal not found",
+      "HAS_LINKED_SCHEDULES": "Cannot deactivate meal as it is linked to meal schedules",
+      "DEACTIVATE_LINKED_SCHEDULES": "Cannot deactivate meal while it is part of active meal schedule",
+      "INVALID_CATEGORY": "Category must be breakfast, lunch, dinner or suhoor"
+    },
+    "meal_day_schedules": {
+      "NOT_FOUND": "Meal day schedule not found",
+      "DUPLICATE_DATE": "Meal schedule for this date already exists",
+      "BOOKING_START_BEFORE_END": "Booking start time must be before end time",
+      "BOOKING_WINDOW_TOO_SHORT": "Booking window must be at least one hour",
+      "SCHEDULE_MUST_BE_FUTURE": "Booking times must be in the future",
+      "SCHEDULE_LOCKED": "Cannot modify schedule as delivery has already started"
+    },
+    "meal_slots": {
+      "NOT_FOUND": "Meal slot not found",
+      "MEAL_NOT_FOUND": "Selected meal not found",
+      "MEAL_INACTIVE": "Cannot create slot for inactive meal",
+      "DELIVERY_START_BEFORE_END": "Delivery start time must be before end time",
+      "BOOKING_MUST_PRECEDE_DELIVERY": "Booking window must completely precede delivery window",
+      "KITCHEN_PREP_TIME_INSUFFICIENT": "Must have at least 2 hours between booking end and delivery start",
+      "DUPLICATE_CATEGORY_SAME_DAY": "Slot for this meal category already exists in this day schedule",
+      "SLOT_LOCKED": "Cannot modify slot as delivery has already started"
+    }
+  },
+  "application_dates": {
+    "NOT_FOUND": "Application date not found",
+    "UPDATE_TARGET_NOT_FOUND": "Application date not found for update",
+    "DELETE_TARGET_NOT_FOUND": "Application date not found for deletion",
+    "STATUS_SET_FAILED": "Failed to update application period status",
+    "TABLE_TRUNCATE_FAILED": "Failed to clear application dates table",
+    "STATISTICS_FETCH_FAILED": "Failed to fetch application dates statistics",
+    "PRELIMINARY_RESULT_TOGGLE_FAILED": "Failed to toggle preliminary result status"
+  },
+  "medical": {
+    "NOT_FOUND": "Medical report not found",
+    "CREATE_FAILED": "Failed to create medical report",
+    "FETCH_FAILED": "Failed to fetch medical report",
+    "REVIEW_FAILED": "Failed to update medical review"
+  },
+  "common": {
+    "USER_NOT_FOUND": "This user not found",
+    "VALIDATION_FAILED": "Validation failed.",
+    "tooManyRequests": "Too many requests. Please try again later.",
+    "CONFLICT": "Resource already exists.",
+    "NOT_FOUND": "Resource not found.",
+    "NO_DATA_FOUND_FOR_EXPORT": "No data found for export."
+  }
+}

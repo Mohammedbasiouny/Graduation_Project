@@ -1,0 +1,19 @@
+{
+    "RETRIEVED_SUCCESSFULLY": "تم استرجاع وجبات اليوم بنجاح",
+    "RESERVED_SUCCESSFULLY": "تم حجز الوجبة بنجاح",
+
+    "FETCH_FAILED": "فشل استرجاع وجبات اليوم",
+    "RESERVE_FAILED": "فشل إنشاء حجز الوجبة",
+
+    "RESTAURANT_CLOSED": "لا يمكن إنشاء الحجز. المطعم مغلق حالياً",
+    "NO_MEAL_TODAY": "لا توجد وجبة مجدولة لهذا اليوم",
+    "BOOKING_NOT_STARTED": "لم تبدأ فترة الحجز بعد",
+    "BOOKING_WINDOW_CLOSED": "انتهت فترة الحجز",
+
+    "ALREADY_RESERVED": "لديك حجز بالفعل لهذه الوجبة",
+    "MEAL_INACTIVE": "هذه الوجبة لم تعد متاحة",
+    "DELIVERY_ALREADY_ENDED": "انتهت نافذة توزيع هذه الوجبة بالفعل",
+
+    "FACULTY_NOT_LINKED": "معلومات كليتك غير مكتملة. يرجى التواصل مع الإدارة",
+    "RESERVATION_TRANSACTION_FAILED": "فشل إتمام الحجز. يرجى المحاولة مرة أخرى"
+}

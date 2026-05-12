@@ -1,0 +1,60 @@
+{
+  "main_heading": {
+    "title": "College Departments",
+    "subtitle": "View and manage college departments"
+  },
+  "main_heading_with_college": {
+    "title": "{{collegeName}} - {{university}}",
+    "subtitle": "Departments count: {{departmentsCount}}"
+  },
+  "table_heading": {
+    "title": "Department Management",
+    "subtitle": "Use the table and filters below to view, edit, and manage the departments available to students"
+  },
+  "departments_overview": {
+    "visible": {
+      "label": "Available Departments",
+      "subtext": "Departments currently available for students"
+    },
+    "not_visible": {
+      "label": "Unavailable Departments",
+      "subtext": "Departments currently not available for selection"
+    },
+    "total": {
+      "label": "Total Departments",
+      "subtext": "Total number of departments available"
+    }
+  },
+  "cards": {
+    "add_department": {
+      "title": "Add New Department",
+      "description": "Create a new department and define its information to make it available within the college.",
+      "button": "Add Department"
+    }
+  },
+  "modals": {
+    "delete": {
+      "title": "Delete Department",
+      "description": "Are you sure you want to delete this department? This action cannot be undone."
+    },
+    "add": {
+      "title": "Add New Department",
+      "description": "Create a new department and specify its details so it can be associated with a college."
+    },
+    "view": {
+      "title": "View Department Details",
+      "description": "Here you can view all the details of the department."
+    },
+    "edit": {
+      "title": "Edit Department",
+      "description": "Modify the department information."
+    }
+  },
+  "columns": {
+    "id": "#ID",
+    "department_name": "Department Name",
+    "college_name": "College Name",
+    "university": "University",
+    "is_visible": "Visible"
+  }
+}

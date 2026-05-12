@@ -1,0 +1,17 @@
+{
+  "errors": {
+    "STUDENT_NOT_FOUND": "الطالب غير موجود.",
+    "NO_ACCEPTED_APP": "لم يتم العثور على طلب مقبول لهذا الطالب.",
+    "BUILDING_NOT_FOUND": "المبنى غير موجود.",
+    "ROOM_NOT_FOUND": "الغرفة المحددة غير موجودة.",
+    "GENDER_MISMATCH": "عدم تطابق النوع: لا يمكن تسكين طالب ({studentGender}) في مبنى مخصص لـ ({buildingType}).",
+    "ROOM_BUILDING_MISMATCH": "الغرفة المحددة لا تنتمي إلى المبنى المختار.",
+    "ROOM_FULL": "الغرفة المحددة ممتلئة بالكامل.",
+    "ALLOCATION_NOT_FOUND": "تخصيص الغرفة غير موجود."
+  },
+  "success": {
+    "ASSIGNED": "تم تخصيص الغرفة بنجاح",
+    "UPDATED": "تم تحديث تخصيص الغرفة بنجاح",
+    "DELETED": "تم إزالة تخصيص الغرفة بنجاح."
+  }
+}

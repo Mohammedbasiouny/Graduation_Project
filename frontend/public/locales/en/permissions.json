@@ -1,0 +1,124 @@
+{
+  "parent": "Unit / Entity",
+  "childrens": "Granted Permissions",
+  "permissions": {
+    "users": {
+      "label": "Users",
+      "children": {
+        "view-users": "View All Users",
+        "view-user": "View User",
+        "add-user": "Add User",
+        "edit-user": "Edit User",
+        "delete-user": "Delete User",
+        "block-user": "Block User",
+        "grant-permissions": "Grant Permissions"
+      }
+    },
+    "governorate": {
+      "label": "Governorate Management",
+      "children": {
+        "add-governorate": "Add Governorate",
+        "view-governorates": "View All Governorates",
+        "view-governorate": "View Governorate Details",
+        "update-governorate": "Edit Governorate",
+        "delete-governorate": "Delete Governorate"
+      }
+    },
+    "Edu-department": {
+      "label": "Educational Department Management",
+      "children": {
+        "add-Edu-department": "Add Educational Department",
+        "view-Edu-departments": "View All Educational Departments",
+        "view-Edu-department": "View Educational Department Details",
+        "update-Edu-department": "Edit Educational Department",
+        "delete-Edu-department": "Delete Educational Department"
+      }
+    },
+    "police-station": {
+      "label": "Police Station Management",
+      "children": {
+        "add-police-station": "Add Police Station",
+        "view-police-stations": "View All Police Stations",
+        "view-police-station": "View Police Station Details",
+        "update-police-station": "Edit Police Station",
+        "delete-police-station": "Delete Police Station"
+      }
+    },
+    "city": {
+      "label": "City Management",
+      "children": {
+        "add-city": "Add City",
+        "view-cities": "View All Cities",
+        "view-city": "View City Details",
+        "update-city": "Edit City",
+        "delete-city": "Delete City"
+      }
+    },
+    "college": {
+      "label": "College Management",
+      "children": {
+        "add-college": "Add College",
+        "view-colleges": "View All Colleges",
+        "view-college": "View College Details",
+        "update-college": "Edit College",
+        "delete-college": "Delete College"
+      }
+    },
+    "department": {
+      "label": "Department Management",
+      "children": {
+        "add-department": "Add Department",
+        "view-departments": "View All Departments",
+        "view-department": "View Department Details",
+        "update-department": "Edit Department",
+        "delete-department": "Delete Department"
+      }
+    },
+    "application-date": {
+      "label": "Application Dates Management",
+      "children": {
+        "add-application-date": "Add Application Date",
+        "view-application-dates": "View All Application Dates",
+        "view-application-date": "View Application Date Details",
+        "update-application-date": "Edit Application Date",
+        "delete-application-date": "Delete Application Date"
+      }
+    },
+    "building": {
+      "label": "Building Management",
+      "children": {
+        "add-building": "Add Building",
+        "view-buildings": "View All Buildings",
+        "view-building": "View Building Details",
+        "update-building": "Edit Building",
+        "delete-building": "Delete Building"
+      }
+    },
+    "room": {
+      "label": "Room Management",
+      "children": {
+        "add-room": "Add Room",
+        "view-rooms": "View All Rooms",
+        "view-room": "View Room Details",
+        "update-room": "Edit Room",
+        "delete-room": "Delete Room"
+      }
+    },
+    "pre-uni-certificate": {
+      "label": "Pre-University Certificate Management",
+      "children": {
+        "add-pre-uni-certificate": "Add Pre-University Certificate",
+        "view-pre-uni-certificates": "View All Pre-University Certificates",
+        "view-pre-uni-certificate": "View Pre-University Certificate Details",
+        "update-pre-uni-certificate": "Edit Pre-University Certificate",
+        "delete-pre-uni-certificate": "Delete Pre-University Certificate"
+      }
+    },
+    "period-status": {
+      "label": "Period Status Management",
+      "children": {
+        "toggle-period-status": "Change Period Status"
+      }
+    }
+  }
+}

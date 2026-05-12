@@ -1,0 +1,116 @@
+{
+  "flags": {
+    "medical_no_record": "No medical record found",
+    "medical_rejected": "Medically unfit (Rejected by medical admin)",
+    "medical_pending": "Pending physical medical examination",
+    "failed_subjects": "Failed or carried subjects from last year",
+    "enrolled_only": "Affiliated student (Distance learning)",
+    "punishment": "Previous disciplinary punishment record",
+    "fee_expelled": "Expelled for non-payment last year",
+    "data_missing": "Missing required geographic or academic data",
+    "special_case_review": "Special case - requires manual review",
+    "punishment_missing": "Disciplinary records missing (requires manual review)",
+    "fee_expelled_missing": "Previous fee records missing (requires manual review)",
+    "missing_grade": "Missing academic grade data (requires manual review)",
+    "city_missing": "City/Village data is missing",
+    "city_suspended": "Acceptance from this City/Village is suspended",
+    "governorate_missing": "Governorate data is missing",
+    "governorate_suspended": "Acceptance from this Governorate is suspended"
+  },
+  "recommendation": {
+    "accepted": "Accepted",
+    "rejected": "Rejected",
+    "review": "Manual Review"
+  },
+  "grades": {
+    "4": "Excellent",
+    "3": "Very Good",
+    "2": "Good",
+    "1": "Pass",
+    "0": "Fail"
+  },
+  "pipeline": {
+    "run_success": "Acceptance pipeline completed successfully",
+    "already_ran": "Pipeline has already been run for this phase",
+    "no_pending": "No pending applications found for this phase",
+    "not_run": "Pipeline has not been run for phase {{phaseId}}. Run the pipeline first.",
+    "skipped": "Pipeline already ran for phase {{phaseId}}. Skipping to prevent duplication."
+  },
+  "export": {
+    "success": "Excel sheet generated successfully",
+    "no_data": "No data found to export for phase {{phaseId}}",
+    "no_processed": "No processed applications found for phase {{phaseId}}",
+    "no_segments": "No valid segments to export for phase {{phaseId}}",
+    "ai_task_fired": "AI security task fired for segment {{segment}}",
+    "ai_task_failed": "AI security task failed for segment {{segment}}",
+    "no_egyptian_students": "No Egyptian students in segment {{segment}}, skipping AI task"
+  },
+  "import": {
+    "success": "Final decisions imported successfully",
+    "no_file": "No file uploaded. Please attach an Excel file.",
+    "no_rows": "No rows found in the uploaded sheet.",
+    "no_applications": "No pending applications found for phase {{phaseId}}.",
+    "missing_decision": "Upload failed: Missing decision for ID {{studentId}}.",
+    "unknown_student": "Upload failed: ID {{studentId}} is in the Excel sheet but does not belong to this phase.",
+    "result": "Import done for phase {{phaseId}}: {{updated}} decisions saved, {{securityRejected}} shadow-banned for security."
+  },
+  "ai_task": {
+    "started": "AI task generation started",
+    "zip_created": "Student ZIP archive created",
+    "task_created": "AI task created successfully",
+    "task_persisted": "AI task saved to database",
+    "no_valid_students": "No valid students provided for AI task generation",
+    "no_documents": "No student documents found for AI task generation",
+    "invalid_file_name": "fileName must be a non-empty string",
+    "invalid_students_array": "students must be a non-empty array",
+    "service_failed": "AI task service failed with status {{status}}",
+    "invalid_response": "Invalid AI task response payload",
+    "failed": "Failed to generate AI task"
+  },
+  "segments": {
+    "male_new": "New Male Students List",
+    "male_returning": "Returning Male Students List",
+    "female_new": "New Female Students List",
+    "female_returning": "Returning Female Students List"
+  },
+  "sheet": {
+    "title": "{{segment}} — Phase {{phaseId}}",
+    "total_students": "Total Students",
+    "auto_accepted": "Auto-accepted by system",
+    "legend_label": "Color Legend:",
+    "legend_accepted": "Accepted (System Recommendation)",
+    "legend_review": "Review (System Recommendation)",
+    "legend_rejected": "Rejected (System Recommendation)",
+    "message_to_student_col": "Admin Decision",
+    "flag_reasons_col": "Acceptance/Rejection Reasons",
+    "message_to_student_validation": "\"Accepted; proceed to (Building 1) for document submission,Geographical mismatch,Financial status unresolved,Incompatible with enrollment system (Distance Learning),Educational zone mismatch (Greater Cairo),Does not meet minimum academic grade,Rejected due to previous disciplinary sanctions\"",
+    "columns": {
+      "index": "#",
+      "db_id": "System ID",
+      "id": "ID Number",
+      "full_name": "Full Name",
+      "student_type": "Student Type",
+      "faculty": "Faculty",
+      "academic_year": "Academic Year",
+      "qualification": "Qualification",
+      "grade": "Total Grade",
+      "level": "Level",
+      "last_year_estimate": "Last Year Grade",
+      "governorate": "Governorate",
+      "city": "City/Village",
+      "village": "Village",
+      "guardian_id": "Guardian ID",
+      "guardian_name": "Guardian Name",
+      "guardian_relation": "Guardian Relation",
+      "guardian_occupation": "Guardian Occupation",
+      "school_governorate": "School Governorate",
+      "flag_reasons": "Acceptance/Rejection Reasons",
+      "system_recommendation": "System Recommendation",
+      "admin_decision": "Admin Decision"
+    },
+    "student_types": {
+      "egyptian": "Egyptian",
+      "foreign": "Foreign"
+    }
+  }
+}

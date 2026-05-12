@@ -1,0 +1,29 @@
+{
+  "main_heading": {
+    "title": "Central Restaurant Management",
+    "subtitle": "Manage meals, meal schedules, and meal bookings"
+  },
+  "cards": {
+    "today_meal": {
+      "title": "The current meal for today's students",
+      "meal_category": "Meal Category",
+      "day_type": "Day Type",
+      "delivery_time": "Delivery Time",
+      "booking_time": "Booking Time",
+      "delivery_period": "Student Meal Delivery Period",
+      "booking_period": "Meal Booking Period",
+      "students_booked": "Number of Students Booked",
+      "no_meal": "No Meal Today"
+    },
+    "manage_meals": {
+      "title": "Manage Meals",
+      "description": "Easily create and edit daily meals available for students.",
+      "button": "Manage Meals"
+    },
+    "manage_meals_schedule": {
+      "title": "Meal Scheduling",
+      "description": "Set delivery and booking times for each day in an organized way.",
+      "button": "Manage Schedule"
+    }
+  }
+}

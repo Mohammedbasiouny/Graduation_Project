@@ -1,0 +1,53 @@
+{
+  "main_heading": {
+    "title": "Housing Applications Management",
+    "subtitle": "View and monitor student housing applications and their completion status"
+  },
+  "table_heading": {
+    "title": "Housing Applications List",
+    "subtitle": "All submitted housing applications in the system"
+  },
+  "cards": {
+    "export_students": {
+      "title": "Export Applications Data",
+      "description": "Download a file containing housing application data for external use.",
+      "button": "Export Applications"
+    },
+    "manage_acceptance": {
+      "title": "Approve and Reject Applications",
+      "description": "Review housing applications and easily approve or reject them based on eligibility requirements.",
+      "button": "Review Applications"
+    }
+  },
+  "overview": {
+    "total": {
+      "label": "Total Applications",
+      "subtext": "Total number of submitted housing applications"
+    }
+  },
+  "table": {
+    "columns": {
+      "id": "#ID",
+      "full_name": "Applicant Name",
+      "gender": "Gender",
+      "is_egyptian_national": "Egyptian National",
+      "is_resident_inside_egypt": "Resident Inside Egypt",
+      "is_new_student": "New Student",
+      "dorm_type": "Dorm Type",
+      "is_completed": "Application Status",
+      "created_at": "Submission Date",
+      "actions": "Actions"
+    }
+  },
+  "is_completed": {
+    "true": "Completed",
+    "false": "Incomplete"
+  },
+  "room_type": {
+    "regular": "Regular",
+    "premium": "Premium"
+  },
+  "actions": {
+    "view_details": "View Application"
+  }
+}

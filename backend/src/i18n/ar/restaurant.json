@@ -1,0 +1,57 @@
+{
+    "meals": {
+        "CREATED_SUCCESSFULLY": "تم إنشاء الوجبة بنجاح",
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع بيانات الوجبات بنجاح",
+        "UPDATED_SUCCESSFULLY": "تم تحديث الوجبة بنجاح",
+        "DELETED_SUCCESSFULLY": "تم تعطيل الوجبة بنجاح",
+
+        "CREATE_FAILED": "فشل إنشاء الوجبة",
+        "FETCH_FAILED": "فشل استرجاع بيانات الوجبات",
+        "UPDATE_FAILED": "فشل تحديث الوجبة",
+        "DELETE_FAILED": "فشل تعطيل الوجبة",
+
+        "NOT_FOUND": "الوجبة غير موجودة",
+        "NAME_ALREADY_EXISTS": "توجد وجبة بهذا الاسم بالفعل",
+        "HAS_LINKED_SCHEDULES": "لا يمكن تعطيل هذه الوجبة لأنها مرتبطة بجداول وجبات",
+        "DEACTIVATE_LINKED_SCHEDULES": "لا يمكن تعطيل هذه الوجبة بينما هي جزء من جدول وجبات نشط",
+        "INVALID_CATEGORY": "يجب أن تكون الفئة إفطار أو غداء أو عشاء أو سحور"
+    },
+    "meal_day_schedules": {
+        "CREATED_SUCCESSFULLY": "تم إنشاء جدول يوم الوجبة بنجاح",
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع بيانات جداول أيام الوجبات بنجاح",
+        "UPDATED_SUCCESSFULLY": "تم تحديث جدول يوم الوجبة بنجاح",
+        "DELETED_SUCCESSFULLY": "تم حذف جدول يوم الوجبة بنجاح",
+
+        "CREATE_FAILED": "فشل إنشاء جدول يوم الوجبة",
+        "FETCH_FAILED": "فشل استرجاع بيانات جداول أيام الوجبات",
+        "UPDATE_FAILED": "فشل تحديث جدول يوم الوجبة",
+        "DELETE_FAILED": "فشل حذف جدول يوم الوجبة",
+
+        "NOT_FOUND": "جدول يوم الوجبة غير موجود",
+        "DUPLICATE_DATE": "يوجد جدول وجبات لهذا اليوم بالفعل",
+        "BOOKING_START_BEFORE_END": "يجب أن يكون وقت بدء الحجز قبل وقت انتهائه",
+        "BOOKING_WINDOW_TOO_SHORT": "يجب أن تكون نافذة الحجز ساعة واحدة على الأقل",
+        "SCHEDULE_MUST_BE_FUTURE": "يجب أن تكون أوقات الحجز في المستقبل",
+        "SCHEDULE_LOCKED": "لا يمكن تعديل هذا الجدول لأن التسليم قد بدأ بالفعل"
+    },
+    "meal_slots": {
+        "CREATED_SUCCESSFULLY": "تم إنشاء فترة الوجبة بنجاح",
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع بيانات فترات الوجبات بنجاح",
+        "UPDATED_SUCCESSFULLY": "تم تحديث فترة الوجبة بنجاح",
+        "DELETED_SUCCESSFULLY": "تم حذف فترة الوجبة بنجاح",
+
+        "CREATE_FAILED": "فشل إنشاء فترة الوجبة",
+        "FETCH_FAILED": "فشل استرجاع بيانات فترات الوجبات",
+        "UPDATE_FAILED": "فشل تحديث فترة الوجبة",
+        "DELETE_FAILED": "فشل حذف فترة الوجبة",
+
+        "NOT_FOUND": "فترة الوجبة غير موجودة",
+        "MEAL_NOT_FOUND": "الوجبة المحددة غير موجودة",
+        "MEAL_INACTIVE": "لا يمكن إنشاء فترة لوجبة غير نشطة",
+        "DELIVERY_START_BEFORE_END": "يجب أن يكون وقت بدء التسليم قبل وقت انتهائه",
+        "BOOKING_MUST_PRECEDE_DELIVERY": "يجب أن تسبق نافذة الحجز بالكامل نافذة التسليم",
+        "KITCHEN_PREP_TIME_INSUFFICIENT": "يجب أن يكون هناك فارق لا يقل عن ساعتين بين نهاية الحجز وبداية التسليم",
+        "DUPLICATE_CATEGORY_SAME_DAY": "توجد فترة لهذه الفئة من الوجبات في هذا الجدول اليومي بالفعل",
+        "SLOT_LOCKED": "لا يمكن تعديل هذه الفترة لأن التسليم قد بدأ بالفعل"
+    }
+}

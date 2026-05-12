@@ -1,0 +1,19 @@
+{
+    "face_recognition": {
+        "HYDRATED_SUCCESSFULLY": "تم تحميل الذاكرة بنجاح",
+        "UNENROLLED_SUCCESSFULLY": "تم إلغاء تسجيل الطالب بنجاح",
+        "RESET_SUCCESSFULLY": "تمت إعادة تعيين النظام بنجاح",
+
+        "HYDRATION_FAILED": "فشل تحميل الذاكرة. قد تكون خدمة Python غير متاحة",
+        "UNENROLL_FAILED": "فشل إلغاء تسجيل الطالب",
+        "RESET_FAILED": "فشلت إعادة تعيين النظام",
+        
+        "STUDENT_NOT_ENROLLED": "لا يوجد بصمة وجه لهذا الطالب لإلغاء تسجيلها"
+    },
+    "attendance_calendar": {
+        "RETRIEVED_SUCCESSFULLY": "تم استرجاع تقويم الحضور بنجاح",
+
+        "FETCH_FAILED": "فشل استرجاع تقويم الحضور",
+        "STUDENT_NOT_FOUND": "الطالب غير موجود"
+    }
+}

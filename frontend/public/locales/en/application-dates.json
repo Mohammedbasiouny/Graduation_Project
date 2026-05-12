@@ -1,0 +1,111 @@
+{
+  "main_heading": {
+    "title":"Application Dates",
+    "subtitle":"Manage all submission windows, deadlines, and upcoming schedules"
+  },
+  "table_heading": {
+    "title": "Manage Application Dates",
+    "subtitle": "Use the table and filters below to view, edit, and manage start and end dates for student applications"
+  },
+  "student_heading": {
+    "title": "Available Application Dates for University Housing Enrollment",
+    "subtitle": "Choose from the available dates to submit your application according to the specified schedule."
+  },
+  "cards": {
+    "add_period": {
+      "title": "Add New Date",
+      "description": "Create a new application date for the admission period.",
+      "button": "Add date"
+    },
+    "end_period": {
+      "title": "End Application Period",
+      "description": "Close the application period and stop receiving new submissions.",
+      "opened_at": "The application period was opened on {{date}} at {{time}}",
+      "button": "End of period"
+    },
+    "start_period": {
+      "title": "Start Application Period",
+      "description": "Open the application period so students can begin submitting their applications.",
+      "closed_at": "The application period was closed on {{date}} at {{time}}",
+      "button": "Start Period"
+    }
+  },
+  "dates_overview": {
+    "available": {
+      "label": "Available Dates",
+      "subtext": "Currently open for applications"
+    },
+    "ended": {
+      "label": "Ended Dates",
+      "subtext": "These application periods are closed"
+    },
+    "upcoming": {
+      "label": "Upcoming Dates",
+      "subtext": "These will start soon"
+    },
+    "total": {
+      "label": "Total Dates",
+      "subtext": "All application periods combined"
+    }
+  },
+  "table": {
+    "columns": {
+      "id": "#ID", 
+      "university": "University", 
+      "start_date": "Start Date and Time", 
+      "end_date": "End Date and Time", 
+      "who_can_apply": "Who can apply?", 
+      "status": "Status", 
+      "actions": "Actions",
+      "student_type": "Student type eligible to apply" 
+    },
+    "period_title": "The application period is now open",
+    "go_to_periods": "View application deadlines",
+    "period_details": "The application period runs from {{start_date}} to {{end_date}}. This period is designated for {{student_type}} applicants. Eligible applicants include: {{who_can_apply}}. University: {{university}}. Please ensure that the application requirements match each applicant before applying, as submitting during an unsuitable period may result in rejection."
+  },
+  "date_status": {
+    "available": "Available",
+    "upcoming": "Upcoming",
+    "ended": "Ended"
+  },
+  "modals": {
+    "delete": {
+      "title": "Confirm Deletion",
+      "description": "Are you sure you want to delete this application period? This action cannot be undone"
+    },
+    "add": {
+      "title": "Add New Date",
+      "description": "Create a new application date for the admission period."
+    },
+    "view": {
+      "title": "View Period Details",
+      "description": "Here you can view the details of the application period."
+    },
+    "edit": {
+      "title": "Edit Application Period",
+      "description": "Edit the details of the application period."
+    },
+    "start_period": {
+      "title": "Confirm Start Application Period",
+      "description": "Are you sure you want to start the application period? Students will be able to begin submitting their applications."
+    },
+    "end_period": {
+      "title": "Confirm End Application Period",
+      "description": "Are you sure you want to end the application period? Students will no longer be able to submit applications."
+    },
+    "truncate": {
+      "title": "Confirm Data Truncation",
+      "description": "Are you sure you want to truncate all application periods? This action cannot be undone."
+    }
+  },
+  "not_found": {
+    "title": "Application Window Not Yet Open",
+    "description": "You will be notified via email as soon as the dates are announced."
+  },
+  "important_notice": {
+    "title": "Important Notice",
+    "description": "Please read carefully before proceeding:\n\n1. Data registration for applying to university dormitories is only available during the designated time period.\n2. The registration period is announced at the dormitory headquarters and on the university's official website.\n3. After the deadline, registration will no longer be available in the system.\n\nMake sure all information is complete and accurate before submitting."
+  },
+  "apply_btn": "Apply now",
+  "truncate_btn": "Clear All Application Dates"
+}

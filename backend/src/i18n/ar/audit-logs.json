@@ -1,0 +1,297 @@
+{
+  "LOGS_FETCHED_SUCCESSFULLY": "تم جلب سجلات التدقيق بنجاح",
+  "MESSAGE": {
+    "SUCCESS_TEMPLATE": "{{action}} {{resource}}",
+    "FAILED_TEMPLATE": "فشل {{action}} {{resource}}",
+    "FAILED_WITH_REASON_TEMPLATE": "فشل {{action}} {{resource}} بسبب {{reason}}"
+  },
+  "ACTION": {
+    "SUCCESS": {
+      "created": "تم إنشاء",
+      "fetched": "تم جلب",
+      "fetched_many": "تم عرض قائمة",
+      "updated": "تم تحديث",
+      "deleted": "تم حذف",
+      "processed": "تم تنفيذ",
+      "logged_in": "تم تسجيل الدخول",
+      "uploaded": "تم رفع",
+      "downloaded": "تم تنزيل",
+      "imported": "تم استيراد",
+      "exported": "تم تصدير"
+    },
+    "FAILED": {
+      "create": "إنشاء",
+      "fetch": "جلب",
+      "update": "تحديث",
+      "delete": "حذف",
+      "process": "تنفيذ",
+      "log_in": "تسجيل الدخول",
+      "upload": "رفع",
+      "download": "تنزيل",
+      "import": "استيراد",
+      "export": "تصدير"
+    }
+  },
+  "RESOURCES": {
+    "user": {
+      "one": "مستخدم",
+      "many": "مستخدمين"
+    },
+    "order": {
+      "one": "طلب",
+      "many": "طلبات"
+    },
+    "category": {
+      "one": "فئة",
+      "many": "فئات"
+    },
+    "table": {
+      "one": "طاولة",
+      "many": "طاولات"
+    },
+    "record": {
+      "one": "سجل",
+      "many": "سجلات"
+    },
+    "student": {
+      "one": "طالب",
+      "many": "طلاب"
+    },
+    "building": {
+      "one": "مبنى",
+      "many": "مباني"
+    },
+    "faculty": {
+      "one": "كلية",
+      "many": "كليات"
+    },
+    "department": {
+      "one": "قسم",
+      "many": "أقسام"
+    },
+    "application_date": {
+      "one": "موعد تقديم",
+      "many": "مواعيد تقديم"
+    },
+    "dormitory": {
+      "one": "سكن",
+      "many": "مساكن"
+    },
+    "room": {
+      "one": "غرفة",
+      "many": "غرف"
+    },
+    "meal": {
+      "one": "وجبة",
+      "many": "وجبات"
+    },
+    "setting": {
+      "one": "إعداد",
+      "many": "إعدادات"
+    },
+    "location": {
+      "one": "موقع",
+      "many": "مواقع"
+    },
+    "email": {
+      "one": "البريد الإلكتروني لمستخدم",
+      "many": "البريد الإلكتروني لمستخدمين"
+    }
+  },
+  "ERRORS": {
+    "Validation failed.": "فشل التحقق من البيانات",
+    "validation failed": "فشل التحقق من البيانات",
+    "Validation error": "خطأ في التحقق من البيانات",
+    "Validation failed": "فشل التحقق من البيانات",
+    "email must not be null.": "البريد الإلكتروني لا يمكن أن يكون فارغ",
+    "email must not be null": "البريد الإلكتروني لا يمكن أن يكون فارغ",
+    "email must not be empty.": "البريد الإلكتروني مطلوب",
+    "email must not be empty": "البريد الإلكتروني مطلوب",
+    "name must not be empty.": "الاسم مطلوب",
+    "name must not be empty": "الاسم مطلوب",
+    "name must not be null.": "الاسم مطلوب",
+    "name must not be null": "الاسم مطلوب",
+    "password must not be empty.": "كلمة المرور مطلوبة",
+    "password must not be empty": "كلمة المرور مطلوبة",
+    "password must be longer than or equal to 6 characters.": "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
+    "password must be longer than or equal to 6 characters": "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
+    "password must be longer than 6 characters": "كلمة المرور يجب أن تكون أكثر من 6 أحرف",
+    "password must be longer than 6 characters.": "كلمة المرور يجب أن تكون أكثر من 6 أحرف",
+    "phone must be a valid phone number.": "رقم الهاتف غير صحيح",
+    "phone must be a valid phone number": "رقم الهاتف غير صحيح",
+    "invalid email format.": "صيغة البريد الإلكتروني غير صحيحة",
+    "invalid email format": "صيغة البريد الإلكتروني غير صحيحة",
+    "already exists.": "موجود بالفعل",
+    "already exists": "موجود بالفعل",
+    "not found.": "لم يتم العثور عليه",
+    "not found": "لم يتم العثور عليه",
+    "unauthorized.": "غير مخول",
+    "unauthorized": "غير مخول",
+    "forbidden.": "ممنوع",
+    "forbidden": "ممنوع",
+    "bad request.": "طلب خاطئ",
+    "bad request": "طلب خاطئ",
+    "internal server error.": "خطأ في الخادم",
+    "internal server error": "خطأ في الخادم",
+    "user not found.": "المستخدم غير موجود",
+    "user not found": "المستخدم غير موجود",
+    "email already in use.": "البريد الإلكتروني مستخدم بالفعل",
+    "email already in use": "البريد الإلكتروني مستخدم بالفعل",
+    "invalid credentials.": "بيانات الدخول غير صحيحة",
+    "invalid credentials": "بيانات الدخول غير صحيحة",
+    "access denied.": "الوصول مرفوض",
+    "access denied": "الوصول مرفوض",
+    "resource not found.": "المورد غير موجود",
+    "resource not found": "المورد غير موجود",
+    "duplicate entry.": "إدخال مكرر",
+    "duplicate entry": "إدخال مكرر",
+    "operation failed.": "فشلت العملية"
+  },
+  "student": {
+    "INVALID_GOV_CODE": "كود المحافظة في الرقم القومي غير صالح",
+    "NATIONAL_ID_EXISTS": "هذا الرقم القومي مسجل بالفعل",
+    "FILE_UPLOAD_ERROR": "حدث خطأ أثناء رفع الملفات",
+    "STUDENT_CREATION_FAILED": "فشل في إنشاء بيانات الطالب",
+    "ALL_FILES_REQUIRED_PERSONAL_EG": "جميع الملفات مطلوبة: صورة شخصية، صورة البطاقة الأمامية، صورة البطاقة الخلفية",
+    "ALL_FILES_REQUIRED_PERSONAL_NON_EG": "جميع الملفات مطلوبة: صورة شخصية، صورة جواز السفر",
+    "NOT_EGYPTIAN": "هذا المستخدم غير مسجل كونه مصرياً.",
+    "NOT_INSIDE_EGYPT": "معلومات الإقامة يمكن تقديمها فقط من داخل مصر.",
+    "COUNTRY_MUST_EGYPT": "يجب أن تكون الدولة هي مصر.",
+    "INVALID_LOCATION_DATA": "اختيار غير صحيح للمحافظة أو القسم أو المدينة",
+    "RESIDENCE_INFO_ERROR": "حدث خطأ أثناء حفظ معلومات الإقامة الخاصة بك. برجاء المحاولة لاحقًا.",
+    "NOT_OUTSIDE_EGYPT": "هذه الخدمة مخصصة فقط للطلاب المقيمين خارج مصر",
+    "COUNTRY_MUST_NOT_BE_EGYPT": "يجب ألا تكون الدولة مصر",
+    "VISA_FILE_REQUIRED": "مطلوب رفع صورة الفيزا أو الإقامة",
+    "VISA_FILE_SAVE_FAILED": "فشل حفظ صورة الفيزا أو الإقامة",
+    "UPDATE_TARGET_NOT_FOUND": "لا يوجد طالب مطابق لتحديث بياناته",
+    "NEW_STUDENT_ONLY": "الخدمة متاحة للطلاب الجدد فقط",
+    "NOMINATION_CARD_REQUIRED": "مطلوب رفع صورة بطاقة الترشيح",
+    "NOMINATION_FILE_SAVE_FAILED": "فشل حفظ صورة بطاقة الترشيح",
+    "ACADEMIC_INFO_ERROR": "حدث خطأ أثناء حفظ المعلومات الأكاديمية. برجاء المحاولة لاحقًا.",
+    "OLD_STUDENT_ONLY": "الخدمة متاحة للطلاب المستمرين فقط",
+    "ENROLLMENT_PROOF_REQUIRED": "مطلوب رفع صورة إثبات التسجيل",
+    "ENROLLMENT_PROOF_SAVE_FAILED": "فشل حفظ صورة إثبات التسجيل",
+    "TOTAL_SCORE_REQUIRED": "مطلوب إدخال الدرجة الكلية",
+    "CERTIFICATE_FILE_REQUIRED": "مطلوب رفع صورة شهادة الثانوية",
+    "INVALID_CERTIFICATE_TYPE_OR_DEGREE": "نوع الشهادة غير صحيح أو الدرجة غير متاحة",
+    "INVALID_PERCENTAGE_CALCULATION": "تعذّر حساب النسبة المئوية، برجاء التحقق من الدرجة الكلية",
+    "PRE_UNI_INFO_ERROR": "حدث خطأ أثناء حفظ بيانات ما قبل الجامعة. برجاء المحاولة لاحقًا.",
+    "CERTIFICATE_FILE_SAVE_FAILED": "فشل في حفظ صورة شهادة الثانوية",
+    "HOUSE_TYPE_INFO_ERROR": "حدث خطأ أثناء حفظ نوع السكن. برجاء المحاولة لاحقًا.",
+    "PARENT_GUARDIAN_INFO_ERROR": "حدث خطأ أثناء حفظ بيانات الوالد/الوصي. برجاء المحاولة لاحقًا.",
+    "INVALID_KINSHIP_TYPE": "نوع القرابة غير صالح. يجب أن يكون 'father' أو 'guardian'.",
+    "GUARDIAN_RELATIONSHIP_REQUIRED": "يجب تحديد صلة القرابة للوصي",
+    "FATHER_KINSHIP_NOT_ALLOWED": "لا يمكن إدخال صلة قرابة للأب",
+    "FATHER_INFO_ERROR": "حدث خطأ أثناء حفظ بيانات الأب",
+    "GUARDIAN_INFO_ERROR": "حدث خطأ أثناء حفظ بيانات الوصي",
+    "PERSONAL_INFO_NOT_COMPLETED": "يجب إكمال البيانات الشخصية أولاً",
+    "RESIDENCY_INFO_NOT_COMPLETED": "يجب إكمال معلومات الإقامة أولاً",
+    "PRE_UNI_INFO_NOT_COMPLETED": "يجب إكمال بيانات ما قبل الجامعة أولاً",
+    "FILE_UPLOAD_FAILED": "فشل رفع الملفات",
+    "REGISTRATION_PERIOD_NOT_ACTIVE": "فترة التقديم غير مفعلة حالياً",
+    "NATIONAL_ID_ALREADY_EXISTS": "هذا الرقم القومي مسجل بالفعل",
+    "STUDENT_IS_NOT_EGYPTIAN": "الطالب غير مسجل كمصري",
+    "MOBILE_NUMBER_ALREADY_EXISTS": "رقم الهاتف مسجل بالفعل",
+    "PERSONAL_IMAGE_REQUIRED": "صورة شخصية مطلوبة",
+    "NATIONAL_ID_FRONT_IMAGE_REQUIRED": "صورة بطاقة الرقم القومي الأمامية مطلوبة",
+    "NATIONAL_ID_BACK_IMAGE_REQUIRED": "صورة بطاقة الرقم القومي الخلفية مطلوبة",
+    "PERSONAL_INFO_ERROR": "حدث خطأ أثناء حفظ البيانات الشخصية. برجاء المحاولة لاحقًا.",
+    "PASSPORT_IMAGE_REQUIRED": "صورة جواز السفر مطلوبة",
+    "INVALID_GOVERNORATE_DATA": "بيانات المحافظة غير صحيحة",
+    "INVALID_POLICE_DEPARTMENT_DATA": "بيانات القسم / المركز غير صحيحة",
+    "INVALID_CITY_OR_VILLAGE_DATA": "بيانات المدينة / القرية غير صحيحة",
+    "STUDENT_NOT_MARKED_AS_INSIDE_EGYPT": "الطالب غير محدد كمقيم داخل مصر",
+    "STUDENT_MARKED_AS_INSIDE_EGYPT": "الطالب محدد كمقيم داخل مصر",
+    "STUDENT_MARKED_AS_OLD": "الطالب محدد كطالب قديم",
+    "COLLEGE_NOT_FOUND": "الكلية المختارة غير موجودة",
+    "DEPARTMENT_NOT_FOUND": "القسم أو البرنامج المختار غير موجود",
+    "STUDENT_MARKED_AS_NEW": "الطالب محدد كطالب مستجد",
+    "STUDENT_MARKED_AS_OUTSIDE_EGYPT": "الطالب محدد كمقيم خارج مصر",
+    "FATHER_ALREADY_MARKED_NON_EGYPTIAN": "تم تحديد الأب مسبقًا كغير مصري",
+    "GUARDIAN_ALREADY_MARKED_NON_EGYPTIAN": "تم تحديد الوصي مسبقًا كغير مصري",
+    "FATHER_ID_IMAGES_REQUIRED": "صور بطاقة هوية الأب الأمامية والخلفية مطلوبة",
+    "GUARDIAN_ID_IMAGES_REQUIRED": "صور بطاقة هوية الوصي الأمامية والخلفية مطلوبة",
+    "FATHER_ALREADY_MARKED_EGYPTIAN": "تم تحديد الأب مسبقًا كمصري",
+    "GUARDIAN_ALREADY_MARKED_EGYPTIAN": "تم تحديد الوصي مسبقًا كمصري",
+    "FATHER_IDENTITY_REQUIRED": "صورة هوية الأب مطلوبة",
+    "GUARDIAN_IDENTITY_REQUIRED": "صورة هوية الوصي مطلوبة",
+    "REGISTRATION_CLOSED": "التسجيل مغلق حالياً. يرجى العودة خلال فترة التسجيل القادمة.",
+    "INVALID_PERCENTAGE": "يجب أن تكون قيمة النسبة المئوية بين 0 و 100."
+  },
+  "academic": {
+    "faculties": {
+      "ALREADY_EXISTS": "كلية بهذا الاسم موجودة بالفعل",
+      "NOT_FOUND": "الكلية غير موجودة",
+      "HAS_LINKED_RECORDS": "لا يمكن حذف الكلية لأنها تحتوي على برامج أقسام مرتبطة بها"
+    },
+    "departments": {
+      "ALREADY_EXISTS": "قسم بهذا الاسم موجود بالفعل في هذه الكلية",
+      "NOT_FOUND": "القسم غير موجود",
+      "FACULTY_NOT_FOUND": "الكلية المحددة غير موجودة",
+      "HAS_LINKED_RECORDS": "لا يمكن حذف القسم لأنه يحتوي على سجلات طلاب مرتبطة به"
+    }
+  },
+  "dormitory": {
+    "buildings": {
+      "ALREADY_EXISTS": "يوجد مبنى بهذا الاسم بالفعل",
+      "NOT_FOUND": "المبنى غير موجود",
+      "HAS_LINKED_RECORDS": "لا يمكن حذف هذا المبنى لأنه مرتبط بغرف"
+    },
+    "rooms": {
+      "ALREADY_EXISTS": "توجد غرفة بهذا الاسم في هذا المبنى بالفعل",
+      "NOT_FOUND": "الغرفة غير موجودة",
+      "FLOOR_EXCEEDS_BUILDING_FLOORS": "رقم الطابق يتجاوز عدد طوابق المبنى",
+      "HAS_LINKED_RECORDS": "لا يمكن حذف هذه الغرفة لأنها مرتبطة بسجلات"
+    }
+  },
+  "restaurant": {
+    "meals": {
+      "NAME_ALREADY_EXISTS": "توجد وجبة بهذا الاسم بالفعل",
+      "NOT_FOUND": "الوجبة غير موجودة",
+      "HAS_LINKED_SCHEDULES": "لا يمكن تعطيل هذه الوجبة لأنها مرتبطة بجداول وجبات",
+      "DEACTIVATE_LINKED_SCHEDULES": "لا يمكن تعطيل هذه الوجبة بينما هي جزء من جدول وجبات نشط",
+      "INVALID_CATEGORY": "يجب أن تكون الفئة إفطار أو غداء أو عشاء أو سحور"
+    },
+    "meal_day_schedules": {
+      "NOT_FOUND": "جدول يوم الوجبة غير موجود",
+      "DUPLICATE_DATE": "يوجد جدول وجبات لهذا اليوم بالفعل",
+      "BOOKING_START_BEFORE_END": "يجب أن يكون وقت بدء الحجز قبل وقت انتهائه",
+      "BOOKING_WINDOW_TOO_SHORT": "يجب أن تكون نافذة الحجز ساعة واحدة على الأقل",
+      "SCHEDULE_MUST_BE_FUTURE": "يجب أن تكون أوقات الحجز في المستقبل",
+      "SCHEDULE_LOCKED": "لا يمكن تعديل هذا الجدول لأن التسليم قد بدأ بالفعل"
+    },
+    "meal_slots": {
+      "NOT_FOUND": "فترة الوجبة غير موجودة",
+      "MEAL_NOT_FOUND": "الوجبة المحددة غير موجودة",
+      "MEAL_INACTIVE": "لا يمكن إنشاء فترة لوجبة غير نشطة",
+      "DELIVERY_START_BEFORE_END": "يجب أن يكون وقت بدء التسليم قبل وقت انتهائه",
+      "BOOKING_MUST_PRECEDE_DELIVERY": "يجب أن تسبق نافذة الحجز بالكامل نافذة التسليم",
+      "KITCHEN_PREP_TIME_INSUFFICIENT": "يجب أن يكون هناك فارق لا يقل عن ساعتين بين نهاية الحجز وبداية التسليم",
+      "DUPLICATE_CATEGORY_SAME_DAY": "توجد فترة لهذه الفئة من الوجبات في هذا الجدول اليومي بالفعل",
+      "SLOT_LOCKED": "لا يمكن تعديل هذه الفترة لأن التسليم قد بدأ بالفعل"
+    }
+  },
+  "application_dates": {
+    "NOT_FOUND": "تاريخ التقديم غير موجود",
+    "UPDATE_TARGET_NOT_FOUND": "تاريخ التقديم غير موجود للتحديث",
+    "DELETE_TARGET_NOT_FOUND": "تاريخ التقديم غير موجود للحذف",
+    "STATUS_SET_FAILED": "فشل تحديث حالة فترة التقديم",
+    "TABLE_TRUNCATE_FAILED": "فشل تفريغ جدول تواريخ التقديم",
+    "STATISTICS_FETCH_FAILED": "فشل استرجاع إحصائيات تواريخ التقديم",
+    "PRELIMINARY_RESULT_TOGGLE_FAILED": "فشل تبديل حالة النتيجة المبدئية"
+  },
+  "medical": {
+    "NOT_FOUND": "التقرير الطبي غير موجود",
+    "CREATE_FAILED": "فشل في إنشاء التقرير الطبي",
+    "FETCH_FAILED": "فشل في استرجاع التقرير الطبي",
+    "REVIEW_FAILED": "فشل في تحديث المراجعة الطبية"
+  },
+  "common": {
+    "USER_NOT_FOUND": "هذا المسخدم غير موجود",
+    "VALIDATION_FAILED": "فشل التحقق من البيانات.",
+    "tooManyRequests": "عدد كبير من الطلبات. الرجاء المحاولة لاحقاً.",
+    "CONFLICT": "المورد موجود بالفعل.",
+    "NOT_FOUND": "المورد غير موجود.",
+    "NO_DATA_FOUND_FOR_EXPORT": "لم يتم العثور على بيانات للتصدير."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "404": {
+    "title": "Page Not Found",
+    "description": "We couldn't find what you're looking for."
+  },
+
+  "500": {
+    "title": "Server Error",
+    "description": "Something went wrong on our end. Please try again later."
+  },
+
+  "401": {
+    "title": "Unauthorized",
+    "description": "You must be logged in to access this page."
+  },
+
+  "403": {
+    "title": "Access Forbidden",
+    "description": "You don’t have permission to view this page."
+  },
+
+  "400": {
+    "title": "Bad Request",
+    "description": "The request could not be processed due to invalid data."
+  },
+
+  "408": {
+    "title": "Request Timeout",
+    "description": "The server took too long to respond. Please try again."
+  },
+
+  "429": {
+    "title": "Too Many Requests",
+    "description": "You're sending too many requests. Please slow down."
+  },
+
+  "503": {
+    "title": "Service Unavailable",
+    "description": "The service is temporarily unavailable due to maintenance."
+  },
+
+  "default": {
+    "title": "Unexpected Error",
+    "description": "Something unexpected happened. Please try again."
+  }
+}

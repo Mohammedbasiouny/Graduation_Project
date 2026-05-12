@@ -1,0 +1,17 @@
+{
+  "ERROR": "خطأ",
+  "USER_NOT_FOUND": "هذا المسستخدم غير موجود",
+  "VALIDATION_ERROR": "dfdsfsfsdf",
+  "tooManyRequests": "عدد كبير من الطلبات. الرجاء المحاولة لاحقاً.",
+  "VALIDATION_FAILED": "فشل التحقق من البيانات.",
+  "CONFLICT": "المورد موجود بالفعل.",
+  "NOT_FOUND": "المورد غير موجود.",
+  "USER_DELETED_SUCCESS": "تم حذف المستخدم بنجاح.",
+  "USER_BLOCK_TOGGLED_SUCCESS": "تم تحديث حالة حظر المستخدم بنجاح.",
+  "USERS_FETCHED_SUCCESS": "تم استرجاع المستخدمين بنجاح.",
+  "USER_FETCHED_SUCCESS": "تم استرجاع المستخدم بنجاح.",
+  "USER_INFO_UPDATED_SUCCESS": "تم تحديث معلومات المستخدم بنجاح.",
+  "PERMISSIONS_FETCHED": "تم استرجاع الصلاحيات بنجاح.",
+  "PERMISSIONS_GRANTED": "تم منح الصلاحيات بنجاح.",
+  "NO_DATA_FOUND_FOR_EXPORT": "لم يتم العثور على بيانات للتصدير."
+}

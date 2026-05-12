@@ -1,0 +1,701 @@
+{
+  "email": {
+    "label": "Email",
+    "placeholder": "Enter your email"
+  },
+  "password": {
+    "label": "Password",
+    "placeholder": "Enter your password"
+  },
+  "confirm_password": {
+    "label": "Confirm Password",
+    "placeholder": "Re-enter your password"
+  },
+  "old_password": {
+    "label": "Old Password",
+    "placeholder": "Enter your current password"
+  },
+  "passport_number": {
+    "label": "Passport Number",
+    "placeholder": "Enter passport number",
+    "description": "Enter the passport number exactly as shown in your passport."
+  },
+  "passport_issuing_country": {
+    "label": "Passport Issuing Country",
+    "placeholder": "Select issuing country",
+    "description": "Please select the passport issuing country as shown in the passport."
+  },
+  "ssn": {
+    "label": "National ID",
+    "placeholder": "Enter national ID",
+    "description": "Enter the 14-digit national ID exactly as recorded on the ID card."
+  },
+  "full_name": {
+    "label": "Full Name",
+    "placeholder": "Enter full name",
+    "description": "Enter your full name as recorded in official documents."
+  },
+  "gpa": {
+    "label": "GPA",
+    "placeholder": "Enter GPA (0.00 - 4.00)"
+  },
+  "description": {
+    "label": "Description",
+    "placeholder": "Write a short description..."
+  },
+  "notes": {
+    "label": "Notes",
+    "placeholder": "Add optional notes..."
+  },
+  "certificate_name": {
+    "label": "Certificate Name",
+    "placeholder": "Enter certificate name..."
+  },
+  "college_name": {
+    "label": "College Name",
+    "placeholder": "Enter college name..."
+  },
+  "college_is_off_campus": {
+    "label": "Is the college located outside the university campus?",
+    "placeholder": "Choose the college location",
+    "description": "Specify whether the college is located outside or inside the university campus. This helps determine the services and facilities available to students in this college.",
+    "options": {
+      "true": "The college is located outside the university campus",
+      "false": "The college is located inside the university campus"
+    }
+  },
+  "department_name": {
+    "label": "Department Name",
+    "placeholder": "Enter department name..."
+  },
+  "degree": {
+    "label": "Degree",
+    "placeholder": "Enter degree..."
+  },
+  "is_visible": {
+    "label": "Visible for Selection",
+    "placeholder": "Check this box if you want this item to be visible to users"
+  },
+  "date": {
+    "label": "Date",
+    "placeholder": "Enter date (YYYY-MM-DD)"
+  },
+  "time": {
+    "label": "Time",
+    "placeholder": "Enter time (HH:MM)"
+  },
+  "file": {
+    "file_name": "File Name: {{name}}",
+    "error_message": "Invalid file type. Allowed: {{types}}",
+    "allowed_message": "All allowed file types",
+    "max_files_message": "You can upload a maximum of {{max}} files only.",
+    "max_files_hint": "Maximum files: {{max}}",
+    "selected_files": "Number of selected files",
+    "buttons": {
+      "remove_file": "Remove Selected File",
+      "view_selected_file": "Click to view selected file",
+      "remove_all": "Remove All Files",
+      "click_or_drag": "Click or drag file to upload"
+    }
+  },
+  "otp": {
+    "label": "Verification Code",
+    "placeholder": "Enter the OTP from left to right"
+  },
+  "country": {
+    "label": "Country",
+    "placeholder": "Select country"
+  },
+  "gender": {
+    "label": "Gender",
+    "placeholder": "Select gender",
+    "description": "Please select the gender as shown on any official document."
+  },
+  "religion": {
+    "label": "Religion",
+    "placeholder": "Select religion",
+    "description": "Please select the religion as shown on the national ID."
+  },
+  "nationality": {
+    "label": "Nationality",
+    "placeholder": "Select nationality",
+    "description": "Please select the nationality as shown on any official document."
+  },
+  "university": {
+    "label": "University",
+    "placeholder": "Select university"
+  },
+  "page_size": {
+    "label": "Page Size",
+    "placeholder": "Page size",
+    "invalid_page_size": "Invalid page size. Please select a value between 5 and 100."
+  },
+  "start_date": {
+    "label": "Start Date and Time",
+    "placeholder": "Select start date"
+  },
+  "account_started": {
+    "label": "Account Start Date",
+    "placeholder": "Select the account start date"
+  },
+  "account_stopped": {
+    "label": "Account End Date",
+    "placeholder": "Select the account end date (optional)"
+  },
+  "end_date": {
+    "label": "End Date and Time",
+    "placeholder": "Select end date"
+  },
+  "who_can_apply": {
+    "label": "Who Can Apply?",
+    "placeholder": "Enter who can apply during this period"
+  },
+  "housing_type": {
+    "label": "Desired Housing Type",
+    "placeholder": "Regular or Premium Housing",
+    "description": "Select the type of housing you wish to apply for this year, based on your preferences or health condition.",
+    "options": {
+      "premium": "Premium Housing – Offers additional services and higher comfort level with greater privacy for the student.",
+      "regular": "Regular Housing – Basic accommodation providing essential needs without extra features."
+    }
+  },
+  "meals": {
+    "filter_label": "Filter students by meal preference",
+    "label": "Do you want meals inside the university housing?",
+    "placeholder": "",
+    "description": "Select “Yes” if you want daily meals inside the university housing, and “No” if you do not. Please note that the decision is subject to review by the university housing administration.",
+    "options": {
+      "yes": "Show students who want meals",
+      "no": "Show students who do not want meals",
+      "all": "Show all students regardless of preference"
+    }
+  },
+  "personal_image": {
+    "label": "Personal Image",
+    "placeholder": "Upload personal image",
+    "description": "Please upload a recent, clear personal photo with an appropriate background."
+  },
+  "national_id_front_image": {
+    "label": "National ID Front Image",
+    "placeholder": "Upload front side image",
+    "description": "Please upload a clear front image of the national ID, ensuring all data is readable."
+  },
+  "national_id_back_image": {
+    "label": "National ID Back Image",
+    "placeholder": "Upload back side image",
+    "description": "Please upload a clear back image of the national ID, ensuring all data is readable."
+  },
+  "passport_image": {
+    "label": "Passport Image",
+    "placeholder": "Upload passport image",
+    "description": "Please upload a clear image of your passport, ensuring all data is readable."
+  },
+  "mobile_number": {
+    "label": "Mobile Number",
+    "placeholder": "Enter mobile number",
+    "description": "Please enter a valid mobile number for contact."
+  },
+  "landline_number": {
+    "label": "Landline Number",
+    "placeholder": "Enter landline number",
+    "description": "You can enter a landline number if available; this field is optional."
+  },
+  "place_of_birth": {
+    "label": "Place of Birth",
+    "placeholder": "Enter place of birth",
+    "description": "Enter the place of birth as shown on any official document."
+  },
+  "date_of_birth": {
+    "label": "Date of Birth",
+    "placeholder": "Select date of birth",
+    "description": "Please select the date of birth as shown on any official document."
+  },
+  "birth_country": {
+    "label": "Country of Birth",
+    "placeholder": "Select country of birth",
+    "description": "Select the country of birth as shown on any official document."
+  },
+  "birth_city": {
+    "label": "City of Birth",
+    "placeholder": "Enter city of birth",
+    "description": "Enter the city of birth as shown on any official document."
+  },
+  "country_of_residence": {
+    "label": "Country of Residence",
+    "placeholder": "Select country of residence",
+    "description": "Please select the country you currently reside in."
+  },
+  "governorate_of_residence": {
+    "label": "Governorate",
+    "placeholder": "Select your governorate",
+    "description": "Please select the governorate where you live."
+  },
+  "police_station_or_center": {
+    "label": "Police Station or Center",
+    "placeholder": "Enter police station or center",
+    "description": "Please enter the name of the local police station or center to verify your official address."
+  },
+  "city_sheikhdom_or_village": {
+    "label": "City, Sheikhdom, or Village",
+    "placeholder": "Enter city, sheikhdom, or village",
+    "description": "Please specify the city, sheikhdom, or village where you reside."
+  },
+  "detailed_address": {
+    "label": "Detailed Address",
+    "placeholder": "Enter full address",
+    "description": "Please provide the complete address including street name, building, and any important landmarks."
+  },
+  "visa_or_residency_image": {
+    "label": "Visa or Residency Image",
+    "placeholder": "Upload visa or residency image",
+    "description": "Please upload a clear image of your visa or residency permit showing all relevant details."
+  },
+  "certificate_type": {
+    "label": "Certificate Type",
+    "placeholder": "Select certificate type",
+    "description": "Please select the type of educational certificate obtained."
+  },
+  "percentage": {
+    "label": "Percentage",
+    "placeholder": "Enter percentage",
+    "description": "Please enter the percentage exactly as shown on the certificate (e.g., 95%)."
+  },
+  "educational_administration": {
+    "label": "Educational Administration",
+    "placeholder": "Enter educational administration",
+    "description": "Please enter the name of the educational administration responsible for issuing the certificate."
+  },
+  "total_score": {
+    "label": "Total Score",
+    "placeholder": "Enter total score",
+    "description": "Please enter the total score or final grade as shown on the certificate."
+  },
+  "certificate_image": {
+    "label": "Certificate Image",
+    "placeholder": "Upload certificate image",
+    "description": "Please upload a clear image of the educational certificate so that all details are clearly visible."
+  },
+  "certificate_country": {
+    "label": "Certificate Issuing Country",
+    "placeholder": "Select the issuing country",
+    "description": "Please select the country that issued the certificate. This is used to determine the type of certificate and grading system (e.g., Egyptian or foreign)."
+  },
+  "administrative_region": {
+    "label": "Governorate",
+    "placeholder": "Select governorate",
+    "description": "Please select the governorate where the educational authority is located."
+  },
+  "college": {
+    "label": "College",
+    "placeholder": "Select college",
+    "description": "Please select the college you are enrolled in."
+  },
+  "department_or_program": {
+    "label": "Department or Program",
+    "placeholder": "Select department or program",
+    "description": "Please select the academic department or study program you are enrolled in."
+  },
+  "admission_year": {
+    "label": "Admission Year",
+    "placeholder": "Enter admission year",
+    "description": "Please enter the academic year in which you were admitted to the university."
+  },
+  "nomination_card_image": {
+    "label": "Nomination Card Image",
+    "placeholder": "Upload nomination card image",
+    "description": "Please upload a clear image of the nomination card issued by the relevant authority."
+  },
+  "study_level": {
+    "label": "Study Level",
+    "placeholder": "Select study level",
+    "description": "Please select your current study level or academic year.",
+    "options": {
+      "preparatory": "Preparatory",
+      "first_year": "First Year",
+      "second_year": "Second Year",
+      "third_year": "Third Year",
+      "fourth_year": "Fourth Year",
+      "fifth_year": "Fifth Year",
+      "sixth_year": "Sixth Year"
+    }
+  },
+  "student_code": {
+    "label": "Student Code",
+    "placeholder": "Enter student code",
+    "description": "Please enter the official student code as registered at the university."
+  },
+  "study_system_type": {
+    "label": "Study System Type",
+    "placeholder": "Select study system type",
+    "description": "Please select the study system you are enrolled in (e.g., Regular System, Credit Hours System).",
+    "options": {
+      "regular": "Regular System – A traditional study system based on academic years and fixed semesters.",
+      "credit_hours": "Credit Hours System – A flexible system based on the number of credit hours completed and registered courses."
+    }
+  },
+  "gpa_or_total_score": {
+    "label": "GPA / Total Score",
+    "placeholder": "Enter GPA or total score",
+    "description": "Please enter your current cumulative GPA or total score according to official academic records."
+  },
+  "enrollment_status": {
+    "label": "Enrollment Status",
+    "placeholder": "Select enrollment status",
+    "description": "Please select your current enrollment status at the university.",
+    "options": {
+      "enrolled": "Enrolled – The student is currently registered and actively studying.",
+      "new": "New – The student has been registered for the first time recently.",
+      "continuing": "Continuing – The student continues their study from a previous academic year.",
+      "deferred": "Deferred – The student’s enrollment has been temporarily postponed for an approved reason.",
+      "withdrawn": "Withdrawn – The student has stopped attending and is no longer continuing.",
+      "re_enrolled": "Re-enrolled – The student has been registered again after a previous interruption or cancellation.",
+      "repeat_year": "Repeat Year – The student is repeating the academic year due to academic requirements.",
+      "transferred": "Transferred – The student has transferred from another institution or program.",
+      "canceled": "Enrollment Canceled – The student’s enrollment has been officially canceled.",
+      "dismissed": "Dismissed – The student has been expelled for academic or disciplinary reasons.",
+      "graduated": "Graduated – The student has successfully completed all academic requirements and graduated."
+    }
+  },
+  "enrollment_proof_image": {
+    "label": "Enrollment Proof Image",
+    "placeholder": "Upload enrollment proof image",
+    "description": "Please upload a clear image of any official document proving your enrollment status."
+  },
+  "certificate_from_egypt": {
+    "label": "Did you obtain the educational certificate from inside Egypt?",
+    "description": "Select “Yes” if the educational certificate was issued by an educational institution inside the Arab Republic of Egypt, or “No” if it was issued outside Egypt."
+  },
+  "guardian_is_egyptian": {
+    "label": "Is the guardian an Egyptian national?",
+    "description": "Select “Yes” if the guardian holds Egyptian nationality, or “No” if they hold another nationality."
+  },
+  "job_title": {
+    "label": "Job Title",
+    "placeholder": "Enter job title and nature of work",
+    "description": "Please enter the current or previous job title and type of work clearly, such as the workplace or professional field."
+  },
+  "relationship": {
+    "label": "Relationship",
+    "placeholder": "Specify your relationship to the student (e.g., Father, Guardian, Brother, etc.)",
+    "description": "Write your relationship to the student to clarify the legal or family connection."
+  },
+  "identity_number": {
+    "label": "Identity Number",
+    "placeholder": "Enter identity number",
+    "description": "Please enter the national ID number or identity card number accurately as listed on the official document."
+  },
+  "identity_image": {
+    "label": "Identity Image",
+    "description": "Please upload a clear image of the identity document, ensuring all details are visible and readable."
+  },
+  "parents_status": {
+    "label": "Parents’ Status",
+    "placeholder": "Select parents’ status",
+    "description": "Please select the current status of the parents, such as alive, deceased, separated, or any other relevant condition.",
+    "options": {
+      "both_alive": "Both parents are alive",
+      "father_deceased": "Father deceased",
+      "mother_deceased": "Mother deceased",
+      "both_deceased": "Both parents deceased",
+      "divorced": "Parents divorced",
+      "separated": "Parents separated (without divorce)",
+      "father_unknown": "Father unknown",
+      "mother_unknown": "Mother unknown",
+      "guardian_only": "Under guardian care only"
+    }
+  },
+  "family_residency_abroad": {
+    "label": "Does the family reside abroad?",
+    "description": "Select “Yes” if the family resides outside the Arab Republic of Egypt permanently or temporarily, or “No” if residing inside Egypt."
+  },
+  "application_result_method": {
+    "label": "Result Viewing Method",
+    "placeholder": "Select appropriate method",
+    "description": "If you are an international student, use the application number. If you are Egyptian and remember your application number, you can enter it or check using your national ID.",
+    "options": {
+      "national_id": "View using National ID",
+      "application_number": "View using application number"
+    }
+  },
+  "application_number": {
+    "label": "Application Number",
+    "placeholder": "Enter your application number",
+    "description": "Enter the application number exactly as submitted when applying."
+  },
+  "message_title": {
+    "label": "Message Title",
+    "placeholder": "Enter the message title",
+    "description": "Write a short and clear title that describes your message."
+  },
+  "message_content": {
+    "label": "Message Content",
+    "placeholder": "Write your message here",
+    "description": "Enter the full content of the message clearly, including all important details."
+  },
+  "governorate_name": {
+    "label": "Governorate Name",
+    "placeholder": "Enter the governorate name",
+    "description": "Please enter the name of the governorate."
+  },
+  "distance_from_cairo": {
+    "label": "Distance from Cairo (km)",
+    "placeholder": "Enter the distance from Cairo",
+    "description": "Please enter the distance of the governorate from Cairo."
+  },
+  "acceptance_status": {
+    "label": "Students Will Be Accepted",
+    "placeholder": "Check ✔ if the system will accept students from this location"
+  },
+  "police_station_name": {
+    "label": "Police Station / Center Name",
+    "placeholder": "Enter the police station / center name",
+    "description": "Please enter the name of the police station / center."
+  },
+  "governorate": {
+    "label": "Governorate",
+    "placeholder": "Select the governorate",
+    "description": "Please select the governorate."
+  },
+  "edu_department_name": {
+    "label": "Educational Administration Name",
+    "placeholder": "Enter the educational administration name",
+    "description": "Please enter the name of the educational administration."
+  },
+  "police_station": {
+    "label": "Police Station / Center",
+    "placeholder": "Select the police station / center",
+    "description": "Please select the police station / center."
+  },
+  "city_name": {
+    "label": "City / Sheikhdom / Village Name",
+    "placeholder": "Enter the city / sheikhdom / village name",
+    "description": "Please enter the city / sheikhdom / village name."
+  },
+  "building_name": {
+    "label": "Building Name",
+    "placeholder": "Enter the building name"
+  },
+  "building_type": {
+    "label": "Building Type",
+    "placeholder": "Select building type (Male / Female)",
+    "description": "Specify whether this building is designated for male or female students.",
+    "options": {
+      "male": "Male",
+      "female": "Female"
+    }
+  },
+  "floors_count": {
+    "label": "Number of Floors",
+    "placeholder": "Enter the number of floors in the building",
+    "description": "Specify the total number of floors in this building."
+  },
+  "is_available_for_stay": {
+    "label": "Available for Stay",
+    "placeholder": "Check if this building is available for student housing"
+  },
+  "room_name": {
+    "label": "Room Name",
+    "placeholder": "Enter the room name",
+    "description": "Specify a unique name or number for this room."
+  },
+  "room_type": {
+    "label": "Room Type",
+    "placeholder": "Select room type (Regular / Premium / Medical)",
+    "description": "Choose the room type based on its purpose and available facilities.",
+    "filter_description": "Select the room type according to student preferences to filter results.",
+    "options": {
+      "regular": "Regular",
+      "premium": "Premium",
+      "medical": "Medical",
+      "studying": "Studying",
+      "all": "All Rooms"
+    }
+  },
+  "floor": {
+    "label": "Floor",
+    "placeholder": "Enter floor number",
+    "description": "Specify the floor where this room is located."
+  },
+  "building": {
+    "label": "Building",
+    "placeholder": "Select the building",
+    "description": "Select the building where this room is located."
+  },
+  "room_capacity": {
+    "label": "Capacity",
+    "placeholder": "Enter the room capacity",
+    "description": "Specify the number of students that can occupy this room."
+  },
+  "student_nationality": {
+    "label": "Student Nationality",
+    "placeholder": "Select student nationality (Egyptian / Expatriate)",
+    "description": "Choose whether to filter Egyptian students or expatriate students.",
+    "options": {
+      "egyptian": "Egyptian",
+      "expatriate": "Expatriate",
+      "all": "All Students"
+    }
+  },
+  "residence_type": {
+    "label": "Residence Type",
+    "placeholder": "Select residence type (Inside / Outside Egypt)",
+    "description": "Choose whether to filter students residing inside Egypt or outside Egypt.",
+    "options": {
+      "inside": "Inside Egypt",
+      "outside": "Outside Egypt",
+      "all": "All Students"
+    }
+  },
+  "student_type": {
+    "label": "Student Type",
+    "placeholder": "Select student type (New / Old)",
+    "description": "Choose whether to filter new students (first year / preparatory) or old students.",
+    "options": {
+      "new": "New Student (First Year / Preparatory)",
+      "old": "Old Student",
+      "all": "All Students"
+    }
+  },
+  "pre_university_education": {
+    "label": "Pre-University Education",
+    "placeholder": "Select pre-university education type (Inside / Outside Egypt)",
+    "description": "Specify whether the student’s pre-university education was inside or outside Egypt for filtering or exporting data accordingly.",
+    "options": {
+      "inside": "Inside Egypt",
+      "outside": "Outside Egypt",
+      "all": "All Students"
+    }
+  },
+  "guardian_nationality": {
+    "label": "Guardian Nationality",
+    "placeholder": "Select guardian nationality (Egyptian / Non-Egyptian)",
+    "description": "Choose whether to filter students based on their guardian’s nationality.",
+    "options": {
+      "egyptian": "Egyptian",
+      "expatriate": "Non-Egyptian",
+      "all": "All Nationalities"
+    }
+  },
+  "grade": {
+    "label": "Student Academic Grade",
+    "placeholder": "Select academic grade",
+    "description": "Choose the student’s academic grade to filter results or include in export.",
+    "options": {
+      "0": "Fail",
+      "1": "Pass",
+      "2": "Good",
+      "3": "Very Good",
+      "4": "Excellent"
+    }
+  },
+  "role": {
+    "label": "User Role",
+    "placeholder": "Select the user role",
+    "description": "Choose the appropriate role for the user",
+    "options": {
+      "admin": "Administrator",
+      "student": "Student",
+      "maintenance": "Maintenance",
+      "cafeteria": "Cafeteria",
+      "medical": "Doctor",
+      "supervisor": "Supervisor"
+    }
+  },
+  "meal_name": {
+    "label": "Meal Name",
+    "placeholder": "Enter the meal name",
+    "description": "Enter the name of the meal (e.g., Breakfast, Lunch, Dinner, Suhoor)."
+  },
+  "meal_is_active": {
+    "label": "Meal Status",
+    "placeholder": "Check if the meal is being prepared in the kitchen",
+    "description": "This indicates whether the meal can still be prepared again or has been permanently canceled."
+  },
+  "meal_category": {
+    "label": "Meal Category",
+    "placeholder": "Select meal category",
+    "description": "Choose the type of meal for this schedule.",
+    "options": {
+      "breakfast": "Breakfast",
+      "lunch": "Lunch",
+      "dinner": "Dinner",
+      "suhoor": "Suhoor"
+    }
+  },
+  "day_type": {
+    "label": "Day Type",
+    "placeholder": "Select day type",
+    "description": "Specify the type of day for which this schedule applies.",
+    "options": {
+      "normal": "Normal Day",
+      "exam": "Exam Day",
+      "ramadan": "Ramadan Day"
+    }
+  },
+  "meal": {
+    "label": "Meal",
+    "placeholder": "Select a meal",
+    "description": "Choose the meal that will be served on this day."
+  },
+  "delivery_start_time": {
+    "label": "Delivery Start Time",
+    "placeholder": "Select delivery start time",
+    "description": "Specify the time when meal delivery to students begins on this day."
+  },
+  "delivery_end_time": {
+    "label": "Delivery End Time",
+    "placeholder": "Select delivery end time",
+    "description": "Specify the time when meal delivery to students ends on this day."
+  },
+  "booking_start_time": {
+    "label": "Booking Start Time",
+    "placeholder": "Select booking start time",
+    "description": "Specify the time when students can start booking the meal for this day."
+  },
+  "booking_end_time": {
+    "label": "Booking End Time",
+    "placeholder": "Select booking end time",
+    "description": "Specify the time when students can no longer book the meal for this day."
+  },
+  "application_period_open": {
+    "label": "Application Period Open",
+    "description": "Specify whether the application period is currently open for students to submit their university housing applications.",
+    "hint": "Date and time of the last change to the application period status {{date}} {{time}}."
+  },
+  "admission_results_announced": {
+    "label": "Admission Results Announced",
+    "description": "Specify whether the university housing admission results have been announced."
+  },
+  "online_payment_available": {
+    "label": "Online Payment Available",
+    "description": "Specify whether online payment is available for students accepted into university housing."
+  },
+  "university_housing_started": {
+    "label": "University Housing Started",
+    "description": "Specify whether students have started moving into university housing."
+  },
+  "female_visits_available": {
+    "label": "Female Visits Available",
+    "description": "Specify whether female visits are allowed in university housing."
+  },
+  "restaurant_status": {
+    "label": "Restaurant Status",
+    "description": "Specify whether the restaurant inside the university campus is currently open to serve meals to students."
+  },
+  "auto_meal_reserve": {
+    "label": "Automatic Meal Reservation",
+    "description": "Specify whether meals are automatically reserved for accepted students based on their preferences, or if they must reserve meals manually."
+  },
+  "attendance_start": {
+    "label": "Attendance Start Time",
+    "description": "Specify the time when student attendance recording begins in university housing."
+  },
+  "attendance_end": {
+    "label": "Attendance End Time",
+    "description": "Specify the time when student attendance recording ends in university housing."
+  },
+  "need_processed_national_ids": {
+    "label": "Request National ID Card Images File (Egyptians Only)",
+    "description": "Generate a Word file containing processed and organized images of national ID cards for Egyptian students only, arranged for easy review and printing."
+  }
+}

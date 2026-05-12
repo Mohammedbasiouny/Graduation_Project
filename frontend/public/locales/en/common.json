@@ -1,0 +1,87 @@
+{
+  "web_site_name": "Capital University Housing",
+  "language": "Language",
+  "en": "English",
+  "ar": "Arabic",
+  "loading_your_experience": "Loading your experience...",
+  "copy": "Copy to clipboard",
+  "copied": "Copied!",
+  "success_copied": "Successfully copied to clipboard!",
+  "failed_copied": "Copy failed!",
+  "universities": {
+    "hu": "Capital University",
+    "hnu": "Capital National University",
+    "hitu": "Capital International Technological University",
+    "all": "All Universities"
+  },
+  "gender": {
+    "male": "Male",
+    "female": "Female",
+    "all": "All"
+  },
+  "religion": {
+    "muslim": "Islam",
+    "christian": "Christianity",
+    "all": "All"
+  },
+  "pagination": {
+    "no_items_found": "No items found",
+    "of": "of",
+    "items": "items"
+  },
+  "search": {
+    "select_placeholder": "Select search key",
+    "input_placeholder": "Enter the value you want to search for...",
+    "missing_key_toast": "Please select a search type before entering a value."
+  },
+  "NA": "Not Available",
+  "selection_status": {
+    "true": "Available for selection",
+    "false": "Currently not available for selection"
+  },
+  "acceptance_status": {
+    "true": "The system accepts students from here",
+    "false": "The system does not accept students from here"
+  },
+  "new_student": {
+    "title": "New Student",
+    "description": "A new student is one who is enrolling in the university for the first time. Please select this option if you have not previously studied in any college or university program."
+  },
+  "existing_student": {
+    "title": "Existing Student",
+    "description": "An existing student is one who has previously enrolled in the university and has been registered for more than one academic year or has moved to a higher academic year."
+  },
+  "resident_in_egypt": {
+    "title": "Resident in Egypt",
+    "description": "A student resident in Egypt is one who has a permanent residence inside the Arab Republic of Egypt at the time of application, whether Egyptian or non-Egyptian."
+  },
+  "resident_outside_egypt": {
+    "title": "Resident Outside Egypt",
+    "description": "A student resident outside Egypt is one who does not have a residence inside Egypt at the time of application, or a non-Egyptian student residing abroad."
+  },
+  "egyptian": {
+    "title": "Egyptian",
+    "description": "Select this option if you are an Egyptian citizen. This applies to students born with Egyptian nationality and affects some administrative and academic procedures related to Egyptian students."
+  },
+  "expatriate": {
+    "title": "Expatriate",
+    "description": "Select this option if you are a non-Egyptian citizen. This applies to foreign students or those residing outside Egypt and affects certain requirements and procedures for expatriate students."
+  },
+  "with_pagination_btn": {
+    "true": "Pagination enabled",
+    "false": "Pagination disabled"
+  },
+  "yes": "Yes",
+  "no": "No",
+  "no_data_available": "No data available",
+  "question": "Question",
+  "zero": "Zero",
+  "optional": "Optional",
+  "coming_soon": {
+    "title": "Coming Soon",
+    "subtitle": "This page is currently under construction and will be launched soon with more features and content.",
+    "under_development": "We are currently working on developing this page to ensure the best user experience.",
+    "content": "New features and rich content will be added soon.",
+    "thanks": "Thank you for your patience, the launch will be soon!"
+  }
+}

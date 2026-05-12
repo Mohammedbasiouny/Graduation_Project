@@ -1,0 +1,30 @@
+{
+  "heading": {
+    "title": "Settings Control",
+    "subtitle": "You can control the application settings from here."
+  },
+  "warning_note": {
+    "title": "Important Note",
+    "description": "Changing the settings may affect the user experience. Please make sure you understand the changes you are making."
+  },
+  "sections": {
+    "application_period": {
+      "title": "Application Period",
+      "description": "Settings related to the application period for new students, including opening and closing the application period."
+    },
+    "housing": {
+      "title": "University Housing",
+      "description": "Settings related to university housing services."
+    },
+    "resturant": {
+      "title": "Restaurant",
+      "description": "Settings related to restaurant services and meal schedule."
+    },
+    "attendance": {
+      "title": "Attendance",
+      "description": "Settings related to the attendance and absence system."
+    }
+  },
+  "last_updated": "Last updated: {{date}}  --  {{time}}",
+  "save_changes": "Save Changes"
+}

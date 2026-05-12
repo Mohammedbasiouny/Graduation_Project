@@ -1,0 +1,68 @@
+{
+  "main_heading": {
+    "title": "Dormitories",
+    "subtitle": "Manage dorm buildings, floors, and rooms"
+  },
+  "table_heading": {
+    "title": "Manage Buildings",
+    "subtitle": "Use the table and filters to view, edit, and manage buildings, floors, and rooms"
+  },
+  "building_type": {
+    "male": "Male Students",
+    "female": "Female Students"
+  },
+  "fields": {
+    "floors_count": "Number of Floors",
+    "rooms_count": "Total number of rooms",
+    "regular_rooms_count": "Regular Rooms",
+    "premium_rooms_count": "Premium Rooms",
+    "medical_rooms_count": "Medical Rooms",
+    "studying_rooms_count": "Studying Rooms"
+  },
+  "cards": {
+    "add_building": {
+      "title": "Add New Building",
+      "description": "Create a new building for male or female students, and specify the number of floors and rooms",
+      "button": "Add Building"
+    }
+  },
+  "overview": {
+    "buildings_count": {
+      "title": "Buildings Overview",
+      "subtitle": "Quick summary of male and female dorm buildings"
+    },
+    "male_buildings_count": {
+      "label": "Male Buildings",
+      "subtext": "View all male buildings"
+    },
+    "female_buildings_count": {
+      "label": "Female Buildings",
+      "subtext": "View all female buildings"
+    }
+  },
+  "modals": {
+    "delete": {
+      "title": "Confirm Deletion",
+      "description": "Are you sure you want to delete this building? This action cannot be undone."
+    },
+    "add": {
+      "title": "Add New Building",
+      "description": "Create a new dorm building and specify its type, floors, and rooms."
+    },
+    "view": {
+      "title": "View Building Details",
+      "description": "Here you can view all details of the building, including floors and rooms."
+    },
+    "edit": {
+      "title": "Edit Building",
+      "description": "Update the building information, type, and related details."
+    }
+  },
+  "is_available_for_stay": {
+    "true": "Available for accommodation",
+    "false": "Not available for accommodation"
+  },
+  "rooms_link": "Click here to view all rooms",
+  "add_room_btn": "Add New Room",
+  "view_rooms_btn": "View Rooms"
+}

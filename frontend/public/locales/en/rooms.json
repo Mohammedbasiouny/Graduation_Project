@@ -1,0 +1,82 @@
+{
+  "main_heading": {
+    "title": "Rooms",
+    "subtitle": "Manage dorm rooms and link them to buildings and floors"
+  },
+  "main_heading_with_building": {
+    "title": "Manage Rooms for Building: \"{{buildingName}}\"",
+    "subtitle": "Total rooms: {{roomsCount}}"
+  },
+  "table_heading": {
+    "title": "Manage Rooms",
+    "subtitle": "Use the table and filters to view, edit, and manage rooms within buildings and floors"
+  },
+  "room_type": {
+    "regular": "Regular",
+    "premium": "Premium",
+    "studying": "Studying",
+    "medical": "Medical"
+  },
+  "fields": {
+    "room_name": "Room Name",
+    "room_type": "Room Type",
+    "floor": "Floor",
+    "capacity": "Capacity",
+    "description": "Description",
+    "is_available_for_stay": "Available for Stay",
+    "building_name": "Building Name",
+    "building_type": "Building Type",
+    "building_available_for_stay": "Building Status"
+  },
+  "cards": {
+    "add_room": {
+      "title": "Add New Room",
+      "description": "Create a new room, set its type, floor, and capacity, and link it to the appropriate building.",
+      "button": "Add Room"
+    }
+  },
+  "overview": {
+    "rooms_count": {
+      "title": "Total Rooms",
+      "subtitle": "Overview of all rooms in the building"
+    },
+    "regular_rooms_count": {
+      "title": "Regular",
+      "subtitle": "Total number of regular rooms across all buildings"
+    },
+    "premium_rooms_count": {
+      "label": "Premium",
+      "subtext": "Total number of premium rooms across all buildings"
+    },
+    "studying_rooms_count": {
+      "label": "Studying",
+      "subtext": "Total number of studying rooms across all buildings"
+    },
+    "medical_rooms_count": {
+      "label": "Medical",
+      "subtext": "Total number of medical rooms across all buildings"
+    }
+  },
+  "modals": {
+    "delete": {
+      "title": "Confirm Deletion",
+      "description": "Are you sure you want to delete this room? This action cannot be undone."
+    },
+    "add": {
+      "title": "Add New Room",
+      "description": "Create a new room and specify its type, floor, capacity, and building."
+    },
+    "view": {
+      "title": "View Room Details",
+      "description": "Here you can view all room details, including building, floor, and capacity."
+    },
+    "edit": {
+      "title": "Edit Room",
+      "description": "Update the room details such as name, type, capacity, and availability status."
+    }
+  },
+  "is_available_for_stay": {
+    "true": "Available for accommodation",
+    "false": "Not available for accommodation"
+  }
+}

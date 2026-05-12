@@ -1,0 +1,31 @@
+{
+  "copyright": "All rights reserved to the Center for Communications and Information Technology - Capital University © 2025",
+  "title": "Capital University Dorms",
+  "sections": {
+    "dorms": {
+      "title": "University Dorms",
+      "about": "About the Dorms",
+      "goals": "Our Goals",
+      "rules": "Residence Rules",
+      "student_guide": "Student Guide",
+      "results": "Results and Instructions"
+    },
+    "application": {
+      "title": "Application and Procedures",
+      "steps": "Application Steps",
+      "new_account": "Create a New Account",
+      "login": "Login",
+      "data_entry": "Required Application Data",
+      "result": "Check Application Result"
+    },
+    "help": {
+      "title": "Help and Contact",
+      "faq": "Frequently Asked Questions",
+      "tech_support": "Technical Support",
+      "contact": "Contact Us",
+      "map": "Site Map",
+      "universities": "Universities' Websites"
+    }
+  },
+  "description": "We provide safe and integrated accommodation for students of Capital University, Capital National University, and Capital Technological University in collaboration with the ICT Center. Comprehensive services include housing, sports activities, and healthcare."
+}
