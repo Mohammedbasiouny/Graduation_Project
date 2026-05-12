@@ -7,4 +7,4 @@ npx prisma migrate deploy
 echo "✅ Migrations completed!"
 echo "🚀 Starting NestJS application..."
 
-exec npm run start:prod
+exec node dist/src/main.js
