@@ -14,6 +14,10 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Warm the default InsightFace model cache during image build so the first
+# runtime startup does not spend several minutes downloading buffalo_l.
+RUN python -c "from insightface.app import FaceAnalysis; app = FaceAnalysis(name='buffalo_l', allowed_modules=['detection', 'recognition']); app.prepare(ctx_id=-1, det_size=(640, 640))"
+
 COPY . .
 
 EXPOSE 8001

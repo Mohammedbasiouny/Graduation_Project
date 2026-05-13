@@ -31,6 +31,18 @@ From the repository root:
 docker-compose up -d --build
 ```
 
+Seed the database inside the backend container:
+
+```powershell
+docker-compose exec backend npx prisma db seed
+```
+
+Important Docker notes:
+
+- The backend container is built without dev dependencies, so the seed runner is configured with `tsx` and works directly inside Docker.
+- The Docker database hostname is `postgres`, not `localhost`.
+- The attendance service image preloads its face-recognition model during build, so runtime startup is faster. The first Docker build may take longer because it downloads the model once.
+
 ### Local Development
 
 ```powershell
@@ -45,6 +57,8 @@ npm run start:dev
 Use `backend/.env` locally and keep the real values out of public repos.
 
 The safe template is `backend/.env.example`.
+
+For Docker, the compose file supplies service hostnames such as `postgres`, `redis`, `backend`, and `id-card-detection`. Keep those names intact when running the stack inside containers.
 
 ## Useful Endpoints
 

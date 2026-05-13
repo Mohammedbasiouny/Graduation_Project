@@ -11,7 +11,7 @@ i18n
   .use(initReactI18next)
 
   .init({
-    supportedLngs: ['ar'],
+    supportedLngs: ['ar', 'en'],
 
     lng:
       localStorage.getItem(import.meta.env.VITE_I18N_LANGUAGE_STORAGE_KEY || "i18nextLng") ||
