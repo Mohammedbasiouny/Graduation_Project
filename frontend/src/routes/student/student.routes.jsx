@@ -1,12 +1,14 @@
 import { Route } from "react-router";
+import { lazy } from "react";
 import LayoutWrapper from "./LayoutWrapper";
-import ApplicationFormsPage from "../../pages/student/application/application-forms";
-import PortalPage from "../../pages/student/portal";
-import ChooseNationalityPage from "../../pages/student/application/choose-nationality";
-import TrackApplicationPage from "@/pages/student/application/track-application";
-import ApplicationDatesPage from "@/pages/student/application/application-dates";
-import StudentAccountPage from "@/pages/student/me";
-import AttendancePage from "@/pages/student/attendance";
+
+const ApplicationFormsPage = lazy(() => import("../../pages/student/application/application-forms"));
+const PortalPage = lazy(() => import("../../pages/student/portal"));
+const ChooseNationalityPage = lazy(() => import("../../pages/student/application/choose-nationality"));
+const TrackApplicationPage = lazy(() => import("../../pages/student/application/track-application"));
+const ApplicationDatesPage = lazy(() => import("../../pages/student/application/application-dates"));
+const StudentAccountPage = lazy(() => import("../../pages/student/me"));
+const AttendancePage = lazy(() => import("../../pages/student/attendance"));
 
 const studentRouteConfig = [
   //! Portal

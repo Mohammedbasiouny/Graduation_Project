@@ -2,6 +2,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
+import { Suspense } from 'react';
 import { RouterProvider } from "react-router";
 import routers from './routes/index.route';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
@@ -35,7 +36,17 @@ export default function App() {
     <>
       <LoadingScreen />
       <QueryClientProvider client={queryClient}>
-        <RouterProvider router={routers} />
+        <Suspense
+          fallback={
+            <div className="fixed inset-0 flex items-center justify-center bg-white text-[var(--navy-main)]">
+              <div className="rounded-2xl border border-[rgba(19,32,145,0.12)] bg-white px-6 py-4 shadow-lg">
+                جاري تحميل الصفحة...
+              </div>
+            </div>
+          }
+        >
+          <RouterProvider router={routers} />
+        </Suspense>
         <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
       <ScrollToTop />

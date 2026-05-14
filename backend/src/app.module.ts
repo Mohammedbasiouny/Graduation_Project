@@ -3,7 +3,11 @@ import { APP_INTERCEPTOR } from '@nestjs/core';
 import { ConfigModule } from '@nestjs/config';
 import { PrismaModule } from './prisma/prisma.module';
 import { AuthModule } from './modules/auth/auth.module';
-import { I18nModule, QueryResolver, HeaderResolver } from 'nestjs-i18n';
+import {
+  I18nModule,
+  QueryResolver,
+  AcceptLanguageResolver,
+} from 'nestjs-i18n';
 import * as path from 'path';
 import { UserModule } from './modules/user/user.module';
 import { MailModule } from './mail/mail.module';
@@ -90,7 +94,7 @@ import { HealthModule } from './modules/health/health.module';
       },
       resolvers: [
         { use: QueryResolver, options: ['lang'] },
-        new HeaderResolver(['accept-language']),
+        AcceptLanguageResolver,
       ],
     }),
 

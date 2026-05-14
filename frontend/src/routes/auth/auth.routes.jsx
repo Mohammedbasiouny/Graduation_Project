@@ -1,7 +1,13 @@
 import { Route } from "react-router";
+import { lazy } from "react";
 import LayoutWrapper from "./LayoutWrapper";
 
-import { CheckOtpPage, ChooseUniversityPage, ForgotPasswordPage, LoginPage, ResetPasswordPage, SignupPage } from "@/pages/auth"
+const LoginPage = lazy(() => import("../../pages/auth/login"));
+const SignupPage = lazy(() => import("../../pages/auth/signup"));
+const ChooseUniversityPage = lazy(() => import("../../pages/auth/choose-university"));
+const ForgotPasswordPage = lazy(() => import("../../pages/auth/forgot-password"));
+const CheckOtpPage = lazy(() => import("../../pages/auth/check-otp"));
+const ResetPasswordPage = lazy(() => import("../../pages/auth/reset-password"));
 
 // Array of auth routes
 const authRouteConfig = [

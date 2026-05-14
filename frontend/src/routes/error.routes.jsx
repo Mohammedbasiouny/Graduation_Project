@@ -1,6 +1,13 @@
 import { Route } from "react-router";
+import { lazy } from "react";
 import RootLayout from "@/components/layouts/common/RootLayout";
-import { ForbiddenPage, NotFoundPage, ServerPage, TooManyRequestsPage, UnauthorizedPage, UnexpectedPage } from "@/pages/errors/";
+
+const ForbiddenPage = lazy(() => import("../pages/errors/forbidden"));
+const NotFoundPage = lazy(() => import("../pages/errors/not-found"));
+const ServerPage = lazy(() => import("../pages/errors/server"));
+const TooManyRequestsPage = lazy(() => import("../pages/errors/too-many-requests"));
+const UnauthorizedPage = lazy(() => import("../pages/errors/unauthorized"));
+const UnexpectedPage = lazy(() => import("../pages/errors/unexpected"));
 
 const errorRouteConfig = [
   { path: "server-error", element: <ServerPage /> },

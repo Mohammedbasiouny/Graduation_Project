@@ -1,18 +1,17 @@
 import { Alert } from '@/components/ui/Alert';
 import Heading from '@/components/ui/Heading';
 import { Projector } from 'lucide-react';
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { BarChart, PieChart } from '@mui/x-charts';
 import AcceptanceStatisticsCard from './cards/AcceptanceStatisticsCard';
 import PeriodsTable from './table/PeriodsTable';
 import DownloadStudentsModal from './modals/DownloadStudentsModal';
-import GenderChart from './cards/GenderChart';
-import PeriodsBarChart from './cards/PeriodsBarChart';
+const GenderChart = lazy(() => import('./cards/GenderChart'));
+const PeriodsBarChart = lazy(() => import('./cards/PeriodsBarChart'));
 import AnnouncingTheResultModal from './modals/AnnouncingTheResultModal';
 import UploadCandidatesModal from './modals/UploadCandidatesModal';
 import { useApplicationDateStatistics } from '@/hooks/api/application-dates.hooks';
-import AITasksCard from './cards/AITasksCard';
+const AITasksCard = lazy(() => import('./cards/AITasksCard'));
 
 const ManageAcceptancePage = () => {
   const { t } = useTranslation();
@@ -84,7 +83,9 @@ const ManageAcceptancePage = () => {
 
       <div className='grid grid-cols-1 lg:grid-cols-4 gap-5'>
         <div className="h-88 col-span-2 flex">
-          <AITasksCard className="flex-1" />
+          <Suspense fallback={<div className="h-88 bg-gray-100 rounded-lg animate-pulse" />}>
+            <AITasksCard className="flex-1" />
+          </Suspense>
         </div>
 
         <div className='col-span-2 space-y-6'>
@@ -108,10 +109,14 @@ const ManageAcceptancePage = () => {
       {/* Charts */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-        <GenderChart malesCount={totals.completedMales} femalesCount={totals.completedFemales} />
+        <Suspense fallback={<div className="h-80 bg-gray-100 rounded-lg animate-pulse" />}>
+          <GenderChart malesCount={totals.completedMales} femalesCount={totals.completedFemales} />
+        </Suspense>
 
         {/* Periods Bar */}
-        <PeriodsBarChart chartLabels={chartLabels} applicationsData={applicationsData} completedData={completedData} />
+        <Suspense fallback={<div className="h-80 bg-gray-100 rounded-lg animate-pulse" />}>
+          <PeriodsBarChart chartLabels={chartLabels} applicationsData={applicationsData} completedData={completedData} />
+        </Suspense>
 
       </div>
 

@@ -19,6 +19,8 @@ i18n
       import.meta.env.VITE_DEFAULT_LANG || "ar",
 
     fallbackLng: import.meta.env.VITE_DEFAULT_LANG || "ar",
+
+    showSupportNotice: false,
     
     preload: ['en', 'ar'],
 
