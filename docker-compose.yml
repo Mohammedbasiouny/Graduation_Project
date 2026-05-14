@@ -36,6 +36,12 @@ services:
       API_PORT: 8000
       REDIS_URL: redis://redis:6379/0
       CORS_ORIGINS: http://localhost:3030,http://frontend:3030,http://localhost:3000,http://backend:3000
+      TEMP_DIR: /shared/tmp
+      OUTPUTS_DIR: /shared/outputs
+
+    volumes:
+      - ai_temp_data:/shared/tmp
+      - ai_outputs_data:/shared/outputs
 
     healthcheck:
       test:
@@ -51,6 +57,10 @@ services:
 
     container_name: id-card-worker
 
+    restart: unless-stopped
+
+    command: ["python", "-u", "-m", "workers.word_worker"]
+
     depends_on:
       redis:
         condition: service_healthy
@@ -60,6 +70,12 @@ services:
 
     environment:
       REDIS_URL: redis://redis:6379/0
+      TEMP_DIR: /shared/tmp
+      OUTPUTS_DIR: /shared/outputs
+
+    volumes:
+      - ai_temp_data:/shared/tmp
+      - ai_outputs_data:/shared/outputs
 
   udorm-attendance-service:
     build:
@@ -186,3 +202,5 @@ services:
 
 volumes:
   postgres_data:
+  ai_temp_data:
+  ai_outputs_data:
